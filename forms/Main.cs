@@ -16,5 +16,10 @@ namespace Facturacion
         {
             InitializeComponent();
         }
+
+        private void rjControls1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
