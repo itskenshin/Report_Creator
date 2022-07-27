@@ -137,5 +137,12 @@ namespace Facturacion
                 
             }
         }
+
+        private void rjControls1_Click(object sender, EventArgs e)
+        {
+            this.Close();
+            Main main = new Main();
+            main.Show();
+        }
     }
 }

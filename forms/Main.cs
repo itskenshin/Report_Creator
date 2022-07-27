@@ -26,5 +26,12 @@ namespace Facturacion
         {
 
         }
+
+        private void boton_cotizacion_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form_cotiza form_Cotiza = new Form_cotiza();
+            form_Cotiza.Show();
+        }
     }
 }
