@@ -16,7 +16,7 @@ namespace Facturacion
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form_cotiza());
+            Application.Run(new Main());
         }
     }
 }
