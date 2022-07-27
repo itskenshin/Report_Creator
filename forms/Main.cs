@@ -21,5 +21,10 @@ namespace Facturacion
         {
 
         }
+
+        private void label_name_empresa_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
