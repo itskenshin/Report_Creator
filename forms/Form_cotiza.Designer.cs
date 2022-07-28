@@ -82,6 +82,7 @@
             this.textBox_numeroCoti = new Facturacion.widgets.RJTextBox();
             this.textBox_RNC = new Facturacion.widgets.RJTextBox();
             this.textBox_nombre = new Facturacion.widgets.RJTextBox();
+            this.cleanbuton = new Facturacion.widgets.RJControls();
             ((System.ComponentModel.ISupportInitialize)(this.gridprodc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -217,6 +218,7 @@
             // 
             // gridprodc
             // 
+            this.gridprodc.AllowUserToAddRows = false;
             this.gridprodc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridprodc.Location = new System.Drawing.Point(12, 430);
             this.gridprodc.Name = "gridprodc";
@@ -519,7 +521,7 @@
             this.descriProductBox.BorderSize = 1;
             this.descriProductBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriProductBox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.descriProductBox.Location = new System.Drawing.Point(604, 329);
+            this.descriProductBox.Location = new System.Drawing.Point(624, 329);
             this.descriProductBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriProductBox.Multiline = true;
             this.descriProductBox.Name = "descriProductBox";
@@ -836,11 +838,32 @@
             this.textBox_nombre.Texts = "";
             this.textBox_nombre.UnderlineStyle = true;
             // 
+            // cleanbuton
+            // 
+            this.cleanbuton.BackColor = System.Drawing.Color.SeaGreen;
+            this.cleanbuton.BackgroundColor = System.Drawing.Color.SeaGreen;
+            this.cleanbuton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.cleanbuton.BorderRadius = 20;
+            this.cleanbuton.BorderSize = 0;
+            this.cleanbuton.FlatAppearance.BorderSize = 0;
+            this.cleanbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cleanbuton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cleanbuton.ForeColor = System.Drawing.Color.White;
+            this.cleanbuton.Location = new System.Drawing.Point(1264, 279);
+            this.cleanbuton.Name = "cleanbuton";
+            this.cleanbuton.Size = new System.Drawing.Size(128, 63);
+            this.cleanbuton.TabIndex = 55;
+            this.cleanbuton.Text = "LIMPIAR CASILLAS";
+            this.cleanbuton.TextColor = System.Drawing.Color.White;
+            this.cleanbuton.UseVisualStyleBackColor = false;
+            this.cleanbuton.Click += new System.EventHandler(this.cleanbuton_Click);
+            // 
             // Form_cotiza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1415, 690);
+            this.Controls.Add(this.cleanbuton);
             this.Controls.Add(this.botonmenuprincipal);
             this.Controls.Add(this.importebox);
             this.Controls.Add(this.impmontobox);
@@ -895,6 +918,7 @@
             this.Controls.Add(this.Nombre_label);
             this.Controls.Add(this.label_datosCliente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form_cotiza";
             this.Text = "Cotización_reporte";
             this.Load += new System.EventHandler(this.Form_cotiza_Load);
@@ -959,5 +983,6 @@
         private widgets.RJTextBox impmontobox;
         private widgets.RJTextBox importebox;
         private widgets.RJControls botonmenuprincipal;
+        private widgets.RJControls cleanbuton;
     }
 }
