@@ -216,5 +216,35 @@ namespace Facturacion
                 gridfactura.Rows.RemoveAt(item.Index);
             }
         }
+
+        private void dirrecionbox_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void vencibox_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numerolabel_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numerobox_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void fechabox_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void condibox_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

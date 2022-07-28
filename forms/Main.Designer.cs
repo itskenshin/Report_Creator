@@ -42,7 +42,7 @@
             // 
             this.label_name_empresa.AutoSize = true;
             this.label_name_empresa.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_name_empresa.Location = new System.Drawing.Point(162, 48);
+            this.label_name_empresa.Location = new System.Drawing.Point(352, 74);
             this.label_name_empresa.Name = "label_name_empresa";
             this.label_name_empresa.Size = new System.Drawing.Size(167, 25);
             this.label_name_empresa.TabIndex = 0;
@@ -52,10 +52,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(110, 124);
+            this.label1.Font = new System.Drawing.Font("DM Sans", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(250, 151);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(184, 20);
+            this.label1.Size = new System.Drawing.Size(257, 31);
             this.label1.TabIndex = 4;
             this.label1.Text = "Seleccione su opción:";
             // 
@@ -70,7 +70,7 @@
             this.boton_factura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.boton_factura.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_factura.ForeColor = System.Drawing.Color.Black;
-            this.boton_factura.Location = new System.Drawing.Point(87, 156);
+            this.boton_factura.Location = new System.Drawing.Point(268, 197);
             this.boton_factura.Name = "boton_factura";
             this.boton_factura.Size = new System.Drawing.Size(222, 69);
             this.boton_factura.TabIndex = 5;
@@ -90,7 +90,7 @@
             this.boton_cotizacion.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.boton_cotizacion.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.boton_cotizacion.ForeColor = System.Drawing.Color.Black;
-            this.boton_cotizacion.Location = new System.Drawing.Point(87, 247);
+            this.boton_cotizacion.Location = new System.Drawing.Point(268, 282);
             this.boton_cotizacion.Name = "boton_cotizacion";
             this.boton_cotizacion.Size = new System.Drawing.Size(222, 69);
             this.boton_cotizacion.TabIndex = 6;
@@ -110,7 +110,7 @@
             this.buton_Orden.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.buton_Orden.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.buton_Orden.ForeColor = System.Drawing.Color.Black;
-            this.buton_Orden.Location = new System.Drawing.Point(87, 337);
+            this.buton_Orden.Location = new System.Drawing.Point(268, 360);
             this.buton_Orden.Name = "buton_Orden";
             this.buton_Orden.Size = new System.Drawing.Size(222, 69);
             this.buton_Orden.TabIndex = 7;
@@ -121,20 +121,21 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(-4, -1);
+            this.pictureBox1.Image = global::Facturacion.Properties.Resources.color;
+            this.pictureBox1.Location = new System.Drawing.Point(235, 27);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(151, 112);
+            this.pictureBox1.Size = new System.Drawing.Size(111, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.Menu;
-            this.ClientSize = new System.Drawing.Size(406, 454);
+            this.ClientSize = new System.Drawing.Size(761, 458);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.buton_Orden);
             this.Controls.Add(this.boton_cotizacion);
@@ -146,6 +147,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creador_Reportes 1.0";
+            this.Load += new System.EventHandler(this.Main_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -29,7 +29,7 @@ namespace Facturacion
             if (ltmbox.Texts == String.Empty || codprodcbox.Texts == String.Empty || 
                 descriProductBox.Texts == String.Empty || bodgbox.Texts == String.Empty || 
                 boxcantidad.Texts == String.Empty || boxunid.Texts == String.Empty
-                && boxprecio.Texts == String.Empty  || impbox.Texts == String.Empty || impmontobox.Texts == String.Empty)
+                && boxprecio.Texts == String.Empty  || impmontobox.Texts == String.Empty)
 
             {
                 var messageValuee = MessageBox.Show("Por favor llene los campos de los productos",
@@ -52,7 +52,6 @@ namespace Facturacion
                     fila.Cells["Unid."].Value = boxunid.Texts;
                     fila.Cells["Precio"].Value = boxprecio.Texts;
                     fila.Cells["Dto.%"].Value = "";
-                    fila.Cells["Imp.%"].Value = impbox.Texts;
                     fila.Cells["Imp.Monto"].Value = impmontobox.Texts;
                     decimal suma = decimal.Parse(boxcantidad.Texts) * decimal.Parse(boxprecio.Texts);
                     string re = String.Format("{0:0.00}",suma);
@@ -156,8 +155,6 @@ namespace Facturacion
             paginahtml_texto = paginahtml_texto.Replace("@Subtotal", total.ToString());
             paginahtml_texto = paginahtml_texto.Replace("@DsGlobal", dsctglobalbox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@Dsctonumero", re);
-            paginahtml_texto = paginahtml_texto.Replace("@imptotal", imptotalbox.Texts);
-            paginahtml_texto = paginahtml_texto.Replace("@TOTAL", totalbox.Texts);
 
             if (saveFile.ShowDialog() == DialogResult.OK) // cuando se muestre la ventana de guardar si le damos ok realizara lo siguiente
             {
@@ -231,7 +228,6 @@ namespace Facturacion
             boxcantidad.Texts = "";
             boxunid.Texts = "";
             boxprecio.Texts = "";
-            impbox.Texts = "";
             impmontobox.Texts = "";
             
 
@@ -246,6 +242,11 @@ namespace Facturacion
         }
 
         private void boxcantidad_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label_NumeroCoti_Click(object sender, EventArgs e)
         {
 
         }
