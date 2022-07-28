@@ -51,11 +51,16 @@
             this.labelPrecio = new System.Windows.Forms.Label();
             this.labelImp = new System.Windows.Forms.Label();
             this.porcientodsct = new System.Windows.Forms.Label();
+
+            this.label5 = new System.Windows.Forms.Label();
+
             this.dsctglobalbox = new Facturacion.widgets.RJTextBox();
             this.borrarbuton = new Facturacion.widgets.RJControls();
             this.cleanbuton = new Facturacion.widgets.RJControls();
             this.botonmenuprincipal = new Facturacion.widgets.RJControls();
-            this.impmontobox = new Facturacion.widgets.RJTextBox();
+
+            this.impbox = new Facturacion.widgets.RJTextBox();
+
             this.boxprecio = new Facturacion.widgets.RJTextBox();
             this.boxunid = new Facturacion.widgets.RJTextBox();
             this.boxcantidad = new Facturacion.widgets.RJTextBox();
@@ -77,9 +82,11 @@
             this.textBox_numeroCoti = new Facturacion.widgets.RJTextBox();
             this.textBox_RNC = new Facturacion.widgets.RJTextBox();
             this.textBox_nombre = new Facturacion.widgets.RJTextBox();
+
             this.gb_DatosClientes = new System.Windows.Forms.GroupBox();
             this.gb_DetallesProducto = new System.Windows.Forms.GroupBox();
             this.labelunit = new System.Windows.Forms.Label();
+
             ((System.ComponentModel.ISupportInitialize)(this.gridprodc)).BeginInit();
             this.gb_DatosClientes.SuspendLayout();
             this.gb_DetallesProducto.SuspendLayout();
@@ -144,9 +151,11 @@
             // label_CodigoCliente
             // 
             this.label_CodigoCliente.AutoSize = true;
+
             this.label_CodigoCliente.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label_CodigoCliente.ForeColor = System.Drawing.SystemColors.ControlText;
             this.label_CodigoCliente.Location = new System.Drawing.Point(29, 127);
+
             this.label_CodigoCliente.Name = "label_CodigoCliente";
             this.label_CodigoCliente.Size = new System.Drawing.Size(110, 16);
             this.label_CodigoCliente.TabIndex = 11;
@@ -224,9 +233,10 @@
             this.gridprodc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridprodc.Location = new System.Drawing.Point(12, 412);
             this.gridprodc.Name = "gridprodc";
+
             this.gridprodc.Size = new System.Drawing.Size(1346, 275);
+
             this.gridprodc.TabIndex = 25;
-            this.gridprodc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridprodc_CellContentClick);
             // 
             // ltmlabel
             // 
@@ -321,27 +331,35 @@
             this.porcientodsct.AutoSize = true;
             this.porcientodsct.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.porcientodsct.ForeColor = System.Drawing.Color.DarkViolet;
+
             this.porcientodsct.Location = new System.Drawing.Point(793, 117);
+
             this.porcientodsct.Name = "porcientodsct";
             this.porcientodsct.Size = new System.Drawing.Size(105, 16);
             this.porcientodsct.TabIndex = 57;
+
             this.porcientodsct.Text = "%.Dscto. GLOBAL";
+
             // 
             // dsctglobalbox
             // 
             this.dsctglobalbox.BackColor = System.Drawing.SystemColors.Window;
             this.dsctglobalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.dsctglobalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.dsctglobalbox.BorderSize = 1;
+            this.dsctglobalbox.BorderSize = 2;
             this.dsctglobalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dsctglobalbox.ForeColor = System.Drawing.SystemColors.GrayText;
+
             this.dsctglobalbox.Location = new System.Drawing.Point(903, 109);
+
             this.dsctglobalbox.Margin = new System.Windows.Forms.Padding(4);
             this.dsctglobalbox.Multiline = false;
             this.dsctglobalbox.Name = "dsctglobalbox";
             this.dsctglobalbox.Padding = new System.Windows.Forms.Padding(7);
             this.dsctglobalbox.PasswordChar = false;
+
             this.dsctglobalbox.Size = new System.Drawing.Size(269, 31);
+
             this.dsctglobalbox.TabIndex = 58;
             this.dsctglobalbox.Texts = "";
             this.dsctglobalbox.UnderlineStyle = true;
@@ -357,8 +375,10 @@
             this.borrarbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.borrarbuton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrarbuton.ForeColor = System.Drawing.Color.White;
+
             this.borrarbuton.Location = new System.Drawing.Point(1223, 336);
             this.borrarbuton.Margin = new System.Windows.Forms.Padding(10);
+
             this.borrarbuton.Name = "borrarbuton";
             this.borrarbuton.Size = new System.Drawing.Size(128, 63);
             this.borrarbuton.TabIndex = 56;
@@ -378,8 +398,10 @@
             this.cleanbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cleanbuton.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cleanbuton.ForeColor = System.Drawing.Color.White;
+
             this.cleanbuton.Location = new System.Drawing.Point(1223, 253);
             this.cleanbuton.Margin = new System.Windows.Forms.Padding(10);
+
             this.cleanbuton.Name = "cleanbuton";
             this.cleanbuton.Size = new System.Drawing.Size(128, 63);
             this.cleanbuton.TabIndex = 55;
@@ -399,8 +421,10 @@
             this.botonmenuprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonmenuprincipal.Font = new System.Drawing.Font("Bahnschrift SemiBold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonmenuprincipal.ForeColor = System.Drawing.Color.White;
+
             this.botonmenuprincipal.Location = new System.Drawing.Point(1223, 24);
             this.botonmenuprincipal.Margin = new System.Windows.Forms.Padding(10);
+
             this.botonmenuprincipal.Name = "botonmenuprincipal";
             this.botonmenuprincipal.Size = new System.Drawing.Size(128, 52);
             this.botonmenuprincipal.TabIndex = 54;
@@ -409,6 +433,7 @@
             this.botonmenuprincipal.UseVisualStyleBackColor = false;
             this.botonmenuprincipal.Click += new System.EventHandler(this.rjControls1_Click);
             // 
+
             // impmontobox
             // 
             this.impmontobox.BackColor = System.Drawing.SystemColors.Window;
@@ -427,11 +452,12 @@
             this.impmontobox.TabIndex = 52;
             this.impmontobox.Texts = "";
             this.impmontobox.UnderlineStyle = true;
+
             // 
             // boxprecio
             // 
             this.boxprecio.BackColor = System.Drawing.SystemColors.Window;
-            this.boxprecio.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.boxprecio.BorderColor = System.Drawing.Color.Red;
             this.boxprecio.BorderFocusColor = System.Drawing.Color.Red;
             this.boxprecio.BorderSize = 1;
             this.boxprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -450,7 +476,7 @@
             // boxunid
             // 
             this.boxunid.BackColor = System.Drawing.SystemColors.Window;
-            this.boxunid.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.boxunid.BorderColor = System.Drawing.Color.Red;
             this.boxunid.BorderFocusColor = System.Drawing.Color.Red;
             this.boxunid.BorderSize = 1;
             this.boxunid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -469,7 +495,7 @@
             // boxcantidad
             // 
             this.boxcantidad.BackColor = System.Drawing.SystemColors.Window;
-            this.boxcantidad.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.boxcantidad.BorderColor = System.Drawing.Color.Red;
             this.boxcantidad.BorderFocusColor = System.Drawing.Color.Red;
             this.boxcantidad.BorderSize = 1;
             this.boxcantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -484,12 +510,11 @@
             this.boxcantidad.TabIndex = 47;
             this.boxcantidad.Texts = "";
             this.boxcantidad.UnderlineStyle = true;
-            this.boxcantidad.Load += new System.EventHandler(this.boxcantidad_Load);
             // 
             // bodgbox
             // 
             this.bodgbox.BackColor = System.Drawing.SystemColors.Window;
-            this.bodgbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.bodgbox.BorderColor = System.Drawing.Color.Red;
             this.bodgbox.BorderFocusColor = System.Drawing.Color.Red;
             this.bodgbox.BorderSize = 1;
             this.bodgbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -508,7 +533,7 @@
             // descriProductBox
             // 
             this.descriProductBox.BackColor = System.Drawing.SystemColors.Window;
-            this.descriProductBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.descriProductBox.BorderColor = System.Drawing.Color.Red;
             this.descriProductBox.BorderFocusColor = System.Drawing.Color.Red;
             this.descriProductBox.BorderSize = 1;
             this.descriProductBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -519,7 +544,7 @@
             this.descriProductBox.Name = "descriProductBox";
             this.descriProductBox.Padding = new System.Windows.Forms.Padding(7);
             this.descriProductBox.PasswordChar = false;
-            this.descriProductBox.Size = new System.Drawing.Size(269, 31);
+            this.descriProductBox.Size = new System.Drawing.Size(266, 31);
             this.descriProductBox.TabIndex = 38;
             this.descriProductBox.Texts = "";
             this.descriProductBox.UnderlineStyle = true;
@@ -527,7 +552,7 @@
             // codprodcbox
             // 
             this.codprodcbox.BackColor = System.Drawing.SystemColors.Window;
-            this.codprodcbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.codprodcbox.BorderColor = System.Drawing.Color.Red;
             this.codprodcbox.BorderFocusColor = System.Drawing.Color.Red;
             this.codprodcbox.BorderSize = 1;
             this.codprodcbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -546,7 +571,7 @@
             // ltmbox
             // 
             this.ltmbox.BackColor = System.Drawing.SystemColors.Window;
-            this.ltmbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltmbox.BorderColor = System.Drawing.Color.Red;
             this.ltmbox.BorderFocusColor = System.Drawing.Color.Red;
             this.ltmbox.BorderSize = 1;
             this.ltmbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -573,8 +598,10 @@
             this.butonImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butonImprimir.Font = new System.Drawing.Font("Bahnschrift SemiBold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butonImprimir.ForeColor = System.Drawing.Color.White;
+
             this.butonImprimir.Location = new System.Drawing.Point(1223, 170);
             this.butonImprimir.Margin = new System.Windows.Forms.Padding(10);
+
             this.butonImprimir.Name = "butonImprimir";
             this.butonImprimir.Size = new System.Drawing.Size(128, 63);
             this.butonImprimir.TabIndex = 27;
@@ -594,8 +621,10 @@
             this.botonAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonAgregarProducto.Font = new System.Drawing.Font("Bahnschrift SemiBold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonAgregarProducto.ForeColor = System.Drawing.Color.White;
+
             this.botonAgregarProducto.Location = new System.Drawing.Point(1223, 90);
             this.botonAgregarProducto.Margin = new System.Windows.Forms.Padding(10);
+
             this.botonAgregarProducto.Name = "botonAgregarProducto";
             this.botonAgregarProducto.Size = new System.Drawing.Size(128, 63);
             this.botonAgregarProducto.TabIndex = 26;
@@ -607,7 +636,7 @@
             // textBoxEmite
             // 
             this.textBoxEmite.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxEmite.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxEmite.BorderColor = System.Drawing.Color.Blue;
             this.textBoxEmite.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxEmite.BorderSize = 1;
             this.textBoxEmite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -626,7 +655,7 @@
             // textBoxMoneda
             // 
             this.textBoxMoneda.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxMoneda.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxMoneda.BorderColor = System.Drawing.Color.Blue;
             this.textBoxMoneda.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxMoneda.BorderSize = 1;
             this.textBoxMoneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -645,7 +674,7 @@
             // textBoxVendedor
             // 
             this.textBoxVendedor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxVendedor.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxVendedor.BorderColor = System.Drawing.Color.Blue;
             this.textBoxVendedor.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxVendedor.BorderSize = 1;
             this.textBoxVendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -664,7 +693,7 @@
             // textBoxTerminos
             // 
             this.textBoxTerminos.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxTerminos.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxTerminos.BorderColor = System.Drawing.Color.Blue;
             this.textBoxTerminos.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxTerminos.BorderSize = 1;
             this.textBoxTerminos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -683,7 +712,7 @@
             // textBoxReferencia
             // 
             this.textBoxReferencia.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxReferencia.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxReferencia.BorderColor = System.Drawing.Color.Blue;
             this.textBoxReferencia.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxReferencia.BorderSize = 1;
             this.textBoxReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -702,7 +731,7 @@
             // textboxRFC
             // 
             this.textboxRFC.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxRFC.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textboxRFC.BorderColor = System.Drawing.Color.Blue;
             this.textboxRFC.BorderFocusColor = System.Drawing.Color.Red;
             this.textboxRFC.BorderSize = 1;
             this.textboxRFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -721,7 +750,7 @@
             // textBoxCodigoCliente
             // 
             this.textBoxCodigoCliente.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCodigoCliente.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxCodigoCliente.BorderColor = System.Drawing.Color.Blue;
             this.textBoxCodigoCliente.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxCodigoCliente.BorderSize = 1;
             this.textBoxCodigoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -740,7 +769,7 @@
             // textboxPagina
             // 
             this.textboxPagina.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxPagina.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textboxPagina.BorderColor = System.Drawing.Color.Blue;
             this.textboxPagina.BorderFocusColor = System.Drawing.Color.Red;
             this.textboxPagina.BorderSize = 1;
             this.textboxPagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -759,7 +788,7 @@
             // textboxFecha
             // 
             this.textboxFecha.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxFecha.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textboxFecha.BorderColor = System.Drawing.Color.Blue;
             this.textboxFecha.BorderFocusColor = System.Drawing.Color.Red;
             this.textboxFecha.BorderSize = 1;
             this.textboxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -778,9 +807,9 @@
             // textBox_numeroCoti
             // 
             this.textBox_numeroCoti.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_numeroCoti.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_numeroCoti.BorderColor = System.Drawing.Color.Blue;
             this.textBox_numeroCoti.BorderFocusColor = System.Drawing.Color.Red;
-            this.textBox_numeroCoti.BorderSize = 1;
+            this.textBox_numeroCoti.BorderSize = 2;
             this.textBox_numeroCoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_numeroCoti.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox_numeroCoti.Location = new System.Drawing.Point(898, 80);
@@ -797,7 +826,7 @@
             // textBox_RNC
             // 
             this.textBox_RNC.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_RNC.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_RNC.BorderColor = System.Drawing.Color.Blue;
             this.textBox_RNC.BorderFocusColor = System.Drawing.Color.Red;
             this.textBox_RNC.BorderSize = 1;
             this.textBox_RNC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -816,7 +845,7 @@
             // textBox_nombre
             // 
             this.textBox_nombre.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_nombre.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_nombre.BorderColor = System.Drawing.Color.Blue;
             this.textBox_nombre.BorderFocusColor = System.Drawing.Color.Red;
             this.textBox_nombre.BorderSize = 1;
             this.textBox_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -832,6 +861,7 @@
             this.textBox_nombre.Texts = "";
             this.textBox_nombre.UnderlineStyle = true;
             // 
+
             // gb_DatosClientes
             // 
             this.gb_DatosClientes.Controls.Add(this.textBox_RNC);
@@ -906,16 +936,19 @@
             this.labelunit.TabIndex = 63;
             this.labelunit.Text = "UNIT";
             // 
+
             // Form_cotiza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(1370, 690);
             this.Controls.Add(this.gb_DetallesProducto);
             this.Controls.Add(this.gb_DatosClientes);
             this.Controls.Add(this.borrarbuton);
             this.Controls.Add(this.cleanbuton);
             this.Controls.Add(this.botonmenuprincipal);
+
             this.Controls.Add(this.butonImprimir);
             this.Controls.Add(this.botonAgregarProducto);
             this.Controls.Add(this.gridprodc);
@@ -976,14 +1009,18 @@
         private widgets.RJTextBox boxcantidad;
         private widgets.RJTextBox boxunid;
         private widgets.RJTextBox boxprecio;
-        private widgets.RJTextBox impmontobox;
+
+        private widgets.RJTextBox impbox;
+
         private widgets.RJControls botonmenuprincipal;
         private widgets.RJControls cleanbuton;
         private widgets.RJControls borrarbuton;
         private System.Windows.Forms.Label porcientodsct;
         private widgets.RJTextBox dsctglobalbox;
+
         private System.Windows.Forms.GroupBox gb_DatosClientes;
         private System.Windows.Forms.GroupBox gb_DetallesProducto;
         private System.Windows.Forms.Label labelunit;
+
     }
 }

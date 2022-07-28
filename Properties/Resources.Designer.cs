@@ -71,27 +71,40 @@ namespace Facturacion.Properties {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to &lt;html&gt;
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colorrojo {
+            get {
+                object obj = ResourceManager.GetObject("colorrojo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
         ///&lt;head&gt;
-        ///    
+        ///
         ///&lt;/head&gt;
-        ///&lt;body &gt;
-        ///    
-        ///    &lt;div &gt;
-        ///        &lt;div &gt;
+        ///&lt;body&gt;
+        ///
+        ///    &lt;div&gt;
+        ///        &lt;div&gt;
         ///            &lt;div&gt;
-        ///                
+        ///
         ///            &lt;/div&gt;
         ///            &lt;h1&gt;ILUMINECA EIRL&lt;/h1&gt;
         ///            &lt;p&gt;
-        ///                RNC: 131-09580-1 &lt;br&gt;
-        ///                Direcccion: Doctor Defillo #45 Ens. Quisqueya, SD. &lt;br&gt;
-        ///                Telefono: 809-4834624 &lt;br&gt;
-        ///                Cel: 829-384-5759 &lt;br&gt;
+        ///                RNC: 131-09580-1
+        ///                &lt;br /&gt;
+        ///                Direccción: Doctor Defillo #45 Ens. Quisqueya, SD.
+        ///                &lt;br /&gt;
+        ///                Telefono: 809-4834624
+        ///                &lt;br /&gt;
+        ///                Cel: 829-384-5759
+        ///                &lt;br /&gt;
         ///                Correo: ilumineca02@gmail.com
-        ///            &lt;/p&gt;
-        ///        &lt;/div&gt;
-        ///        &lt;table border=&quot;1px&quot; style=&quot;border-collapse [rest of string was truncated]&quot;;.
+        ///                &lt;b [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string cotizacion {
             get {
@@ -105,7 +118,7 @@ namespace Facturacion.Properties {
         ///&lt;head&gt;
         ///    
         ///    
-        ///    &lt;title&gt;Impresion&lt;/title&gt;
+        ///    &lt;title&gt;Impresi&amp;oacute;n&lt;/title&gt;
         ///    
         ///&lt;/head&gt;
         ///
@@ -116,14 +129,14 @@ namespace Facturacion.Properties {
         ///        &lt;div&gt;
         ///            &lt;p&gt;ILUMINECA EIRL&lt;/p&gt;
         ///            &lt;p&gt;Doctor Defillo #45 Ens. Quisqueya&lt;/p&gt;
-        ///            &lt;p&gt;Santo Domingo, RepÃºblica Dominicana&lt;/p&gt;
+        ///            &lt;p&gt;Santo Domingo, Rep&amp;uacute;blica Dominicana&lt;/p&gt;
         ///            &lt;p&gt;Tel:. (849) 483 4624 / Cel:. (829) 384 5759&lt;/p&gt;
         ///            &lt;p&gt;ilumineca02@gmail.com&lt;/p&gt;
         ///        &lt;/div&gt;
         ///        &lt;div&gt;
         ///            &lt;h7&gt;FACTURA CON VALOR FISCAL&lt;/h7&gt;
         ///            &lt;div&gt;
-        ///                &lt;p&gt;NFC: &lt;/p&gt;&lt;P&gt;@N [rest of string was truncated]&quot;;.
+        ///                &lt;p&gt;N [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string index {
             get {

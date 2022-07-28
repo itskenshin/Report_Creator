@@ -121,8 +121,10 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Facturacion.Properties.Resources.color;
-            this.pictureBox1.Location = new System.Drawing.Point(235, 27);
+
+            this.pictureBox1.Image = global::Facturacion.Properties.Resources.colorrojo;
+            this.pictureBox1.Location = new System.Drawing.Point(-4, -1);
+
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(111, 112);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
