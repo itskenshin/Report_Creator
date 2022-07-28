@@ -92,6 +92,7 @@
             // 
             this.labeldetalles.AutoSize = true;
             this.labeldetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldetalles.ForeColor = System.Drawing.SystemColors.Highlight;
             this.labeldetalles.Location = new System.Drawing.Point(51, 26);
             this.labeldetalles.Name = "labeldetalles";
             this.labeldetalles.Size = new System.Drawing.Size(195, 25);
@@ -129,6 +130,7 @@
             // 
             this.rnclabel.AutoSize = true;
             this.rnclabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rnclabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.rnclabel.Location = new System.Drawing.Point(23, 83);
             this.rnclabel.Name = "rnclabel";
             this.rnclabel.Size = new System.Drawing.Size(36, 15);
@@ -139,6 +141,7 @@
             // 
             this.clientelabel.AutoSize = true;
             this.clientelabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clientelabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.clientelabel.Location = new System.Drawing.Point(21, 125);
             this.clientelabel.Name = "clientelabel";
             this.clientelabel.Size = new System.Drawing.Size(64, 15);
@@ -168,6 +171,7 @@
             // 
             this.direccionlabel.AutoSize = true;
             this.direccionlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.direccionlabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.direccionlabel.Location = new System.Drawing.Point(22, 169);
             this.direccionlabel.Name = "direccionlabel";
             this.direccionlabel.Size = new System.Drawing.Size(82, 15);
@@ -178,6 +182,7 @@
             // 
             this.tellabel.AutoSize = true;
             this.tellabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tellabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.tellabel.Location = new System.Drawing.Point(22, 211);
             this.tellabel.Name = "tellabel";
             this.tellabel.Size = new System.Drawing.Size(79, 15);
@@ -188,6 +193,7 @@
             // 
             this.vendedorlabel.AutoSize = true;
             this.vendedorlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vendedorlabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.vendedorlabel.Location = new System.Drawing.Point(23, 254);
             this.vendedorlabel.Name = "vendedorlabel";
             this.vendedorlabel.Size = new System.Drawing.Size(83, 15);
@@ -255,6 +261,7 @@
             // 
             this.nfclabel.AutoSize = true;
             this.nfclabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.nfclabel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.nfclabel.Location = new System.Drawing.Point(23, 296);
             this.nfclabel.Name = "nfclabel";
             this.nfclabel.Size = new System.Drawing.Size(34, 15);
@@ -284,6 +291,7 @@
             // 
             this.labelfactyra.AutoSize = true;
             this.labelfactyra.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelfactyra.ForeColor = System.Drawing.Color.Brown;
             this.labelfactyra.Location = new System.Drawing.Point(77, 374);
             this.labelfactyra.Name = "labelfactyra";
             this.labelfactyra.Size = new System.Drawing.Size(169, 25);
@@ -302,6 +310,7 @@
             // 
             this.numerolabel.AutoSize = true;
             this.numerolabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numerolabel.ForeColor = System.Drawing.Color.Brown;
             this.numerolabel.Location = new System.Drawing.Point(12, 440);
             this.numerolabel.Name = "numerolabel";
             this.numerolabel.Size = new System.Drawing.Size(68, 15);
@@ -312,6 +321,7 @@
             // 
             this.fechalabel.AutoSize = true;
             this.fechalabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.fechalabel.ForeColor = System.Drawing.Color.Brown;
             this.fechalabel.Location = new System.Drawing.Point(12, 478);
             this.fechalabel.Name = "fechalabel";
             this.fechalabel.Size = new System.Drawing.Size(51, 15);
@@ -322,6 +332,7 @@
             // 
             this.condicioneslabel.AutoSize = true;
             this.condicioneslabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.condicioneslabel.ForeColor = System.Drawing.Color.Brown;
             this.condicioneslabel.Location = new System.Drawing.Point(12, 521);
             this.condicioneslabel.Name = "condicioneslabel";
             this.condicioneslabel.Size = new System.Drawing.Size(101, 15);
@@ -332,6 +343,7 @@
             // 
             this.vencimientolabel.AutoSize = true;
             this.vencimientolabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.vencimientolabel.ForeColor = System.Drawing.Color.Brown;
             this.vencimientolabel.Location = new System.Drawing.Point(21, 558);
             this.vencimientolabel.Name = "vencimientolabel";
             this.vencimientolabel.Size = new System.Drawing.Size(100, 15);
@@ -342,6 +354,7 @@
             // 
             this.ordenlabel.AutoSize = true;
             this.ordenlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ordenlabel.ForeColor = System.Drawing.Color.Brown;
             this.ordenlabel.Location = new System.Drawing.Point(21, 603);
             this.ordenlabel.Name = "ordenlabel";
             this.ordenlabel.Size = new System.Drawing.Size(80, 15);
@@ -352,6 +365,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Brown;
             this.label8.Location = new System.Drawing.Point(23, 642);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(80, 15);
@@ -485,6 +499,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Black;
             this.label1.Location = new System.Drawing.Point(764, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(193, 25);
@@ -728,6 +743,7 @@
             // 
             this.obralabeel.AutoSize = true;
             this.obralabeel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.obralabeel.ForeColor = System.Drawing.SystemColors.Highlight;
             this.obralabeel.Location = new System.Drawing.Point(23, 341);
             this.obralabeel.Name = "obralabeel";
             this.obralabeel.Size = new System.Drawing.Size(44, 15);

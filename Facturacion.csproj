@@ -138,5 +138,14 @@
   <ItemGroup>
     <None Include="Resources\cotizacion.html" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image_2022-07-28_13-58-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Logo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\colorrojo.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
