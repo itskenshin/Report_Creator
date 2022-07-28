@@ -59,6 +59,8 @@
             this.porcientodsct = new System.Windows.Forms.Label();
             this.imptotallabel = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.sumarboton = new Facturacion.widgets.RJControls();
             this.totalbox = new Facturacion.widgets.RJTextBox();
             this.imptotalbox = new Facturacion.widgets.RJTextBox();
             this.dsctglobalbox = new Facturacion.widgets.RJTextBox();
@@ -88,7 +90,7 @@
             this.textBox_numeroCoti = new Facturacion.widgets.RJTextBox();
             this.textBox_RNC = new Facturacion.widgets.RJTextBox();
             this.textBox_nombre = new Facturacion.widgets.RJTextBox();
-            this.label5 = new System.Windows.Forms.Label();
+            this.dsctoglobalboton = new Facturacion.widgets.RJControls();
             ((System.ComponentModel.ISupportInitialize)(this.gridprodc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -163,7 +165,7 @@
             this.label_CodigoCliente.AutoSize = true;
             this.label_CodigoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label_CodigoCliente.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.label_CodigoCliente.Location = new System.Drawing.Point(38, 165);
+            this.label_CodigoCliente.Location = new System.Drawing.Point(48, 165);
             this.label_CodigoCliente.Name = "label_CodigoCliente";
             this.label_CodigoCliente.Size = new System.Drawing.Size(131, 20);
             this.label_CodigoCliente.TabIndex = 11;
@@ -241,9 +243,8 @@
             this.gridprodc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridprodc.Location = new System.Drawing.Point(12, 430);
             this.gridprodc.Name = "gridprodc";
-            this.gridprodc.Size = new System.Drawing.Size(1357, 234);
+            this.gridprodc.Size = new System.Drawing.Size(1391, 334);
             this.gridprodc.TabIndex = 25;
-            this.gridprodc.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridprodc_CellContentClick);
             // 
             // label1
             // 
@@ -384,7 +385,7 @@
             this.porcientodsct.AutoSize = true;
             this.porcientodsct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.porcientodsct.ForeColor = System.Drawing.Color.DarkViolet;
-            this.porcientodsct.Location = new System.Drawing.Point(748, 262);
+            this.porcientodsct.Location = new System.Drawing.Point(808, 251);
             this.porcientodsct.Name = "porcientodsct";
             this.porcientodsct.Size = new System.Drawing.Size(133, 20);
             this.porcientodsct.TabIndex = 57;
@@ -395,7 +396,7 @@
             this.imptotallabel.AutoSize = true;
             this.imptotallabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imptotallabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.imptotallabel.Location = new System.Drawing.Point(754, 300);
+            this.imptotallabel.Location = new System.Drawing.Point(808, 290);
             this.imptotallabel.Name = "imptotallabel";
             this.imptotallabel.Size = new System.Drawing.Size(113, 20);
             this.imptotallabel.TabIndex = 59;
@@ -406,27 +407,55 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label4.Location = new System.Drawing.Point(843, 377);
+            this.label4.Location = new System.Drawing.Point(910, 379);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(64, 20);
             this.label4.TabIndex = 61;
             this.label4.Text = "TOTAL";
+            // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Location = new System.Drawing.Point(441, 232);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(257, 2);
+            this.label5.TabIndex = 63;
+            // 
+            // sumarboton
+            // 
+            this.sumarboton.BackColor = System.Drawing.Color.Orchid;
+            this.sumarboton.BackgroundColor = System.Drawing.Color.Orchid;
+            this.sumarboton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.sumarboton.BorderRadius = 20;
+            this.sumarboton.BorderSize = 0;
+            this.sumarboton.FlatAppearance.BorderSize = 0;
+            this.sumarboton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.sumarboton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sumarboton.ForeColor = System.Drawing.Color.White;
+            this.sumarboton.Location = new System.Drawing.Point(1136, 98);
+            this.sumarboton.Name = "sumarboton";
+            this.sumarboton.Size = new System.Drawing.Size(122, 35);
+            this.sumarboton.TabIndex = 64;
+            this.sumarboton.Text = "sumar Importes";
+            this.sumarboton.TextColor = System.Drawing.Color.White;
+            this.sumarboton.UseVisualStyleBackColor = false;
+            this.sumarboton.Click += new System.EventHandler(this.sumarboton_Click);
             // 
             // totalbox
             // 
             this.totalbox.BackColor = System.Drawing.SystemColors.Window;
             this.totalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.totalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.totalbox.BorderSize = 1;
+            this.totalbox.BorderSize = 2;
             this.totalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.totalbox.Location = new System.Drawing.Point(927, 368);
+            this.totalbox.Location = new System.Drawing.Point(990, 368);
             this.totalbox.Margin = new System.Windows.Forms.Padding(4);
             this.totalbox.Multiline = false;
             this.totalbox.Name = "totalbox";
             this.totalbox.Padding = new System.Windows.Forms.Padding(7);
             this.totalbox.PasswordChar = false;
-            this.totalbox.Size = new System.Drawing.Size(228, 31);
+            this.totalbox.Size = new System.Drawing.Size(201, 31);
             this.totalbox.TabIndex = 62;
             this.totalbox.Texts = "";
             this.totalbox.UnderlineStyle = true;
@@ -436,16 +465,16 @@
             this.imptotalbox.BackColor = System.Drawing.SystemColors.Window;
             this.imptotalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.imptotalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.imptotalbox.BorderSize = 1;
+            this.imptotalbox.BorderSize = 2;
             this.imptotalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.imptotalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.imptotalbox.Location = new System.Drawing.Point(874, 290);
+            this.imptotalbox.Location = new System.Drawing.Point(945, 282);
             this.imptotalbox.Margin = new System.Windows.Forms.Padding(4);
             this.imptotalbox.Multiline = false;
             this.imptotalbox.Name = "imptotalbox";
             this.imptotalbox.Padding = new System.Windows.Forms.Padding(7);
             this.imptotalbox.PasswordChar = false;
-            this.imptotalbox.Size = new System.Drawing.Size(228, 31);
+            this.imptotalbox.Size = new System.Drawing.Size(113, 31);
             this.imptotalbox.TabIndex = 60;
             this.imptotalbox.Texts = "";
             this.imptotalbox.UnderlineStyle = true;
@@ -455,16 +484,16 @@
             this.dsctglobalbox.BackColor = System.Drawing.SystemColors.Window;
             this.dsctglobalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
             this.dsctglobalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.dsctglobalbox.BorderSize = 1;
+            this.dsctglobalbox.BorderSize = 2;
             this.dsctglobalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dsctglobalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.dsctglobalbox.Location = new System.Drawing.Point(888, 251);
+            this.dsctglobalbox.Location = new System.Drawing.Point(959, 243);
             this.dsctglobalbox.Margin = new System.Windows.Forms.Padding(4);
             this.dsctglobalbox.Multiline = false;
             this.dsctglobalbox.Name = "dsctglobalbox";
             this.dsctglobalbox.Padding = new System.Windows.Forms.Padding(7);
             this.dsctglobalbox.PasswordChar = false;
-            this.dsctglobalbox.Size = new System.Drawing.Size(228, 31);
+            this.dsctglobalbox.Size = new System.Drawing.Size(99, 31);
             this.dsctglobalbox.TabIndex = 58;
             this.dsctglobalbox.Texts = "";
             this.dsctglobalbox.UnderlineStyle = true;
@@ -480,7 +509,7 @@
             this.borrarbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.borrarbuton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.borrarbuton.ForeColor = System.Drawing.Color.White;
-            this.borrarbuton.Location = new System.Drawing.Point(1241, 359);
+            this.borrarbuton.Location = new System.Drawing.Point(1275, 355);
             this.borrarbuton.Name = "borrarbuton";
             this.borrarbuton.Size = new System.Drawing.Size(128, 63);
             this.borrarbuton.TabIndex = 56;
@@ -500,7 +529,7 @@
             this.cleanbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.cleanbuton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cleanbuton.ForeColor = System.Drawing.Color.White;
-            this.cleanbuton.Location = new System.Drawing.Point(1241, 282);
+            this.cleanbuton.Location = new System.Drawing.Point(1275, 271);
             this.cleanbuton.Name = "cleanbuton";
             this.cleanbuton.Size = new System.Drawing.Size(128, 63);
             this.cleanbuton.TabIndex = 55;
@@ -520,7 +549,7 @@
             this.botonmenuprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonmenuprincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonmenuprincipal.ForeColor = System.Drawing.Color.White;
-            this.botonmenuprincipal.Location = new System.Drawing.Point(1241, 27);
+            this.botonmenuprincipal.Location = new System.Drawing.Point(1275, 26);
             this.botonmenuprincipal.Name = "botonmenuprincipal";
             this.botonmenuprincipal.Size = new System.Drawing.Size(128, 63);
             this.botonmenuprincipal.TabIndex = 54;
@@ -532,7 +561,7 @@
             // impmontobox
             // 
             this.impmontobox.BackColor = System.Drawing.SystemColors.Window;
-            this.impmontobox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.impmontobox.BorderColor = System.Drawing.Color.Red;
             this.impmontobox.BorderFocusColor = System.Drawing.Color.Red;
             this.impmontobox.BorderSize = 1;
             this.impmontobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -551,7 +580,7 @@
             // impbox
             // 
             this.impbox.BackColor = System.Drawing.SystemColors.Window;
-            this.impbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.impbox.BorderColor = System.Drawing.Color.Red;
             this.impbox.BorderFocusColor = System.Drawing.Color.Red;
             this.impbox.BorderSize = 1;
             this.impbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -570,7 +599,7 @@
             // boxprecio
             // 
             this.boxprecio.BackColor = System.Drawing.SystemColors.Window;
-            this.boxprecio.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.boxprecio.BorderColor = System.Drawing.Color.Red;
             this.boxprecio.BorderFocusColor = System.Drawing.Color.Red;
             this.boxprecio.BorderSize = 1;
             this.boxprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -589,7 +618,7 @@
             // boxunid
             // 
             this.boxunid.BackColor = System.Drawing.SystemColors.Window;
-            this.boxunid.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.boxunid.BorderColor = System.Drawing.Color.Red;
             this.boxunid.BorderFocusColor = System.Drawing.Color.Red;
             this.boxunid.BorderSize = 1;
             this.boxunid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -608,7 +637,7 @@
             // boxcantidad
             // 
             this.boxcantidad.BackColor = System.Drawing.SystemColors.Window;
-            this.boxcantidad.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.boxcantidad.BorderColor = System.Drawing.Color.Red;
             this.boxcantidad.BorderFocusColor = System.Drawing.Color.Red;
             this.boxcantidad.BorderSize = 1;
             this.boxcantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -623,12 +652,11 @@
             this.boxcantidad.TabIndex = 47;
             this.boxcantidad.Texts = "";
             this.boxcantidad.UnderlineStyle = true;
-            this.boxcantidad.Load += new System.EventHandler(this.boxcantidad_Load);
             // 
             // bodgbox
             // 
             this.bodgbox.BackColor = System.Drawing.SystemColors.Window;
-            this.bodgbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.bodgbox.BorderColor = System.Drawing.Color.Red;
             this.bodgbox.BorderFocusColor = System.Drawing.Color.Red;
             this.bodgbox.BorderSize = 1;
             this.bodgbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -647,7 +675,7 @@
             // descriProductBox
             // 
             this.descriProductBox.BackColor = System.Drawing.SystemColors.Window;
-            this.descriProductBox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.descriProductBox.BorderColor = System.Drawing.Color.Red;
             this.descriProductBox.BorderFocusColor = System.Drawing.Color.Red;
             this.descriProductBox.BorderSize = 1;
             this.descriProductBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -658,7 +686,7 @@
             this.descriProductBox.Name = "descriProductBox";
             this.descriProductBox.Padding = new System.Windows.Forms.Padding(7);
             this.descriProductBox.PasswordChar = false;
-            this.descriProductBox.Size = new System.Drawing.Size(269, 31);
+            this.descriProductBox.Size = new System.Drawing.Size(266, 31);
             this.descriProductBox.TabIndex = 38;
             this.descriProductBox.Texts = "";
             this.descriProductBox.UnderlineStyle = true;
@@ -666,7 +694,7 @@
             // codprodcbox
             // 
             this.codprodcbox.BackColor = System.Drawing.SystemColors.Window;
-            this.codprodcbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.codprodcbox.BorderColor = System.Drawing.Color.Red;
             this.codprodcbox.BorderFocusColor = System.Drawing.Color.Red;
             this.codprodcbox.BorderSize = 1;
             this.codprodcbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -685,7 +713,7 @@
             // ltmbox
             // 
             this.ltmbox.BackColor = System.Drawing.SystemColors.Window;
-            this.ltmbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.ltmbox.BorderColor = System.Drawing.Color.Red;
             this.ltmbox.BorderFocusColor = System.Drawing.Color.Red;
             this.ltmbox.BorderSize = 1;
             this.ltmbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -712,7 +740,7 @@
             this.butonImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.butonImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butonImprimir.ForeColor = System.Drawing.Color.White;
-            this.butonImprimir.Location = new System.Drawing.Point(1241, 190);
+            this.butonImprimir.Location = new System.Drawing.Point(1275, 188);
             this.butonImprimir.Name = "butonImprimir";
             this.butonImprimir.Size = new System.Drawing.Size(128, 63);
             this.butonImprimir.TabIndex = 27;
@@ -732,7 +760,7 @@
             this.botonAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.botonAgregarProducto.Location = new System.Drawing.Point(1241, 107);
+            this.botonAgregarProducto.Location = new System.Drawing.Point(1275, 104);
             this.botonAgregarProducto.Name = "botonAgregarProducto";
             this.botonAgregarProducto.Size = new System.Drawing.Size(128, 63);
             this.botonAgregarProducto.TabIndex = 26;
@@ -744,7 +772,7 @@
             // textBoxEmite
             // 
             this.textBoxEmite.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxEmite.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxEmite.BorderColor = System.Drawing.Color.Blue;
             this.textBoxEmite.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxEmite.BorderSize = 2;
             this.textBoxEmite.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -763,7 +791,7 @@
             // textBoxMoneda
             // 
             this.textBoxMoneda.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxMoneda.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxMoneda.BorderColor = System.Drawing.Color.Blue;
             this.textBoxMoneda.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxMoneda.BorderSize = 2;
             this.textBoxMoneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -782,7 +810,7 @@
             // textBoxVendedor
             // 
             this.textBoxVendedor.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxVendedor.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxVendedor.BorderColor = System.Drawing.Color.Blue;
             this.textBoxVendedor.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxVendedor.BorderSize = 2;
             this.textBoxVendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -801,7 +829,7 @@
             // textBoxTerminos
             // 
             this.textBoxTerminos.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxTerminos.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxTerminos.BorderColor = System.Drawing.Color.Blue;
             this.textBoxTerminos.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxTerminos.BorderSize = 2;
             this.textBoxTerminos.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -820,7 +848,7 @@
             // textBoxReferencia
             // 
             this.textBoxReferencia.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxReferencia.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxReferencia.BorderColor = System.Drawing.Color.Blue;
             this.textBoxReferencia.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxReferencia.BorderSize = 2;
             this.textBoxReferencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -839,7 +867,7 @@
             // textboxRFC
             // 
             this.textboxRFC.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxRFC.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textboxRFC.BorderColor = System.Drawing.Color.Blue;
             this.textboxRFC.BorderFocusColor = System.Drawing.Color.Red;
             this.textboxRFC.BorderSize = 2;
             this.textboxRFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -858,7 +886,7 @@
             // textBoxCodigoCliente
             // 
             this.textBoxCodigoCliente.BackColor = System.Drawing.SystemColors.Window;
-            this.textBoxCodigoCliente.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBoxCodigoCliente.BorderColor = System.Drawing.Color.Blue;
             this.textBoxCodigoCliente.BorderFocusColor = System.Drawing.Color.Red;
             this.textBoxCodigoCliente.BorderSize = 2;
             this.textBoxCodigoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -877,7 +905,7 @@
             // textboxPagina
             // 
             this.textboxPagina.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxPagina.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textboxPagina.BorderColor = System.Drawing.Color.Blue;
             this.textboxPagina.BorderFocusColor = System.Drawing.Color.Red;
             this.textboxPagina.BorderSize = 2;
             this.textboxPagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -896,7 +924,7 @@
             // textboxFecha
             // 
             this.textboxFecha.BackColor = System.Drawing.SystemColors.Window;
-            this.textboxFecha.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textboxFecha.BorderColor = System.Drawing.Color.Blue;
             this.textboxFecha.BorderFocusColor = System.Drawing.Color.Red;
             this.textboxFecha.BorderSize = 2;
             this.textboxFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -915,9 +943,9 @@
             // textBox_numeroCoti
             // 
             this.textBox_numeroCoti.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_numeroCoti.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_numeroCoti.BorderColor = System.Drawing.Color.Blue;
             this.textBox_numeroCoti.BorderFocusColor = System.Drawing.Color.Red;
-            this.textBox_numeroCoti.BorderSize = 1;
+            this.textBox_numeroCoti.BorderSize = 2;
             this.textBox_numeroCoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.textBox_numeroCoti.ForeColor = System.Drawing.SystemColors.GrayText;
             this.textBox_numeroCoti.Location = new System.Drawing.Point(587, 79);
@@ -934,7 +962,7 @@
             // textBox_RNC
             // 
             this.textBox_RNC.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_RNC.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_RNC.BorderColor = System.Drawing.Color.Blue;
             this.textBox_RNC.BorderFocusColor = System.Drawing.Color.Red;
             this.textBox_RNC.BorderSize = 2;
             this.textBox_RNC.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -953,7 +981,7 @@
             // textBox_nombre
             // 
             this.textBox_nombre.BackColor = System.Drawing.SystemColors.Window;
-            this.textBox_nombre.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.textBox_nombre.BorderColor = System.Drawing.Color.Blue;
             this.textBox_nombre.BorderFocusColor = System.Drawing.Color.Red;
             this.textBox_nombre.BorderSize = 2;
             this.textBox_nombre.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -969,19 +997,33 @@
             this.textBox_nombre.Texts = "";
             this.textBox_nombre.UnderlineStyle = true;
             // 
-            // label5
+            // dsctoglobalboton
             // 
-            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label5.Location = new System.Drawing.Point(441, 232);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(257, 2);
-            this.label5.TabIndex = 63;
+            this.dsctoglobalboton.BackColor = System.Drawing.Color.Orchid;
+            this.dsctoglobalboton.BackgroundColor = System.Drawing.Color.Orchid;
+            this.dsctoglobalboton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.dsctoglobalboton.BorderRadius = 20;
+            this.dsctoglobalboton.BorderSize = 0;
+            this.dsctoglobalboton.FlatAppearance.BorderSize = 0;
+            this.dsctoglobalboton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.dsctoglobalboton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dsctoglobalboton.ForeColor = System.Drawing.Color.White;
+            this.dsctoglobalboton.Location = new System.Drawing.Point(1136, 139);
+            this.dsctoglobalboton.Name = "dsctoglobalboton";
+            this.dsctoglobalboton.Size = new System.Drawing.Size(122, 35);
+            this.dsctoglobalboton.TabIndex = 65;
+            this.dsctoglobalboton.Text = "dscto.Global";
+            this.dsctoglobalboton.TextColor = System.Drawing.Color.White;
+            this.dsctoglobalboton.UseVisualStyleBackColor = false;
+            this.dsctoglobalboton.Click += new System.EventHandler(this.rjControls1_Click_1);
             // 
             // Form_cotiza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1415, 690);
+            this.ClientSize = new System.Drawing.Size(1415, 776);
+            this.Controls.Add(this.dsctoglobalboton);
+            this.Controls.Add(this.sumarboton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.totalbox);
             this.Controls.Add(this.label4);
@@ -1115,5 +1157,7 @@
         private System.Windows.Forms.Label label4;
         private widgets.RJTextBox totalbox;
         private System.Windows.Forms.Label label5;
+        private widgets.RJControls sumarboton;
+        private widgets.RJControls dsctoglobalboton;
     }
 }
