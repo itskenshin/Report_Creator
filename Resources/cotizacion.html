@@ -87,7 +87,7 @@
         </tr>
     </table>
     
-    <table style="border-collapse: collapse; border: 2px solid rgb(0, 0, 0);" border="1px">
+    <table style="border-collapse: collapse; border: 2px solid black;" border="1px">
         <tr>
             <th style="padding: 10px;">Itm</th>
             <th>Cod. Prod</th>
@@ -114,31 +114,23 @@
                     Aviso: Consultar precio y disponibilidad al momento de la compra, pueden variar sin previo aviso
                 </div>
             
-            <table style="border-collapse: collapse; border: 2px solid black; margin-left: 10px; border-radius: 5px; width: 349px;" border="1px">
+            <table style="border-collapse: collapse; border: 2px solid black;" border="1px">
                 <tr>
                     <td>
-                        Subtotal
+                        Subtotal----->@Subtotal
                         <br />
                         Dscto. parcial
                         <br />
-                        @DsGlobal Dscto. Global
+                        @DsGlobal % Dscto. Global-----> @Dsctonumero
                         <br />
                         Miscelaneos
                         <br />
-                        Impto. 18.0 %
-                        
-                        <b>TOTAL</b>
+                        Impto. 18.0 % ----->@imptotal
+                        <br />
+                        <b>TOTAL-----> @TOTAL</b>
                     </td>
-                    <td>
-                        @Subtotal
-                        <br />
-                        Dscto. Global
-                        <br />
-                        @Dsctonumero
-                        <br />
-                        Impto. 18.0 %
-                        <b>@TOTAL</b>
-                    </td>
+
+                   
                 </tr>
             </table>
         </div>

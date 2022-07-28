@@ -208,5 +208,13 @@ namespace Facturacion
                 }
             }
         }
+
+        private void borrarbuton_Click(object sender, EventArgs e)
+        {
+            foreach (DataGridViewRow item in this.gridfactura   .SelectedRows)
+            {
+                gridfactura.Rows.RemoveAt(item.Index);
+            }
+        }
     }
 }

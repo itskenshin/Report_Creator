@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form_factura));
             this.labeldetalles = new System.Windows.Forms.Label();
             this.rncbox = new Facturacion.widgets.RJTextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -83,6 +84,7 @@
             this.brutobox = new Facturacion.widgets.RJTextBox();
             this.impuestobox = new Facturacion.widgets.RJTextBox();
             this.vavlornetbox = new Facturacion.widgets.RJTextBox();
+            this.borrarbuton = new Facturacion.widgets.RJControls();
             ((System.ComponentModel.ISupportInitialize)(this.gridfactura)).BeginInit();
             this.SuspendLayout();
             // 
@@ -673,7 +675,7 @@
             this.botonmenuprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonmenuprincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonmenuprincipal.ForeColor = System.Drawing.Color.White;
-            this.botonmenuprincipal.Location = new System.Drawing.Point(1283, 83);
+            this.botonmenuprincipal.Location = new System.Drawing.Point(1283, 26);
             this.botonmenuprincipal.Name = "botonmenuprincipal";
             this.botonmenuprincipal.Size = new System.Drawing.Size(90, 46);
             this.botonmenuprincipal.TabIndex = 75;
@@ -713,7 +715,7 @@
             this.botonAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.botonAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.botonAgregarProducto.Location = new System.Drawing.Point(1283, 196);
+            this.botonAgregarProducto.Location = new System.Drawing.Point(1283, 83);
             this.botonAgregarProducto.Name = "botonAgregarProducto";
             this.botonAgregarProducto.Size = new System.Drawing.Size(90, 46);
             this.botonAgregarProducto.TabIndex = 73;
@@ -867,11 +869,32 @@
             this.vavlornetbox.Texts = "";
             this.vavlornetbox.UnderlineStyle = true;
             // 
+            // borrarbuton
+            // 
+            this.borrarbuton.BackColor = System.Drawing.Color.BlueViolet;
+            this.borrarbuton.BackgroundColor = System.Drawing.Color.BlueViolet;
+            this.borrarbuton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.borrarbuton.BorderRadius = 20;
+            this.borrarbuton.BorderSize = 0;
+            this.borrarbuton.FlatAppearance.BorderSize = 0;
+            this.borrarbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.borrarbuton.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrarbuton.ForeColor = System.Drawing.Color.White;
+            this.borrarbuton.Location = new System.Drawing.Point(1283, 195);
+            this.borrarbuton.Name = "borrarbuton";
+            this.borrarbuton.Size = new System.Drawing.Size(90, 46);
+            this.borrarbuton.TabIndex = 89;
+            this.borrarbuton.Text = "BORRAR";
+            this.borrarbuton.TextColor = System.Drawing.Color.White;
+            this.borrarbuton.UseVisualStyleBackColor = false;
+            this.borrarbuton.Click += new System.EventHandler(this.borrarbuton_Click);
+            // 
             // Form_factura
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1415, 690);
+            this.Controls.Add(this.borrarbuton);
             this.Controls.Add(this.vavlornetbox);
             this.Controls.Add(this.impuestobox);
             this.Controls.Add(this.brutobox);
@@ -927,6 +950,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.rncbox);
             this.Controls.Add(this.labeldetalles);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
             this.Name = "Form_factura";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -994,6 +1018,7 @@
         private widgets.RJTextBox brutobox;
         private widgets.RJTextBox impuestobox;
         private widgets.RJTextBox vavlornetbox;
+        private widgets.RJControls borrarbuton;
     }
 }
 
