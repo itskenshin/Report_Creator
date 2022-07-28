@@ -143,7 +143,7 @@ namespace Facturacion
                 filas += "<tr style=\"padding: 3px;\">";
                 filas += "<td>" + row.Cells["Ltm"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
-                filas += "<td style=\"height: 20px; width: 209px; padding: 10px;\">" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 20px; width: 209px; padding: 10px; word-wrap: break-word; \">" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Bodg."].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Unid."].Value.ToString() + "</td>";
