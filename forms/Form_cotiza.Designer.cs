@@ -55,19 +55,12 @@
             this.labelunid = new System.Windows.Forms.Label();
             this.labelPrecio = new System.Windows.Forms.Label();
             this.labelImp = new System.Windows.Forms.Label();
-            this.labelimpmonto = new System.Windows.Forms.Label();
             this.porcientodsct = new System.Windows.Forms.Label();
-            this.imptotallabel = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.sumarboton = new Facturacion.widgets.RJControls();
-            this.totalbox = new Facturacion.widgets.RJTextBox();
-            this.imptotalbox = new Facturacion.widgets.RJTextBox();
             this.dsctglobalbox = new Facturacion.widgets.RJTextBox();
             this.borrarbuton = new Facturacion.widgets.RJControls();
             this.cleanbuton = new Facturacion.widgets.RJControls();
             this.botonmenuprincipal = new Facturacion.widgets.RJControls();
-            this.impmontobox = new Facturacion.widgets.RJTextBox();
             this.impbox = new Facturacion.widgets.RJTextBox();
             this.boxprecio = new Facturacion.widgets.RJTextBox();
             this.boxunid = new Facturacion.widgets.RJTextBox();
@@ -90,7 +83,6 @@
             this.textBox_numeroCoti = new Facturacion.widgets.RJTextBox();
             this.textBox_RNC = new Facturacion.widgets.RJTextBox();
             this.textBox_nombre = new Facturacion.widgets.RJTextBox();
-            this.dsctoglobalboton = new Facturacion.widgets.RJControls();
             ((System.ComponentModel.ISupportInitialize)(this.gridprodc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -369,17 +361,6 @@
             this.labelImp.TabIndex = 43;
             this.labelImp.Text = "Imp.%";
             // 
-            // labelimpmonto
-            // 
-            this.labelimpmonto.AutoSize = true;
-            this.labelimpmonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelimpmonto.ForeColor = System.Drawing.Color.Red;
-            this.labelimpmonto.Location = new System.Drawing.Point(808, 208);
-            this.labelimpmonto.Name = "labelimpmonto";
-            this.labelimpmonto.Size = new System.Drawing.Size(94, 20);
-            this.labelimpmonto.TabIndex = 44;
-            this.labelimpmonto.Text = "Imp.Monto";
-            // 
             // porcientodsct
             // 
             this.porcientodsct.AutoSize = true;
@@ -391,28 +372,6 @@
             this.porcientodsct.TabIndex = 57;
             this.porcientodsct.Text = "%.Dscto.Global";
             // 
-            // imptotallabel
-            // 
-            this.imptotallabel.AutoSize = true;
-            this.imptotallabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.imptotallabel.ForeColor = System.Drawing.Color.DarkViolet;
-            this.imptotallabel.Location = new System.Drawing.Point(808, 290);
-            this.imptotallabel.Name = "imptotallabel";
-            this.imptotallabel.Size = new System.Drawing.Size(113, 20);
-            this.imptotallabel.TabIndex = 59;
-            this.imptotallabel.Text = "imp18% total";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.DarkViolet;
-            this.label4.Location = new System.Drawing.Point(910, 379);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(64, 20);
-            this.label4.TabIndex = 61;
-            this.label4.Text = "TOTAL";
-            // 
             // label5
             // 
             this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
@@ -420,64 +379,6 @@
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(257, 2);
             this.label5.TabIndex = 63;
-            // 
-            // sumarboton
-            // 
-            this.sumarboton.BackColor = System.Drawing.Color.Orchid;
-            this.sumarboton.BackgroundColor = System.Drawing.Color.Orchid;
-            this.sumarboton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.sumarboton.BorderRadius = 20;
-            this.sumarboton.BorderSize = 0;
-            this.sumarboton.FlatAppearance.BorderSize = 0;
-            this.sumarboton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.sumarboton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.sumarboton.ForeColor = System.Drawing.Color.White;
-            this.sumarboton.Location = new System.Drawing.Point(1136, 98);
-            this.sumarboton.Name = "sumarboton";
-            this.sumarboton.Size = new System.Drawing.Size(122, 35);
-            this.sumarboton.TabIndex = 64;
-            this.sumarboton.Text = "sumar Importes";
-            this.sumarboton.TextColor = System.Drawing.Color.White;
-            this.sumarboton.UseVisualStyleBackColor = false;
-            this.sumarboton.Click += new System.EventHandler(this.sumarboton_Click);
-            // 
-            // totalbox
-            // 
-            this.totalbox.BackColor = System.Drawing.SystemColors.Window;
-            this.totalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.totalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.totalbox.BorderSize = 2;
-            this.totalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.totalbox.Location = new System.Drawing.Point(990, 368);
-            this.totalbox.Margin = new System.Windows.Forms.Padding(4);
-            this.totalbox.Multiline = false;
-            this.totalbox.Name = "totalbox";
-            this.totalbox.Padding = new System.Windows.Forms.Padding(7);
-            this.totalbox.PasswordChar = false;
-            this.totalbox.Size = new System.Drawing.Size(201, 31);
-            this.totalbox.TabIndex = 62;
-            this.totalbox.Texts = "";
-            this.totalbox.UnderlineStyle = true;
-            // 
-            // imptotalbox
-            // 
-            this.imptotalbox.BackColor = System.Drawing.SystemColors.Window;
-            this.imptotalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.imptotalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.imptotalbox.BorderSize = 2;
-            this.imptotalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.imptotalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.imptotalbox.Location = new System.Drawing.Point(945, 282);
-            this.imptotalbox.Margin = new System.Windows.Forms.Padding(4);
-            this.imptotalbox.Multiline = false;
-            this.imptotalbox.Name = "imptotalbox";
-            this.imptotalbox.Padding = new System.Windows.Forms.Padding(7);
-            this.imptotalbox.PasswordChar = false;
-            this.imptotalbox.Size = new System.Drawing.Size(113, 31);
-            this.imptotalbox.TabIndex = 60;
-            this.imptotalbox.Texts = "";
-            this.imptotalbox.UnderlineStyle = true;
             // 
             // dsctglobalbox
             // 
@@ -487,7 +388,7 @@
             this.dsctglobalbox.BorderSize = 2;
             this.dsctglobalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dsctglobalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.dsctglobalbox.Location = new System.Drawing.Point(959, 243);
+            this.dsctglobalbox.Location = new System.Drawing.Point(948, 240);
             this.dsctglobalbox.Margin = new System.Windows.Forms.Padding(4);
             this.dsctglobalbox.Multiline = false;
             this.dsctglobalbox.Name = "dsctglobalbox";
@@ -557,25 +458,6 @@
             this.botonmenuprincipal.TextColor = System.Drawing.Color.White;
             this.botonmenuprincipal.UseVisualStyleBackColor = false;
             this.botonmenuprincipal.Click += new System.EventHandler(this.rjControls1_Click);
-            // 
-            // impmontobox
-            // 
-            this.impmontobox.BackColor = System.Drawing.SystemColors.Window;
-            this.impmontobox.BorderColor = System.Drawing.Color.Red;
-            this.impmontobox.BorderFocusColor = System.Drawing.Color.Red;
-            this.impmontobox.BorderSize = 1;
-            this.impmontobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.impmontobox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.impmontobox.Location = new System.Drawing.Point(900, 197);
-            this.impmontobox.Margin = new System.Windows.Forms.Padding(4);
-            this.impmontobox.Multiline = false;
-            this.impmontobox.Name = "impmontobox";
-            this.impmontobox.Padding = new System.Windows.Forms.Padding(7);
-            this.impmontobox.PasswordChar = false;
-            this.impmontobox.Size = new System.Drawing.Size(228, 31);
-            this.impmontobox.TabIndex = 52;
-            this.impmontobox.Texts = "";
-            this.impmontobox.UnderlineStyle = true;
             // 
             // impbox
             // 
@@ -997,49 +879,21 @@
             this.textBox_nombre.Texts = "";
             this.textBox_nombre.UnderlineStyle = true;
             // 
-            // dsctoglobalboton
-            // 
-            this.dsctoglobalboton.BackColor = System.Drawing.Color.Orchid;
-            this.dsctoglobalboton.BackgroundColor = System.Drawing.Color.Orchid;
-            this.dsctoglobalboton.BorderColor = System.Drawing.Color.PaleVioletRed;
-            this.dsctoglobalboton.BorderRadius = 20;
-            this.dsctoglobalboton.BorderSize = 0;
-            this.dsctoglobalboton.FlatAppearance.BorderSize = 0;
-            this.dsctoglobalboton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.dsctoglobalboton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dsctoglobalboton.ForeColor = System.Drawing.Color.White;
-            this.dsctoglobalboton.Location = new System.Drawing.Point(1136, 139);
-            this.dsctoglobalboton.Name = "dsctoglobalboton";
-            this.dsctoglobalboton.Size = new System.Drawing.Size(122, 35);
-            this.dsctoglobalboton.TabIndex = 65;
-            this.dsctoglobalboton.Text = "dscto.Global";
-            this.dsctoglobalboton.TextColor = System.Drawing.Color.White;
-            this.dsctoglobalboton.UseVisualStyleBackColor = false;
-            this.dsctoglobalboton.Click += new System.EventHandler(this.rjControls1_Click_1);
-            // 
             // Form_cotiza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1415, 776);
-            this.Controls.Add(this.dsctoglobalboton);
-            this.Controls.Add(this.sumarboton);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.totalbox);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.imptotalbox);
-            this.Controls.Add(this.imptotallabel);
             this.Controls.Add(this.dsctglobalbox);
             this.Controls.Add(this.porcientodsct);
             this.Controls.Add(this.borrarbuton);
             this.Controls.Add(this.cleanbuton);
             this.Controls.Add(this.botonmenuprincipal);
-            this.Controls.Add(this.impmontobox);
             this.Controls.Add(this.impbox);
             this.Controls.Add(this.boxprecio);
             this.Controls.Add(this.boxunid);
             this.Controls.Add(this.boxcantidad);
-            this.Controls.Add(this.labelimpmonto);
             this.Controls.Add(this.labelImp);
             this.Controls.Add(this.labelPrecio);
             this.Controls.Add(this.labelunid);
@@ -1141,23 +995,15 @@
         private System.Windows.Forms.Label labelunid;
         private System.Windows.Forms.Label labelPrecio;
         private System.Windows.Forms.Label labelImp;
-        private System.Windows.Forms.Label labelimpmonto;
         private widgets.RJTextBox boxcantidad;
         private widgets.RJTextBox boxunid;
         private widgets.RJTextBox boxprecio;
         private widgets.RJTextBox impbox;
-        private widgets.RJTextBox impmontobox;
         private widgets.RJControls botonmenuprincipal;
         private widgets.RJControls cleanbuton;
         private widgets.RJControls borrarbuton;
         private System.Windows.Forms.Label porcientodsct;
         private widgets.RJTextBox dsctglobalbox;
-        private System.Windows.Forms.Label imptotallabel;
-        private widgets.RJTextBox imptotalbox;
-        private System.Windows.Forms.Label label4;
-        private widgets.RJTextBox totalbox;
         private System.Windows.Forms.Label label5;
-        private widgets.RJControls sumarboton;
-        private widgets.RJControls dsctoglobalboton;
     }
 }
