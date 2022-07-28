@@ -56,9 +56,15 @@
             this.labelPrecio = new System.Windows.Forms.Label();
             this.labelImp = new System.Windows.Forms.Label();
             this.labelimpmonto = new System.Windows.Forms.Label();
-            this.importelabeel = new System.Windows.Forms.Label();
+            this.porcientodsct = new System.Windows.Forms.Label();
+            this.imptotallabel = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.totalbox = new Facturacion.widgets.RJTextBox();
+            this.imptotalbox = new Facturacion.widgets.RJTextBox();
+            this.dsctglobalbox = new Facturacion.widgets.RJTextBox();
+            this.borrarbuton = new Facturacion.widgets.RJControls();
+            this.cleanbuton = new Facturacion.widgets.RJControls();
             this.botonmenuprincipal = new Facturacion.widgets.RJControls();
-            this.importebox = new Facturacion.widgets.RJTextBox();
             this.impmontobox = new Facturacion.widgets.RJTextBox();
             this.impbox = new Facturacion.widgets.RJTextBox();
             this.boxprecio = new Facturacion.widgets.RJTextBox();
@@ -82,6 +88,7 @@
             this.textBox_numeroCoti = new Facturacion.widgets.RJTextBox();
             this.textBox_RNC = new Facturacion.widgets.RJTextBox();
             this.textBox_nombre = new Facturacion.widgets.RJTextBox();
+            this.label5 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.gridprodc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,6 +96,7 @@
             // 
             this.label_datosCliente.AutoSize = true;
             this.label_datosCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_datosCliente.ForeColor = System.Drawing.SystemColors.MenuHighlight;
             this.label_datosCliente.Location = new System.Drawing.Point(141, 33);
             this.label_datosCliente.Name = "label_datosCliente";
             this.label_datosCliente.Size = new System.Drawing.Size(148, 20);
@@ -99,6 +107,7 @@
             // 
             this.Nombre_label.AutoSize = true;
             this.Nombre_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Nombre_label.ForeColor = System.Drawing.SystemColors.Highlight;
             this.Nombre_label.Location = new System.Drawing.Point(51, 85);
             this.Nombre_label.Name = "Nombre_label";
             this.Nombre_label.Size = new System.Drawing.Size(76, 20);
@@ -109,6 +118,7 @@
             // 
             this.RNC_label.AutoSize = true;
             this.RNC_label.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RNC_label.ForeColor = System.Drawing.SystemColors.Highlight;
             this.RNC_label.Location = new System.Drawing.Point(51, 124);
             this.RNC_label.Name = "RNC_label";
             this.RNC_label.Size = new System.Drawing.Size(51, 20);
@@ -119,6 +129,7 @@
             // 
             this.label_NumeroCoti.AutoSize = true;
             this.label_NumeroCoti.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_NumeroCoti.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_NumeroCoti.Location = new System.Drawing.Point(437, 85);
             this.label_NumeroCoti.Name = "label_NumeroCoti";
             this.label_NumeroCoti.Size = new System.Drawing.Size(155, 20);
@@ -129,6 +140,7 @@
             // 
             this.labelFecha.AutoSize = true;
             this.labelFecha.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelFecha.ForeColor = System.Drawing.SystemColors.Highlight;
             this.labelFecha.Location = new System.Drawing.Point(437, 124);
             this.labelFecha.Name = "labelFecha";
             this.labelFecha.Size = new System.Drawing.Size(59, 20);
@@ -139,6 +151,7 @@
             // 
             this.labelPagina.AutoSize = true;
             this.labelPagina.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPagina.ForeColor = System.Drawing.SystemColors.Highlight;
             this.labelPagina.Location = new System.Drawing.Point(437, 165);
             this.labelPagina.Name = "labelPagina";
             this.labelPagina.Size = new System.Drawing.Size(64, 20);
@@ -149,6 +162,7 @@
             // 
             this.label_CodigoCliente.AutoSize = true;
             this.label_CodigoCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_CodigoCliente.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_CodigoCliente.Location = new System.Drawing.Point(38, 165);
             this.label_CodigoCliente.Name = "label_CodigoCliente";
             this.label_CodigoCliente.Size = new System.Drawing.Size(131, 20);
@@ -159,6 +173,7 @@
             // 
             this.label_RFC.AutoSize = true;
             this.label_RFC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_RFC.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_RFC.Location = new System.Drawing.Point(48, 204);
             this.label_RFC.Name = "label_RFC";
             this.label_RFC.Size = new System.Drawing.Size(50, 20);
@@ -169,6 +184,7 @@
             // 
             this.label_referencia.AutoSize = true;
             this.label_referencia.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_referencia.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_referencia.Location = new System.Drawing.Point(48, 243);
             this.label_referencia.Name = "label_referencia";
             this.label_referencia.Size = new System.Drawing.Size(102, 20);
@@ -179,6 +195,7 @@
             // 
             this.label_terminos.AutoSize = true;
             this.label_terminos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_terminos.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_terminos.Location = new System.Drawing.Point(42, 282);
             this.label_terminos.Name = "label_terminos";
             this.label_terminos.Size = new System.Drawing.Size(87, 20);
@@ -189,6 +206,7 @@
             // 
             this.label_vendedor.AutoSize = true;
             this.label_vendedor.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_vendedor.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_vendedor.Location = new System.Drawing.Point(42, 323);
             this.label_vendedor.Name = "label_vendedor";
             this.label_vendedor.Size = new System.Drawing.Size(92, 20);
@@ -199,6 +217,7 @@
             // 
             this.label_moneda.AutoSize = true;
             this.label_moneda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_moneda.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_moneda.Location = new System.Drawing.Point(42, 359);
             this.label_moneda.Name = "label_moneda";
             this.label_moneda.Size = new System.Drawing.Size(78, 20);
@@ -209,6 +228,7 @@
             // 
             this.label_emite.AutoSize = true;
             this.label_emite.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label_emite.ForeColor = System.Drawing.SystemColors.Highlight;
             this.label_emite.Location = new System.Drawing.Point(44, 399);
             this.label_emite.Name = "label_emite";
             this.label_emite.Size = new System.Drawing.Size(60, 20);
@@ -217,6 +237,7 @@
             // 
             // gridprodc
             // 
+            this.gridprodc.AllowUserToAddRows = false;
             this.gridprodc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.gridprodc.Location = new System.Drawing.Point(12, 430);
             this.gridprodc.Name = "gridprodc";
@@ -227,7 +248,7 @@
             // label1
             // 
             this.label1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label1.Location = new System.Drawing.Point(441, 208);
+            this.label1.Location = new System.Drawing.Point(441, 193);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(257, 2);
             this.label1.TabIndex = 28;
@@ -236,7 +257,8 @@
             // 
             this.label_detallesproductos.AutoSize = true;
             this.label_detallesproductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label_detallesproductos.Location = new System.Drawing.Point(447, 223);
+            this.label_detallesproductos.ForeColor = System.Drawing.Color.Red;
+            this.label_detallesproductos.Location = new System.Drawing.Point(453, 208);
             this.label_detallesproductos.Name = "label_detallesproductos";
             this.label_detallesproductos.Size = new System.Drawing.Size(203, 20);
             this.label_detallesproductos.TabIndex = 29;
@@ -262,6 +284,7 @@
             // 
             this.ltmlabel.AutoSize = true;
             this.ltmlabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltmlabel.ForeColor = System.Drawing.Color.Red;
             this.ltmlabel.Location = new System.Drawing.Point(437, 262);
             this.ltmlabel.Name = "ltmlabel";
             this.ltmlabel.Size = new System.Drawing.Size(39, 20);
@@ -272,6 +295,7 @@
             // 
             this.labelCodprod.AutoSize = true;
             this.labelCodprod.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelCodprod.ForeColor = System.Drawing.Color.Red;
             this.labelCodprod.Location = new System.Drawing.Point(437, 299);
             this.labelCodprod.Name = "labelCodprod";
             this.labelCodprod.Size = new System.Drawing.Size(83, 20);
@@ -282,6 +306,7 @@
             // 
             this.labeldescripcionproducto.AutoSize = true;
             this.labeldescripcionproducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labeldescripcionproducto.ForeColor = System.Drawing.Color.Red;
             this.labeldescripcionproducto.Location = new System.Drawing.Point(437, 339);
             this.labeldescripcionproducto.Name = "labeldescripcionproducto";
             this.labeldescripcionproducto.Size = new System.Drawing.Size(180, 20);
@@ -292,6 +317,7 @@
             // 
             this.labelbodg.AutoSize = true;
             this.labelbodg.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelbodg.ForeColor = System.Drawing.Color.Red;
             this.labelbodg.Location = new System.Drawing.Point(437, 378);
             this.labelbodg.Name = "labelbodg";
             this.labelbodg.Size = new System.Drawing.Size(56, 20);
@@ -302,6 +328,7 @@
             // 
             this.labelcantidad.AutoSize = true;
             this.labelcantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelcantidad.ForeColor = System.Drawing.Color.Red;
             this.labelcantidad.Location = new System.Drawing.Point(809, 26);
             this.labelcantidad.Name = "labelcantidad";
             this.labelcantidad.Size = new System.Drawing.Size(81, 20);
@@ -312,6 +339,7 @@
             // 
             this.labelunid.AutoSize = true;
             this.labelunid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelunid.ForeColor = System.Drawing.Color.Red;
             this.labelunid.Location = new System.Drawing.Point(809, 65);
             this.labelunid.Name = "labelunid";
             this.labelunid.Size = new System.Drawing.Size(46, 20);
@@ -322,6 +350,7 @@
             // 
             this.labelPrecio.AutoSize = true;
             this.labelPrecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelPrecio.ForeColor = System.Drawing.Color.Red;
             this.labelPrecio.Location = new System.Drawing.Point(809, 113);
             this.labelPrecio.Name = "labelPrecio";
             this.labelPrecio.Size = new System.Drawing.Size(59, 20);
@@ -332,6 +361,7 @@
             // 
             this.labelImp.AutoSize = true;
             this.labelImp.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelImp.ForeColor = System.Drawing.Color.Red;
             this.labelImp.Location = new System.Drawing.Point(808, 165);
             this.labelImp.Name = "labelImp";
             this.labelImp.Size = new System.Drawing.Size(59, 20);
@@ -342,34 +372,155 @@
             // 
             this.labelimpmonto.AutoSize = true;
             this.labelimpmonto.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelimpmonto.ForeColor = System.Drawing.Color.Red;
             this.labelimpmonto.Location = new System.Drawing.Point(808, 208);
             this.labelimpmonto.Name = "labelimpmonto";
             this.labelimpmonto.Size = new System.Drawing.Size(94, 20);
             this.labelimpmonto.TabIndex = 44;
             this.labelimpmonto.Text = "Imp.Monto";
             // 
-            // importelabeel
+            // porcientodsct
             // 
-            this.importelabeel.AutoSize = true;
-            this.importelabeel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.importelabeel.Location = new System.Drawing.Point(809, 251);
-            this.importelabeel.Name = "importelabeel";
-            this.importelabeel.Size = new System.Drawing.Size(71, 20);
-            this.importelabeel.TabIndex = 45;
-            this.importelabeel.Text = "Importe";
+            this.porcientodsct.AutoSize = true;
+            this.porcientodsct.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.porcientodsct.ForeColor = System.Drawing.Color.DarkViolet;
+            this.porcientodsct.Location = new System.Drawing.Point(748, 262);
+            this.porcientodsct.Name = "porcientodsct";
+            this.porcientodsct.Size = new System.Drawing.Size(133, 20);
+            this.porcientodsct.TabIndex = 57;
+            this.porcientodsct.Text = "%.Dscto.Global";
+            // 
+            // imptotallabel
+            // 
+            this.imptotallabel.AutoSize = true;
+            this.imptotallabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imptotallabel.ForeColor = System.Drawing.Color.DarkViolet;
+            this.imptotallabel.Location = new System.Drawing.Point(754, 300);
+            this.imptotallabel.Name = "imptotallabel";
+            this.imptotallabel.Size = new System.Drawing.Size(113, 20);
+            this.imptotallabel.TabIndex = 59;
+            this.imptotallabel.Text = "imp18% total";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.DarkViolet;
+            this.label4.Location = new System.Drawing.Point(843, 377);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(64, 20);
+            this.label4.TabIndex = 61;
+            this.label4.Text = "TOTAL";
+            // 
+            // totalbox
+            // 
+            this.totalbox.BackColor = System.Drawing.SystemColors.Window;
+            this.totalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.totalbox.BorderFocusColor = System.Drawing.Color.Red;
+            this.totalbox.BorderSize = 1;
+            this.totalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalbox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.totalbox.Location = new System.Drawing.Point(927, 368);
+            this.totalbox.Margin = new System.Windows.Forms.Padding(4);
+            this.totalbox.Multiline = false;
+            this.totalbox.Name = "totalbox";
+            this.totalbox.Padding = new System.Windows.Forms.Padding(7);
+            this.totalbox.PasswordChar = false;
+            this.totalbox.Size = new System.Drawing.Size(228, 31);
+            this.totalbox.TabIndex = 62;
+            this.totalbox.Texts = "";
+            this.totalbox.UnderlineStyle = true;
+            // 
+            // imptotalbox
+            // 
+            this.imptotalbox.BackColor = System.Drawing.SystemColors.Window;
+            this.imptotalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.imptotalbox.BorderFocusColor = System.Drawing.Color.Red;
+            this.imptotalbox.BorderSize = 1;
+            this.imptotalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.imptotalbox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.imptotalbox.Location = new System.Drawing.Point(874, 290);
+            this.imptotalbox.Margin = new System.Windows.Forms.Padding(4);
+            this.imptotalbox.Multiline = false;
+            this.imptotalbox.Name = "imptotalbox";
+            this.imptotalbox.Padding = new System.Windows.Forms.Padding(7);
+            this.imptotalbox.PasswordChar = false;
+            this.imptotalbox.Size = new System.Drawing.Size(228, 31);
+            this.imptotalbox.TabIndex = 60;
+            this.imptotalbox.Texts = "";
+            this.imptotalbox.UnderlineStyle = true;
+            // 
+            // dsctglobalbox
+            // 
+            this.dsctglobalbox.BackColor = System.Drawing.SystemColors.Window;
+            this.dsctglobalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.dsctglobalbox.BorderFocusColor = System.Drawing.Color.Red;
+            this.dsctglobalbox.BorderSize = 1;
+            this.dsctglobalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dsctglobalbox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.dsctglobalbox.Location = new System.Drawing.Point(888, 251);
+            this.dsctglobalbox.Margin = new System.Windows.Forms.Padding(4);
+            this.dsctglobalbox.Multiline = false;
+            this.dsctglobalbox.Name = "dsctglobalbox";
+            this.dsctglobalbox.Padding = new System.Windows.Forms.Padding(7);
+            this.dsctglobalbox.PasswordChar = false;
+            this.dsctglobalbox.Size = new System.Drawing.Size(228, 31);
+            this.dsctglobalbox.TabIndex = 58;
+            this.dsctglobalbox.Texts = "";
+            this.dsctglobalbox.UnderlineStyle = true;
+            // 
+            // borrarbuton
+            // 
+            this.borrarbuton.BackColor = System.Drawing.Color.SlateGray;
+            this.borrarbuton.BackgroundColor = System.Drawing.Color.SlateGray;
+            this.borrarbuton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.borrarbuton.BorderRadius = 20;
+            this.borrarbuton.BorderSize = 0;
+            this.borrarbuton.FlatAppearance.BorderSize = 0;
+            this.borrarbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.borrarbuton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.borrarbuton.ForeColor = System.Drawing.Color.White;
+            this.borrarbuton.Location = new System.Drawing.Point(1241, 359);
+            this.borrarbuton.Name = "borrarbuton";
+            this.borrarbuton.Size = new System.Drawing.Size(128, 63);
+            this.borrarbuton.TabIndex = 56;
+            this.borrarbuton.Text = "BORRAR";
+            this.borrarbuton.TextColor = System.Drawing.Color.White;
+            this.borrarbuton.UseVisualStyleBackColor = false;
+            this.borrarbuton.Click += new System.EventHandler(this.borrarbuton_Click);
+            // 
+            // cleanbuton
+            // 
+            this.cleanbuton.BackColor = System.Drawing.Color.SeaGreen;
+            this.cleanbuton.BackgroundColor = System.Drawing.Color.SeaGreen;
+            this.cleanbuton.BorderColor = System.Drawing.Color.PaleVioletRed;
+            this.cleanbuton.BorderRadius = 20;
+            this.cleanbuton.BorderSize = 0;
+            this.cleanbuton.FlatAppearance.BorderSize = 0;
+            this.cleanbuton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cleanbuton.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cleanbuton.ForeColor = System.Drawing.Color.White;
+            this.cleanbuton.Location = new System.Drawing.Point(1241, 282);
+            this.cleanbuton.Name = "cleanbuton";
+            this.cleanbuton.Size = new System.Drawing.Size(128, 63);
+            this.cleanbuton.TabIndex = 55;
+            this.cleanbuton.Text = "LIMPIAR CASILLAS";
+            this.cleanbuton.TextColor = System.Drawing.Color.White;
+            this.cleanbuton.UseVisualStyleBackColor = false;
+            this.cleanbuton.Click += new System.EventHandler(this.cleanbuton_Click);
             // 
             // botonmenuprincipal
             // 
-            this.botonmenuprincipal.BackColor = System.Drawing.Color.Crimson;
-            this.botonmenuprincipal.BackgroundColor = System.Drawing.Color.Crimson;
+            this.botonmenuprincipal.BackColor = System.Drawing.Color.DarkKhaki;
+            this.botonmenuprincipal.BackgroundColor = System.Drawing.Color.DarkKhaki;
             this.botonmenuprincipal.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.botonmenuprincipal.BorderRadius = 20;
             this.botonmenuprincipal.BorderSize = 0;
             this.botonmenuprincipal.FlatAppearance.BorderSize = 0;
             this.botonmenuprincipal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonmenuprincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonmenuprincipal.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonmenuprincipal.ForeColor = System.Drawing.Color.White;
-            this.botonmenuprincipal.Location = new System.Drawing.Point(1264, 24);
+            this.botonmenuprincipal.Location = new System.Drawing.Point(1241, 27);
             this.botonmenuprincipal.Name = "botonmenuprincipal";
             this.botonmenuprincipal.Size = new System.Drawing.Size(128, 63);
             this.botonmenuprincipal.TabIndex = 54;
@@ -377,25 +528,6 @@
             this.botonmenuprincipal.TextColor = System.Drawing.Color.White;
             this.botonmenuprincipal.UseVisualStyleBackColor = false;
             this.botonmenuprincipal.Click += new System.EventHandler(this.rjControls1_Click);
-            // 
-            // importebox
-            // 
-            this.importebox.BackColor = System.Drawing.SystemColors.Window;
-            this.importebox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.importebox.BorderFocusColor = System.Drawing.Color.Red;
-            this.importebox.BorderSize = 1;
-            this.importebox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.importebox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.importebox.Location = new System.Drawing.Point(880, 240);
-            this.importebox.Margin = new System.Windows.Forms.Padding(4);
-            this.importebox.Multiline = false;
-            this.importebox.Name = "importebox";
-            this.importebox.Padding = new System.Windows.Forms.Padding(7);
-            this.importebox.PasswordChar = false;
-            this.importebox.Size = new System.Drawing.Size(249, 31);
-            this.importebox.TabIndex = 53;
-            this.importebox.Texts = "";
-            this.importebox.UnderlineStyle = true;
             // 
             // impmontobox
             // 
@@ -491,6 +623,7 @@
             this.boxcantidad.TabIndex = 47;
             this.boxcantidad.Texts = "";
             this.boxcantidad.UnderlineStyle = true;
+            this.boxcantidad.Load += new System.EventHandler(this.boxcantidad_Load);
             // 
             // bodgbox
             // 
@@ -519,7 +652,7 @@
             this.descriProductBox.BorderSize = 1;
             this.descriProductBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descriProductBox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.descriProductBox.Location = new System.Drawing.Point(604, 329);
+            this.descriProductBox.Location = new System.Drawing.Point(624, 329);
             this.descriProductBox.Margin = new System.Windows.Forms.Padding(4);
             this.descriProductBox.Multiline = true;
             this.descriProductBox.Name = "descriProductBox";
@@ -577,9 +710,9 @@
             this.butonImprimir.BorderSize = 0;
             this.butonImprimir.FlatAppearance.BorderSize = 0;
             this.butonImprimir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.butonImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.butonImprimir.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.butonImprimir.ForeColor = System.Drawing.Color.White;
-            this.butonImprimir.Location = new System.Drawing.Point(1264, 102);
+            this.butonImprimir.Location = new System.Drawing.Point(1241, 190);
             this.butonImprimir.Name = "butonImprimir";
             this.butonImprimir.Size = new System.Drawing.Size(128, 63);
             this.butonImprimir.TabIndex = 27;
@@ -590,16 +723,16 @@
             // 
             // botonAgregarProducto
             // 
-            this.botonAgregarProducto.BackColor = System.Drawing.Color.MediumSlateBlue;
-            this.botonAgregarProducto.BackgroundColor = System.Drawing.Color.MediumSlateBlue;
+            this.botonAgregarProducto.BackColor = System.Drawing.Color.Red;
+            this.botonAgregarProducto.BackgroundColor = System.Drawing.Color.Red;
             this.botonAgregarProducto.BorderColor = System.Drawing.Color.PaleVioletRed;
             this.botonAgregarProducto.BorderRadius = 20;
             this.botonAgregarProducto.BorderSize = 0;
             this.botonAgregarProducto.FlatAppearance.BorderSize = 0;
             this.botonAgregarProducto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.botonAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.botonAgregarProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.botonAgregarProducto.ForeColor = System.Drawing.Color.White;
-            this.botonAgregarProducto.Location = new System.Drawing.Point(1264, 188);
+            this.botonAgregarProducto.Location = new System.Drawing.Point(1241, 107);
             this.botonAgregarProducto.Name = "botonAgregarProducto";
             this.botonAgregarProducto.Size = new System.Drawing.Size(128, 63);
             this.botonAgregarProducto.TabIndex = 26;
@@ -836,19 +969,34 @@
             this.textBox_nombre.Texts = "";
             this.textBox_nombre.UnderlineStyle = true;
             // 
+            // label5
+            // 
+            this.label5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.label5.Location = new System.Drawing.Point(441, 232);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(257, 2);
+            this.label5.TabIndex = 63;
+            // 
             // Form_cotiza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1415, 690);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.totalbox);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.imptotalbox);
+            this.Controls.Add(this.imptotallabel);
+            this.Controls.Add(this.dsctglobalbox);
+            this.Controls.Add(this.porcientodsct);
+            this.Controls.Add(this.borrarbuton);
+            this.Controls.Add(this.cleanbuton);
             this.Controls.Add(this.botonmenuprincipal);
-            this.Controls.Add(this.importebox);
             this.Controls.Add(this.impmontobox);
             this.Controls.Add(this.impbox);
             this.Controls.Add(this.boxprecio);
             this.Controls.Add(this.boxunid);
             this.Controls.Add(this.boxcantidad);
-            this.Controls.Add(this.importelabeel);
             this.Controls.Add(this.labelimpmonto);
             this.Controls.Add(this.labelImp);
             this.Controls.Add(this.labelPrecio);
@@ -895,6 +1043,7 @@
             this.Controls.Add(this.Nombre_label);
             this.Controls.Add(this.label_datosCliente);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form_cotiza";
             this.Text = "Cotización_reporte";
             this.Load += new System.EventHandler(this.Form_cotiza_Load);
@@ -951,13 +1100,20 @@
         private System.Windows.Forms.Label labelPrecio;
         private System.Windows.Forms.Label labelImp;
         private System.Windows.Forms.Label labelimpmonto;
-        private System.Windows.Forms.Label importelabeel;
         private widgets.RJTextBox boxcantidad;
         private widgets.RJTextBox boxunid;
         private widgets.RJTextBox boxprecio;
         private widgets.RJTextBox impbox;
         private widgets.RJTextBox impmontobox;
-        private widgets.RJTextBox importebox;
         private widgets.RJControls botonmenuprincipal;
+        private widgets.RJControls cleanbuton;
+        private widgets.RJControls borrarbuton;
+        private System.Windows.Forms.Label porcientodsct;
+        private widgets.RJTextBox dsctglobalbox;
+        private System.Windows.Forms.Label imptotallabel;
+        private widgets.RJTextBox imptotalbox;
+        private System.Windows.Forms.Label label4;
+        private widgets.RJTextBox totalbox;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -117,6 +117,7 @@
             this.buton_Orden.Text = "ORDEN DE COMPRA";
             this.buton_Orden.TextColor = System.Drawing.Color.Black;
             this.buton_Orden.UseVisualStyleBackColor = false;
+            this.buton_Orden.Click += new System.EventHandler(this.buton_Orden_Click);
             // 
             // pictureBox1
             // 
