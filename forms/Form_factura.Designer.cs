@@ -91,14 +91,7 @@
 
             // labeldetalles
             // 
-            this.labeldetalles.AutoSize = true;
-            this.labeldetalles.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labeldetalles.ForeColor = System.Drawing.SystemColors.Highlight;
-            this.labeldetalles.Location = new System.Drawing.Point(51, 26);
-            this.labeldetalles.Name = "labeldetalles";
-            this.labeldetalles.Size = new System.Drawing.Size(195, 25);
-            this.labeldetalles.TabIndex = 1;
-            this.labeldetalles.Text = "Detalles Generales";
+           
             // 
 
             // rncbox
@@ -493,22 +486,11 @@
 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(764, 26);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 25);
-            this.label1.TabIndex = 58;
-            this.label1.Text = "Detalles Productos";
+          
             // 
             // label4
             // 
-            this.label4.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.label4.Location = new System.Drawing.Point(735, 56);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(257, 2);
-            this.label4.TabIndex = 59;
+            
             // 
 
             // reflabel
