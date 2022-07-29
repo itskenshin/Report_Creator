@@ -144,18 +144,18 @@ namespace Facturacion
             decimal impmontotal = 0;
             foreach (DataGridViewRow row in gridprodc.Rows)
             {
-                filas += "<tr style=\"padding: 3px;\">";
-                filas += "<td>" + row.Cells["Ltm"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
-                filas += "<td style=\"height: 20px; width: 209px; padding: 10px; word-wrap: break-word; \">" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Bodg."].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Unid."].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Precio"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Dto.%"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Imp.%"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Importe"].Value.ToString() + " </td>";
+                filas += "<tr>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Ltm"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Bodg."].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Cantidad"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Unid."].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Precio"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Dto.%"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Imp.%"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Importe"].Value.ToString() + " </td>";
                 filas += "</tr>";
                 total += decimal.Parse(row.Cells["Importe"].Value.ToString());
                 impmontotal += decimal.Parse(row.Cells["Imp.Monto"].Value.ToString());
@@ -270,7 +270,7 @@ namespace Facturacion
             boxunid.Texts = "";
             boxprecio.Texts = "";
 
-            impbox.Texts = "";
+            
             
             dsctglobalbox.Texts = "";
             

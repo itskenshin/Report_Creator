@@ -58,26 +58,20 @@
             this.cantidadlabl = new System.Windows.Forms.Label();
             this.descripcionlabel = new System.Windows.Forms.Label();
             this.preeciunilabl = new System.Windows.Forms.Label();
-            this.totallabel = new System.Windows.Forms.Label();
             this.refbox = new Facturacion.widgets.RJTextBox();
             this.cantidadbox = new Facturacion.widgets.RJTextBox();
             this.descrbox = new Facturacion.widgets.RJTextBox();
             this.preciunibox = new Facturacion.widgets.RJTextBox();
-            this.totalbox = new Facturacion.widgets.RJTextBox();
             this.cleanbuton = new Facturacion.widgets.RJControls();
             this.botonmenuprincipal = new Facturacion.widgets.RJControls();
             this.butonImprimir = new Facturacion.widgets.RJControls();
             this.botonAgregarProducto = new Facturacion.widgets.RJControls();
             this.obralabeel = new System.Windows.Forms.Label();
             this.obrabox = new Facturacion.widgets.RJTextBox();
-            this.valorbrutolabel = new System.Windows.Forms.Label();
             this.descuentolabeel = new System.Windows.Forms.Label();
             this.descuentobox = new Facturacion.widgets.RJTextBox();
             this.impustolabel = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.brutobox = new Facturacion.widgets.RJTextBox();
             this.impuestobox = new Facturacion.widgets.RJTextBox();
-            this.vavlornetbox = new Facturacion.widgets.RJTextBox();
             this.borrarbuton = new Facturacion.widgets.RJControls();
             this.gb_DetallesProductos = new System.Windows.Forms.GroupBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -88,12 +82,6 @@
             this.gb_DetallesFactura.SuspendLayout();
             this.SuspendLayout();
             // 
-
-            // labeldetalles
-            // 
-           
-            // 
-
             // rncbox
             // 
             this.rncbox.BackColor = System.Drawing.SystemColors.Window;
@@ -116,25 +104,21 @@
             // rnclabel
             // 
             this.rnclabel.AutoSize = true;
-
             this.rnclabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rnclabel.ForeColor = System.Drawing.SystemColors.ControlText;
             this.rnclabel.Location = new System.Drawing.Point(74, 48);
-
             this.rnclabel.Name = "rnclabel";
-            this.rnclabel.Size = new System.Drawing.Size(33, 16);
+            this.rnclabel.Size = new System.Drawing.Size(32, 16);
             this.rnclabel.TabIndex = 32;
             this.rnclabel.Text = "RNC";
             // 
             // clientelabel
             // 
             this.clientelabel.AutoSize = true;
-
             this.clientelabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clientelabel.Location = new System.Drawing.Point(48, 84);
-
             this.clientelabel.Name = "clientelabel";
-            this.clientelabel.Size = new System.Drawing.Size(59, 16);
+            this.clientelabel.Size = new System.Drawing.Size(58, 16);
             this.clientelabel.TabIndex = 33;
             this.clientelabel.Text = "CLIENTE";
             // 
@@ -160,36 +144,30 @@
             // direccionlabel
             // 
             this.direccionlabel.AutoSize = true;
-
             this.direccionlabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.direccionlabel.Location = new System.Drawing.Point(33, 123);
-
             this.direccionlabel.Name = "direccionlabel";
-            this.direccionlabel.Size = new System.Drawing.Size(74, 16);
+            this.direccionlabel.Size = new System.Drawing.Size(73, 16);
             this.direccionlabel.TabIndex = 35;
             this.direccionlabel.Text = "DIRECCION";
             // 
             // tellabel
             // 
             this.tellabel.AutoSize = true;
-
             this.tellabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tellabel.Location = new System.Drawing.Point(38, 164);
-
             this.tellabel.Name = "tellabel";
-            this.tellabel.Size = new System.Drawing.Size(69, 16);
+            this.tellabel.Size = new System.Drawing.Size(68, 16);
             this.tellabel.TabIndex = 36;
             this.tellabel.Text = "TELEFONO";
             // 
             // vendedorlabel
             // 
             this.vendedorlabel.AutoSize = true;
-
             this.vendedorlabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vendedorlabel.Location = new System.Drawing.Point(32, 203);
-
             this.vendedorlabel.Name = "vendedorlabel";
-            this.vendedorlabel.Size = new System.Drawing.Size(75, 16);
+            this.vendedorlabel.Size = new System.Drawing.Size(74, 16);
             this.vendedorlabel.TabIndex = 37;
             this.vendedorlabel.Text = "VENDEDOR";
             // 
@@ -211,7 +189,7 @@
             this.dirrecionbox.TabIndex = 38;
             this.dirrecionbox.Texts = "";
             this.dirrecionbox.UnderlineStyle = true;
-            this.dirrecionbox.Load += new System.EventHandler(this.dirrecionbox_Load);
+            
             // 
             // telbox
             // 
@@ -254,12 +232,10 @@
             // nfclabel
             // 
             this.nfclabel.AutoSize = true;
-
             this.nfclabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.nfclabel.Location = new System.Drawing.Point(75, 242);
-
             this.nfclabel.Name = "nfclabel";
-            this.nfclabel.Size = new System.Drawing.Size(32, 16);
+            this.nfclabel.Size = new System.Drawing.Size(31, 16);
             this.nfclabel.TabIndex = 41;
             this.nfclabel.Text = "NFC";
             // 
@@ -282,76 +258,64 @@
             this.nfcbox.Texts = "";
             this.nfcbox.UnderlineStyle = true;
             // 
-
             // numerolabel
             // 
             this.numerolabel.AutoSize = true;
             this.numerolabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.numerolabel.Location = new System.Drawing.Point(43, 46);
-
             this.numerolabel.Name = "numerolabel";
-            this.numerolabel.Size = new System.Drawing.Size(60, 16);
+            this.numerolabel.Size = new System.Drawing.Size(59, 16);
             this.numerolabel.TabIndex = 45;
             this.numerolabel.Text = "NUMERO";
-            this.numerolabel.Click += new System.EventHandler(this.numerolabel_Click);
+            
             // 
             // fechalabel
             // 
             this.fechalabel.AutoSize = true;
-
             this.fechalabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.fechalabel.Location = new System.Drawing.Point(53, 85);
-
             this.fechalabel.Name = "fechalabel";
-            this.fechalabel.Size = new System.Drawing.Size(48, 16);
+            this.fechalabel.Size = new System.Drawing.Size(47, 16);
             this.fechalabel.TabIndex = 46;
             this.fechalabel.Text = "FECHA";
             // 
             // condicioneslabel
             // 
             this.condicioneslabel.AutoSize = true;
-
             this.condicioneslabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.condicioneslabel.Location = new System.Drawing.Point(10, 123);
-
             this.condicioneslabel.Name = "condicioneslabel";
-            this.condicioneslabel.Size = new System.Drawing.Size(91, 16);
+            this.condicioneslabel.Size = new System.Drawing.Size(90, 16);
             this.condicioneslabel.TabIndex = 47;
             this.condicioneslabel.Text = "CONDICIONES";
             // 
             // vencimientolabel
             // 
             this.vencimientolabel.AutoSize = true;
-
             this.vencimientolabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.vencimientolabel.Location = new System.Drawing.Point(11, 162);
-
             this.vencimientolabel.Name = "vencimientolabel";
-            this.vencimientolabel.Size = new System.Drawing.Size(91, 16);
+            this.vencimientolabel.Size = new System.Drawing.Size(90, 16);
             this.vencimientolabel.TabIndex = 48;
             this.vencimientolabel.Text = "VENCIMIENTO";
             // 
             // ordenlabel
             // 
             this.ordenlabel.AutoSize = true;
-
             this.ordenlabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.ordenlabel.Location = new System.Drawing.Point(33, 202);
-
             this.ordenlabel.Name = "ordenlabel";
-            this.ordenlabel.Size = new System.Drawing.Size(70, 16);
+            this.ordenlabel.Size = new System.Drawing.Size(69, 16);
             this.ordenlabel.TabIndex = 49;
             this.ordenlabel.Text = "ORDEN.NO";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-
             this.label8.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
             this.label8.Location = new System.Drawing.Point(30, 240);
-
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(71, 16);
+            this.label8.Size = new System.Drawing.Size(70, 16);
             this.label8.TabIndex = 50;
             this.label8.Text = "PAGINA.NO";
             // 
@@ -373,7 +337,7 @@
             this.numerobox.TabIndex = 51;
             this.numerobox.Texts = "";
             this.numerobox.UnderlineStyle = true;
-            this.numerobox.Load += new System.EventHandler(this.numerobox_Load);
+            
             // 
             // fechabox
             // 
@@ -393,7 +357,7 @@
             this.fechabox.TabIndex = 52;
             this.fechabox.Texts = "";
             this.fechabox.UnderlineStyle = true;
-            this.fechabox.Load += new System.EventHandler(this.fechabox_Load);
+            
             // 
             // condibox
             // 
@@ -413,7 +377,7 @@
             this.condibox.TabIndex = 53;
             this.condibox.Texts = "";
             this.condibox.UnderlineStyle = true;
-            this.condibox.Load += new System.EventHandler(this.condibox_Load);
+            
             // 
             // vencibox
             // 
@@ -433,7 +397,7 @@
             this.vencibox.TabIndex = 54;
             this.vencibox.Texts = "";
             this.vencibox.UnderlineStyle = true;
-            this.vencibox.Load += new System.EventHandler(this.vencibox_Load);
+            
             // 
             // ordenbox
             // 
@@ -482,24 +446,13 @@
             this.gridfactura.Size = new System.Drawing.Size(914, 364);
             this.gridfactura.TabIndex = 57;
             // 
-
-
-            // label1
-            // 
-          
-            // 
-            // label4
-            // 
-            
-            // 
-
             // reflabel
             // 
             this.reflabel.AutoSize = true;
             this.reflabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.reflabel.Location = new System.Drawing.Point(75, 44);
             this.reflabel.Name = "reflabel";
-            this.reflabel.Size = new System.Drawing.Size(31, 16);
+            this.reflabel.Size = new System.Drawing.Size(30, 16);
             this.reflabel.TabIndex = 63;
             this.reflabel.Text = "REF";
             // 
@@ -509,7 +462,7 @@
             this.cantidadlabl.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cantidadlabl.Location = new System.Drawing.Point(36, 84);
             this.cantidadlabl.Name = "cantidadlabl";
-            this.cantidadlabl.Size = new System.Drawing.Size(70, 16);
+            this.cantidadlabl.Size = new System.Drawing.Size(69, 16);
             this.cantidadlabl.TabIndex = 64;
             this.cantidadlabl.Text = "CANTIDAD";
             // 
@@ -519,7 +472,7 @@
             this.descripcionlabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descripcionlabel.Location = new System.Drawing.Point(16, 123);
             this.descripcionlabel.Name = "descripcionlabel";
-            this.descripcionlabel.Size = new System.Drawing.Size(90, 16);
+            this.descripcionlabel.Size = new System.Drawing.Size(89, 16);
             this.descripcionlabel.TabIndex = 65;
             this.descripcionlabel.Text = "DESCRIPCION";
             // 
@@ -527,21 +480,11 @@
             // 
             this.preeciunilabl.AutoSize = true;
             this.preeciunilabl.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.preeciunilabl.Location = new System.Drawing.Point(412, 44);
+            this.preeciunilabl.Location = new System.Drawing.Point(16, 169);
             this.preeciunilabl.Name = "preeciunilabl";
-            this.preeciunilabl.Size = new System.Drawing.Size(86, 16);
+            this.preeciunilabl.Size = new System.Drawing.Size(111, 16);
             this.preeciunilabl.TabIndex = 66;
-            this.preeciunilabl.Text = "PRECIO UNIT.";
-            // 
-            // totallabel
-            // 
-            this.totallabel.AutoSize = true;
-            this.totallabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.totallabel.Location = new System.Drawing.Point(455, 84);
-            this.totallabel.Name = "totallabel";
-            this.totallabel.Size = new System.Drawing.Size(43, 16);
-            this.totallabel.TabIndex = 67;
-            this.totallabel.Text = "TOTAL";
+            this.preeciunilabl.Text = "PRECIO UNITARIO";
             // 
             // refbox
             // 
@@ -608,7 +551,7 @@
             this.preciunibox.BorderSize = 1;
             this.preciunibox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.preciunibox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.preciunibox.Location = new System.Drawing.Point(508, 37);
+            this.preciunibox.Location = new System.Drawing.Point(134, 154);
             this.preciunibox.Margin = new System.Windows.Forms.Padding(4);
             this.preciunibox.Multiline = false;
             this.preciunibox.Name = "preciunibox";
@@ -618,25 +561,6 @@
             this.preciunibox.TabIndex = 71;
             this.preciunibox.Texts = "";
             this.preciunibox.UnderlineStyle = true;
-            // 
-            // totalbox
-            // 
-            this.totalbox.BackColor = System.Drawing.SystemColors.Window;
-            this.totalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.totalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.totalbox.BorderSize = 1;
-            this.totalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.totalbox.Location = new System.Drawing.Point(508, 76);
-            this.totalbox.Margin = new System.Windows.Forms.Padding(4);
-            this.totalbox.Multiline = false;
-            this.totalbox.Name = "totalbox";
-            this.totalbox.Padding = new System.Windows.Forms.Padding(7);
-            this.totalbox.PasswordChar = false;
-            this.totalbox.Size = new System.Drawing.Size(268, 31);
-            this.totalbox.TabIndex = 72;
-            this.totalbox.Texts = "";
-            this.totalbox.UnderlineStyle = true;
             // 
             // cleanbuton
             // 
@@ -725,12 +649,10 @@
             // obralabeel
             // 
             this.obralabeel.AutoSize = true;
-
             this.obralabeel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.obralabeel.Location = new System.Drawing.Point(67, 281);
-
             this.obralabeel.Name = "obralabeel";
-            this.obralabeel.Size = new System.Drawing.Size(40, 16);
+            this.obralabeel.Size = new System.Drawing.Size(39, 16);
             this.obralabeel.TabIndex = 77;
             this.obralabeel.Text = "OBRA";
             // 
@@ -753,23 +675,13 @@
             this.obrabox.Texts = "";
             this.obrabox.UnderlineStyle = true;
             // 
-            // valorbrutolabel
-            // 
-            this.valorbrutolabel.AutoSize = true;
-            this.valorbrutolabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.valorbrutolabel.Location = new System.Drawing.Point(410, 123);
-            this.valorbrutolabel.Name = "valorbrutolabel";
-            this.valorbrutolabel.Size = new System.Drawing.Size(88, 16);
-            this.valorbrutolabel.TabIndex = 79;
-            this.valorbrutolabel.Text = "VALOR BRUTO";
-            // 
             // descuentolabeel
             // 
             this.descuentolabeel.AutoSize = true;
             this.descuentolabeel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descuentolabeel.Location = new System.Drawing.Point(24, 163);
+            this.descuentolabeel.Location = new System.Drawing.Point(429, 44);
             this.descuentolabeel.Name = "descuentolabeel";
-            this.descuentolabeel.Size = new System.Drawing.Size(82, 16);
+            this.descuentolabeel.Size = new System.Drawing.Size(81, 16);
             this.descuentolabeel.TabIndex = 81;
             this.descuentolabeel.Text = "DESCUENTO";
             // 
@@ -781,7 +693,7 @@
             this.descuentobox.BorderSize = 1;
             this.descuentobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.descuentobox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.descuentobox.Location = new System.Drawing.Point(117, 154);
+            this.descuentobox.Location = new System.Drawing.Point(516, 37);
             this.descuentobox.Margin = new System.Windows.Forms.Padding(4);
             this.descuentobox.Multiline = false;
             this.descuentobox.Name = "descuentobox";
@@ -796,40 +708,11 @@
             // 
             this.impustolabel.AutoSize = true;
             this.impustolabel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.impustolabel.Location = new System.Drawing.Point(429, 163);
+            this.impustolabel.Location = new System.Drawing.Point(429, 84);
             this.impustolabel.Name = "impustolabel";
-            this.impustolabel.Size = new System.Drawing.Size(69, 16);
+            this.impustolabel.Size = new System.Drawing.Size(68, 16);
             this.impustolabel.TabIndex = 83;
             this.impustolabel.Text = "IMPUESTO";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(26, 203);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(80, 16);
-            this.label5.TabIndex = 85;
-            this.label5.Text = "VALOR NETO";
-            // 
-            // brutobox
-            // 
-            this.brutobox.BackColor = System.Drawing.SystemColors.Window;
-            this.brutobox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.brutobox.BorderFocusColor = System.Drawing.Color.Red;
-            this.brutobox.BorderSize = 1;
-            this.brutobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.brutobox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.brutobox.Location = new System.Drawing.Point(508, 115);
-            this.brutobox.Margin = new System.Windows.Forms.Padding(4);
-            this.brutobox.Multiline = false;
-            this.brutobox.Name = "brutobox";
-            this.brutobox.Padding = new System.Windows.Forms.Padding(7);
-            this.brutobox.PasswordChar = false;
-            this.brutobox.Size = new System.Drawing.Size(268, 31);
-            this.brutobox.TabIndex = 86;
-            this.brutobox.Texts = "";
-            this.brutobox.UnderlineStyle = true;
             // 
             // impuestobox
             // 
@@ -839,7 +722,7 @@
             this.impuestobox.BorderSize = 1;
             this.impuestobox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.impuestobox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.impuestobox.Location = new System.Drawing.Point(508, 154);
+            this.impuestobox.Location = new System.Drawing.Point(520, 76);
             this.impuestobox.Margin = new System.Windows.Forms.Padding(4);
             this.impuestobox.Multiline = false;
             this.impuestobox.Name = "impuestobox";
@@ -849,25 +732,6 @@
             this.impuestobox.TabIndex = 87;
             this.impuestobox.Texts = "";
             this.impuestobox.UnderlineStyle = true;
-            // 
-            // vavlornetbox
-            // 
-            this.vavlornetbox.BackColor = System.Drawing.SystemColors.Window;
-            this.vavlornetbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.vavlornetbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.vavlornetbox.BorderSize = 1;
-            this.vavlornetbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.vavlornetbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.vavlornetbox.Location = new System.Drawing.Point(117, 193);
-            this.vavlornetbox.Margin = new System.Windows.Forms.Padding(4);
-            this.vavlornetbox.Multiline = false;
-            this.vavlornetbox.Name = "vavlornetbox";
-            this.vavlornetbox.Padding = new System.Windows.Forms.Padding(7);
-            this.vavlornetbox.PasswordChar = false;
-            this.vavlornetbox.Size = new System.Drawing.Size(272, 31);
-            this.vavlornetbox.TabIndex = 88;
-            this.vavlornetbox.Texts = "";
-            this.vavlornetbox.UnderlineStyle = true;
             // 
             // borrarbuton
             // 
@@ -894,23 +758,17 @@
             // 
             this.gb_DetallesProductos.Controls.Add(this.cantidadbox);
             this.gb_DetallesProductos.Controls.Add(this.reflabel);
-            this.gb_DetallesProductos.Controls.Add(this.vavlornetbox);
             this.gb_DetallesProductos.Controls.Add(this.cantidadlabl);
             this.gb_DetallesProductos.Controls.Add(this.impuestobox);
             this.gb_DetallesProductos.Controls.Add(this.descripcionlabel);
-            this.gb_DetallesProductos.Controls.Add(this.brutobox);
             this.gb_DetallesProductos.Controls.Add(this.preeciunilabl);
-            this.gb_DetallesProductos.Controls.Add(this.label5);
-            this.gb_DetallesProductos.Controls.Add(this.totallabel);
             this.gb_DetallesProductos.Controls.Add(this.impustolabel);
             this.gb_DetallesProductos.Controls.Add(this.refbox);
             this.gb_DetallesProductos.Controls.Add(this.descuentobox);
             this.gb_DetallesProductos.Controls.Add(this.descrbox);
             this.gb_DetallesProductos.Controls.Add(this.descuentolabeel);
             this.gb_DetallesProductos.Controls.Add(this.preciunibox);
-            this.gb_DetallesProductos.Controls.Add(this.valorbrutolabel);
-            this.gb_DetallesProductos.Controls.Add(this.totalbox);
-            this.gb_DetallesProductos.Font = new System.Drawing.Font("DM Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_DetallesProductos.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_DetallesProductos.Location = new System.Drawing.Point(444, 22);
             this.gb_DetallesProductos.Name = "gb_DetallesProductos";
             this.gb_DetallesProductos.Size = new System.Drawing.Size(795, 237);
@@ -934,7 +792,7 @@
             this.groupBox1.Controls.Add(this.vendedorbox);
             this.groupBox1.Controls.Add(this.nfclabel);
             this.groupBox1.Controls.Add(this.nfcbox);
-            this.groupBox1.Font = new System.Drawing.Font("DM Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(12, 22);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(413, 321);
@@ -956,7 +814,7 @@
             this.gb_DetallesFactura.Controls.Add(this.vencibox);
             this.gb_DetallesFactura.Controls.Add(this.ordenbox);
             this.gb_DetallesFactura.Controls.Add(this.pagbox);
-            this.gb_DetallesFactura.Font = new System.Drawing.Font("DM Sans", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_DetallesFactura.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gb_DetallesFactura.Location = new System.Drawing.Point(12, 359);
             this.gb_DetallesFactura.Name = "gb_DetallesFactura";
             this.gb_DetallesFactura.Size = new System.Drawing.Size(413, 308);
@@ -1025,26 +883,20 @@
         private System.Windows.Forms.Label cantidadlabl;
         private System.Windows.Forms.Label descripcionlabel;
         private System.Windows.Forms.Label preeciunilabl;
-        private System.Windows.Forms.Label totallabel;
         private widgets.RJTextBox refbox;
         private widgets.RJTextBox cantidadbox;
         private widgets.RJTextBox descrbox;
         private widgets.RJTextBox preciunibox;
-        private widgets.RJTextBox totalbox;
         private widgets.RJControls cleanbuton;
         private widgets.RJControls botonmenuprincipal;
         private widgets.RJControls butonImprimir;
         private widgets.RJControls botonAgregarProducto;
         private System.Windows.Forms.Label obralabeel;
         private widgets.RJTextBox obrabox;
-        private System.Windows.Forms.Label valorbrutolabel;
         private System.Windows.Forms.Label descuentolabeel;
         private widgets.RJTextBox descuentobox;
         private System.Windows.Forms.Label impustolabel;
-        private System.Windows.Forms.Label label5;
-        private widgets.RJTextBox brutobox;
         private widgets.RJTextBox impuestobox;
-        private widgets.RJTextBox vavlornetbox;
         private widgets.RJControls borrarbuton;
         private System.Windows.Forms.GroupBox gb_DetallesProductos;
         private System.Windows.Forms.GroupBox groupBox1;
