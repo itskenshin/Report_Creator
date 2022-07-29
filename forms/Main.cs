@@ -42,5 +42,15 @@ namespace Facturacion
             Form_orden_compra form_Factura = new Form_orden_compra();
             form_Factura.Show();
         }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

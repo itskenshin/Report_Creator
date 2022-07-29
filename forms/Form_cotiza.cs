@@ -29,7 +29,11 @@ namespace Facturacion
             if (ltmbox.Texts == String.Empty || codprodcbox.Texts == String.Empty || 
                 descriProductBox.Texts == String.Empty || bodgbox.Texts == String.Empty || 
                 boxcantidad.Texts == String.Empty || boxunid.Texts == String.Empty
-                && boxprecio.Texts == String.Empty  || impbox.Texts == String.Empty)
+
+
+                && boxprecio.Texts == String.Empty  || impboxx.Texts == String.Empty)
+
+
 
             {
                 var messageValuee = MessageBox.Show("Por favor llene los campos de los productos",
@@ -53,12 +57,18 @@ namespace Facturacion
                     fila.Cells["Unid."].Value = boxunid.Texts;
                     fila.Cells["Precio"].Value = boxprecio.Texts;
                     fila.Cells["Dto.%"].Value = "";
-                    fila.Cells["Imp.%"].Value = impbox.Texts;
-                    decimal converimp = decimal.Parse(impbox.Texts) / 100;
+
+
+                    fila.Cells["Imp.%"].Value = impboxx.Texts;
+                    decimal converimp = decimal.Parse(impboxx.Texts) / 100;
+
                     decimal imp = decimal.Parse(boxprecio.Texts) * converimp;
                     string re1 = String.Format("{0:0.00}", converimp);
                     string re2 = String.Format("{0:0.00}", imp);
                     fila.Cells["Imp.Monto"].Value = re2;
+
+
+
                     decimal suma = decimal.Parse(boxcantidad.Texts) * decimal.Parse(boxprecio.Texts);
                     string re = String.Format("{0:0.00}",suma);
                     fila.Cells["Importe"].Value = re;
@@ -140,18 +150,20 @@ namespace Facturacion
             decimal impmontotal = 0;
             foreach (DataGridViewRow row in gridprodc.Rows)
             {
-                filas += "<tr style=\"padding: 3px;\">";
-                filas += "<td>" + row.Cells["Ltm"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
-                filas += "<td style=\"height: 20px; width: 209px; padding: 10px;\">" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Bodg."].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Unid."].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Precio"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Dto.%"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Imp.%"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
-                filas += "<td>" + row.Cells["Importe"].Value.ToString() + " </td>";
+
+                filas += "<tr>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Ltm"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Bodg."].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Cantidad"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Unid."].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Precio"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Dto.%"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Imp.%"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
+                filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Importe"].Value.ToString() + " </td>";
+
                 filas += "</tr>";
                 total += decimal.Parse(row.Cells["Importe"].Value.ToString());
                 impmontotal += decimal.Parse(row.Cells["Imp.Monto"].Value.ToString());
@@ -165,13 +177,19 @@ namespace Facturacion
             string re1 = String.Format("{0:0.00}", impmontotal);
             decimal totaltodo = (total - dsctglobal) + impmontotal;
             string re2= String.Format("{0:0.00}", totaltodo);
-            paginahtml_texto = paginahtml_texto.Replace("@imp", impbox.Texts.ToString());
+
+            paginahtml_texto = paginahtml_texto.Replace("@imp", impboxx.Texts.ToString());
+
             paginahtml_texto = paginahtml_texto.Replace("@Filas", filas);
             paginahtml_texto = paginahtml_texto.Replace("@IMPTOTAL", re1);
             paginahtml_texto = paginahtml_texto.Replace("@Subtotal", total.ToString());
             paginahtml_texto = paginahtml_texto.Replace("@DsGlobal", dsctglobalbox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@Dsctonumero", re);
+
+
             paginahtml_texto = paginahtml_texto.Replace("@TOTAL", re2);
+
+
 
 
             if (saveFile.ShowDialog() == DialogResult.OK) // cuando se muestre la ventana de guardar si le damos ok realizara lo siguiente
@@ -263,10 +281,14 @@ namespace Facturacion
             boxcantidad.Texts = "";
             boxunid.Texts = "";
             boxprecio.Texts = "";
-            impbox.Texts = "";
+
+
+            
             
             dsctglobalbox.Texts = "";
             
+
+
             
 
         }
@@ -316,6 +338,11 @@ namespace Facturacion
                                          MessageBoxButtons.OK);
             }
            
+        }
+
+        private void label_NumeroCoti_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

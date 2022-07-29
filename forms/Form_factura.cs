@@ -46,8 +46,8 @@ namespace Facturacion
         {
             // una condicional para verificar si hay campos vacios si encuentra se mostrara un dialogo
             if (refbox.Texts == String.Empty || descrbox.Texts == String.Empty ||
-                cantidadbox.Texts == String.Empty || preciunibox.Texts == String.Empty ||
-                totalbox.Texts == String.Empty)
+                cantidadbox.Texts == String.Empty || preciunibox.Texts == String.Empty
+                )
 
             {
                 var messageValuee = MessageBox.Show("Por favor llene los campos de los productos",
@@ -105,11 +105,11 @@ namespace Facturacion
             cantidadbox.Texts = string.Empty;
             descrbox.Texts = string.Empty;
             preciunibox.Texts = string.Empty;
-            totalbox.Texts = string.Empty;
+            
             descuentobox.Texts = string.Empty;
-            brutobox.Texts = string.Empty;
+            
             impuestobox.Texts = string.Empty;
-            vavlornetbox.Texts = string.Empty;
+            
             
             
 
@@ -144,16 +144,18 @@ namespace Facturacion
             paginahtml_texto = paginahtml_texto.Replace("@VENCIMIENTO", vencibox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@ORDEN", ordenbox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@PAGINA", pagbox.Texts);
-            paginahtml_texto = paginahtml_texto.Replace("@VALOR_BRUTO", brutobox.Texts);
+            
             paginahtml_texto = paginahtml_texto.Replace("@DESCUENTO", descuentobox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@IMPUESTO", impuestobox.Texts);
-            paginahtml_texto = paginahtml_texto.Replace("@VALOR_NETO", vavlornetbox.Texts);
+            
             paginahtml_texto = paginahtml_texto.Replace("@TELEFONO", telbox.Texts);
 
 
             string filas = String.Empty;
             decimal total = 0;
-            
+            decimal totaldescuento = 0;
+            decimal totalimpuesto = 0;
+            decimal valorneto = 0;
             foreach (DataGridViewRow row in gridfactura.Rows)
             {
                 filas += "<tr>";
@@ -163,9 +165,28 @@ namespace Facturacion
                 filas += "<td>" + row.Cells["PRECIO UNITARIO"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["TOTAL"].Value.ToString() + "</td>";
                 filas += "</tr>";
+                total += decimal.Parse(row.Cells["TOTAL"].Value.ToString());
+            }
+            if (descuentobox.Texts != String.Empty && impuestobox.Texts != String.Empty)
+            {
+
+                totaldescuento = total * ((decimal.Parse(impuestobox.Texts) / 100));
+                totalimpuesto = total * ((decimal.Parse(descuentobox.Texts) / 100));
+                valorneto = (total - totaldescuento) + totalimpuesto;
+
                 
             }
+            string re = String.Format("{0:0.00}", totaldescuento);
+            string re2 = String.Format("{0:0.00}", totalimpuesto);
+            string re3 = String.Format("{0:0.00}", valorneto);
+
+
+
             paginahtml_texto = paginahtml_texto.Replace("@Filas", filas);
+            paginahtml_texto = paginahtml_texto.Replace("@B", total.ToString());
+            paginahtml_texto = paginahtml_texto.Replace("@D", re);
+            paginahtml_texto = paginahtml_texto.Replace("@I", re2);
+            paginahtml_texto = paginahtml_texto.Replace("@V", re3);
 
 
 
@@ -223,5 +244,7 @@ namespace Facturacion
                 gridfactura.Rows.RemoveAt(item.Index);
             }
         }
+
+      
     }
 }
