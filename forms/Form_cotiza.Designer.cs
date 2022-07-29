@@ -51,6 +51,7 @@
             this.labelPrecio = new System.Windows.Forms.Label();
             this.labelImp = new System.Windows.Forms.Label();
             this.porcientodsct = new System.Windows.Forms.Label();
+
             this.gb_DatosClientes = new System.Windows.Forms.GroupBox();
             this.textBox_RNC = new Facturacion.widgets.RJTextBox();
             this.textBox_nombre = new Facturacion.widgets.RJTextBox();
@@ -71,6 +72,7 @@
             this.boxunid = new Facturacion.widgets.RJTextBox();
             this.codprodcbox = new Facturacion.widgets.RJTextBox();
             this.descriProductBox = new Facturacion.widgets.RJTextBox();
+
             this.dsctglobalbox = new Facturacion.widgets.RJTextBox();
             this.bodgbox = new Facturacion.widgets.RJTextBox();
             this.boxcantidad = new Facturacion.widgets.RJTextBox();
@@ -78,8 +80,10 @@
             this.borrarbuton = new Facturacion.widgets.RJControls();
             this.cleanbuton = new Facturacion.widgets.RJControls();
             this.botonmenuprincipal = new Facturacion.widgets.RJControls();
+
             this.butonImprimir = new Facturacion.widgets.RJControls();
             this.botonAgregarProducto = new Facturacion.widgets.RJControls();
+
             ((System.ComponentModel.ISupportInitialize)(this.gridprodc)).BeginInit();
             this.gb_DatosClientes.SuspendLayout();
             this.gb_DetallesProducto.SuspendLayout();
@@ -324,6 +328,7 @@
             this.porcientodsct.Name = "porcientodsct";
             this.porcientodsct.Size = new System.Drawing.Size(104, 16);
             this.porcientodsct.TabIndex = 57;
+
             this.porcientodsct.Text = "%.Dscto. GLOBAL";
             // 
             // gb_DatosClientes
@@ -361,6 +366,7 @@
             this.gb_DatosClientes.Text = "Datos Clientes";
             // 
             // textBox_RNC
+
             // 
             this.textBox_RNC.BackColor = System.Drawing.SystemColors.Window;
             this.textBox_RNC.BorderColor = System.Drawing.Color.Blue;
@@ -419,6 +425,7 @@
             // 
             // textboxRFC
             // 
+
             this.textboxRFC.BackColor = System.Drawing.SystemColors.Window;
             this.textboxRFC.BorderColor = System.Drawing.Color.Blue;
             this.textboxRFC.BorderFocusColor = System.Drawing.Color.Red;
@@ -435,6 +442,7 @@
             this.textboxRFC.TabIndex = 19;
             this.textboxRFC.Texts = "";
             this.textboxRFC.UnderlineStyle = true;
+
             // 
             // textBoxReferencia
             // 
@@ -820,6 +828,7 @@
             this.borrarbuton.UseVisualStyleBackColor = false;
             this.borrarbuton.Click += new System.EventHandler(this.borrarbuton_Click);
             // 
+
             // cleanbuton
             // 
             this.cleanbuton.BackColor = System.Drawing.Color.SeaGreen;
@@ -904,16 +913,19 @@
             this.botonAgregarProducto.UseVisualStyleBackColor = false;
             this.botonAgregarProducto.Click += new System.EventHandler(this.botonAgregarProducto_Click);
             // 
+
             // Form_cotiza
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+
             this.ClientSize = new System.Drawing.Size(1370, 690);
             this.Controls.Add(this.gb_DetallesProducto);
             this.Controls.Add(this.gb_DatosClientes);
             this.Controls.Add(this.borrarbuton);
             this.Controls.Add(this.cleanbuton);
             this.Controls.Add(this.botonmenuprincipal);
+
             this.Controls.Add(this.butonImprimir);
             this.Controls.Add(this.botonAgregarProducto);
             this.Controls.Add(this.gridprodc);
@@ -974,15 +986,19 @@
         private widgets.RJTextBox boxcantidad;
         private widgets.RJTextBox boxunid;
         private widgets.RJTextBox boxprecio;
+
+
         private widgets.RJControls botonmenuprincipal;
         private widgets.RJControls cleanbuton;
         private widgets.RJControls borrarbuton;
         private System.Windows.Forms.Label porcientodsct;
         private widgets.RJTextBox dsctglobalbox;
 
+
         private System.Windows.Forms.GroupBox gb_DatosClientes;
         private System.Windows.Forms.GroupBox gb_DetallesProducto;
         private System.Windows.Forms.Label labelunit;
         private widgets.RJTextBox impboxx;
+
     }
 }

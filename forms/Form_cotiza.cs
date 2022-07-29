@@ -30,7 +30,9 @@ namespace Facturacion
                 descriProductBox.Texts == String.Empty || bodgbox.Texts == String.Empty || 
                 boxcantidad.Texts == String.Empty || boxunid.Texts == String.Empty
 
+
                 && boxprecio.Texts == String.Empty  || impboxx.Texts == String.Empty)
+
 
 
             {
@@ -56,12 +58,16 @@ namespace Facturacion
                     fila.Cells["Precio"].Value = boxprecio.Texts;
                     fila.Cells["Dto.%"].Value = "";
 
+
                     fila.Cells["Imp.%"].Value = impboxx.Texts;
                     decimal converimp = decimal.Parse(impboxx.Texts) / 100;
+
                     decimal imp = decimal.Parse(boxprecio.Texts) * converimp;
                     string re1 = String.Format("{0:0.00}", converimp);
                     string re2 = String.Format("{0:0.00}", imp);
                     fila.Cells["Imp.Monto"].Value = re2;
+
+
 
                     decimal suma = decimal.Parse(boxcantidad.Texts) * decimal.Parse(boxprecio.Texts);
                     string re = String.Format("{0:0.00}",suma);
@@ -144,6 +150,7 @@ namespace Facturacion
             decimal impmontotal = 0;
             foreach (DataGridViewRow row in gridprodc.Rows)
             {
+
                 filas += "<tr>";
                 filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Ltm"].Value.ToString() + "</td>";
                 filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
@@ -156,6 +163,7 @@ namespace Facturacion
                 filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Imp.%"].Value.ToString() + "</td>";
                 filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
                 filas += "<td style=\"height: 5px; width: 400px; padding: 10px; \">" + row.Cells["Importe"].Value.ToString() + " </td>";
+
                 filas += "</tr>";
                 total += decimal.Parse(row.Cells["Importe"].Value.ToString());
                 impmontotal += decimal.Parse(row.Cells["Imp.Monto"].Value.ToString());
@@ -169,14 +177,18 @@ namespace Facturacion
             string re1 = String.Format("{0:0.00}", impmontotal);
             decimal totaltodo = (total - dsctglobal) + impmontotal;
             string re2= String.Format("{0:0.00}", totaltodo);
+
             paginahtml_texto = paginahtml_texto.Replace("@imp", impboxx.Texts.ToString());
+
             paginahtml_texto = paginahtml_texto.Replace("@Filas", filas);
             paginahtml_texto = paginahtml_texto.Replace("@IMPTOTAL", re1);
             paginahtml_texto = paginahtml_texto.Replace("@Subtotal", total.ToString());
             paginahtml_texto = paginahtml_texto.Replace("@DsGlobal", dsctglobalbox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@Dsctonumero", re);
 
+
             paginahtml_texto = paginahtml_texto.Replace("@TOTAL", re2);
+
 
 
 
@@ -270,10 +282,12 @@ namespace Facturacion
             boxunid.Texts = "";
             boxprecio.Texts = "";
 
+
             
             
             dsctglobalbox.Texts = "";
             
+
 
             
 
