@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+     
+</head>
+<body>
+
+    <div>
+        <div>
+            <div>
+
+            </div>
+            <h1>ILUMINECA EIRL</h1>
+            <p>
+                RNC: 131-09580-1
+                <br />
+                Direcci&oacute;n:
+                Doctor Defillo #45 Ens. Quisqueya, SD.
+                <br />
+                Tel&eacute;fono:
+                809-4834624
+                <br />
+                Cel: 829-384-5759
+                <br />
+                Correo: ilumineca02@gmail.com
+                <br />
+                Santo Domingo, República Dominicana.
+            </p>
+        </div>
+        <table border="1px" style="border-collapse: collapse; display:inline-block; margin-left: 340px;">
+           
+            <tr>
+                <td style="padding: 5px;">N&uacute;mero</td>
+                <td style="padding: 5px;">@NUMERO</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">Fecha</td>
+                <td style="padding: 5px;">@FECHA</td>
+            </tr>
+            <tr>
+                <td style="padding: 5px;">
+                    
+                    P&aacute;gina
+                </td>
+                <td style="padding: 5px;">@PAGINA</td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <div>
+            <h2 style="display: inline;">Datos Clientes</h2>
+            <div>
+                <p>Empresa: @EMPRESA</p>
+                <br />
+                <p>RNC: @RNC</p>
+            </div>
+        </div>
+        <div>
+            <h2 style="text-align: left; display: inline;">Cotizaci&oacute;n</h2>
+            <div>
+                <p>Empresa: @EMPRESA</p>
+                <br />
+                <p>RNC: @RNC</p>
+            </div>
+        </div>
+    </div>
+    
+    <table style="border-collapse: collapse; border: 2px solid black;" border="1px">
+        <tr style="padding: 3px;">
+            <th style="padding: 10px;">C&oacute;digo Cliente</th>
+            <th>RFC</th>
+            <th>Referencia</th>
+            <th>Terminos</th>
+        </tr>
+        <tr>
+            <td style="height: 20px; width: 209px; padding: 10px;">@CODIGOCLIENTE</td>
+            <td style="height: 20px; width: 208px;">@RFC</td>
+            <td style="height: 20px; width: 208px;">@REFERENCIA</td>
+            <td style="height: 20px; width: 208px;">@TERMINOS</td>
+        </tr>
+        <tr>
+            <th style="padding: 10px;">Vendedor</th>
+            <th>Moneda</th>
+            <th>Emite</th>
+            <td style="height: 20px; padding: 10px;"></td>
+        </tr>
+        <tr>
+            <td style="height: 20px; width: 208px; padding: 10px;">@VENDEDOR</td>
+            <td style="height: 20px; width: 208px;">@MONEDA</td>
+            <td style="height: 20px; width: 208px;">@EMITE</td>
+            <td style="height: 20px; width: 208px;"></td>
+        </tr>
+    </table>
+    
+    <table style="border-collapse: collapse; border: 2px solid black;" border="1px">
+        <tr style="padding: 3px;">
+            <th style="padding: 10px;">Itm</th>
+            <th>Cod. Prod</th>
+            <th>Descripción Producto</th>
+            <th>Bodg.</th>
+            <th>Cantidad</th>
+            <th>Unid.</th>
+            <th>Precio</th>
+            <th>Dto.%</th>
+            <th>Imp.%</th>
+            <th>Imp.Monto</th>
+            <th>Importe</th>
+        </tr>
+        @Filas
+        <br />
+    </table>
+    
+    <footer>
+        <div>
+        </div>
+        <div>
+
+            <div>
+                Aviso: Consultar precio y disponibilidad al momento de la compra, pueden variar sin previo aviso
+            </div>
+
+            <table style="border-collapse: collapse; border: 2px solid black;" border="1px">
+                <tr>
+                    <td>
+                        Subtotal  ----->@Subtotal
+                        <br />
+                        Dscto. parcial
+                        <br />
+                        @DsGlobal % Dscto. Global  -----> @Dsctonumero
+                        <br />
+                        Miscelaneos
+                        <br />
+                        Impto. @imp %  ----->@IMPTOTAL
+                        <br />
+                        <b>TOTAL  -----> @TOTAL</b>
+                    </td>
+
+
+                </tr>
+            </table>
+        </div>
+
+
+        <p style="padding:50px; text-align:left">ENTREGADO POR</p>                                <p style="padding:50px; text-align:right">RECIBIDO POR</p>
+
+    </footer>
+</body>
+</html>

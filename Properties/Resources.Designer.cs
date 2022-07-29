@@ -8,10 +8,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Facturacion.Properties
-{
-
-
+namespace Facturacion.Properties {
+    using System;
+    
+    
     /// <summary>
     ///   A strongly-typed resource class, for looking up localized strings, etc.
     /// </summary>
@@ -19,52 +19,138 @@ namespace Facturacion.Properties
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "17.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    internal class Resources
-    {
-
+    internal class Resources {
+        
         private static global::System.Resources.ResourceManager resourceMan;
-
+        
         private static global::System.Globalization.CultureInfo resourceCulture;
-
+        
         [global::System.Diagnostics.CodeAnalysis.SuppressMessageAttribute("Microsoft.Performance", "CA1811:AvoidUncalledPrivateCode")]
-        internal Resources()
-        {
+        internal Resources() {
         }
-
+        
         /// <summary>
         ///   Returns the cached ResourceManager instance used by this class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Resources.ResourceManager ResourceManager
-        {
-            get
-            {
-                if ((resourceMan == null))
-                {
+        internal static global::System.Resources.ResourceManager ResourceManager {
+            get {
+                if (object.ReferenceEquals(resourceMan, null)) {
                     global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Facturacion.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;
             }
         }
-
+        
         /// <summary>
         ///   Overrides the current thread's CurrentUICulture property for all
         ///   resource lookups using this strongly typed resource class.
         /// </summary>
         [global::System.ComponentModel.EditorBrowsableAttribute(global::System.ComponentModel.EditorBrowsableState.Advanced)]
-        internal static global::System.Globalization.CultureInfo Culture
-        {
-            get
-            {
+        internal static global::System.Globalization.CultureInfo Culture {
+            get {
                 return resourceCulture;
             }
-            set
-            {
+            set {
                 resourceCulture = value;
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap color {
+            get {
+                object obj = ResourceManager.GetObject("color", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap colorrojo {
+            get {
+                object obj = ResourceManager.GetObject("colorrojo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///
+        ///    &lt;div&gt;
+        ///        &lt;div&gt;
+        ///            &lt;div&gt;
+        ///
+        ///            &lt;/div&gt;
+        ///            &lt;h1&gt;ILUMINECA EIRL&lt;/h1&gt;
+        ///            &lt;p&gt;
+        ///                RNC: 131-09580-1
+        ///                &lt;br /&gt;
+        ///                Direccción: Doctor Defillo #45 Ens. Quisqueya, SD.
+        ///                &lt;br /&gt;
+        ///                Telefono: 809-4834624
+        ///                &lt;br /&gt;
+        ///                Cel: 829-384-5759
+        ///                &lt;br /&gt;
+        ///                Correo: ilumineca02@gmail.com
+        ///                &lt;b [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string cotizacion {
+            get {
+                return ResourceManager.GetString("cotizacion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///    
+        ///    
+        ///    &lt;title&gt;Impresi&amp;oacute;n&lt;/title&gt;
+        ///    
+        ///&lt;/head&gt;
+        ///
+        ///&lt;body&gt;
+        ///
+        ///    &lt;div&gt;
+        ///
+        ///        &lt;div&gt;
+        ///            &lt;p&gt;ILUMINECA EIRL&lt;/p&gt;
+        ///            &lt;p&gt;Doctor Defillo #45 Ens. Quisqueya&lt;/p&gt;
+        ///            &lt;p&gt;Santo Domingo, Rep&amp;uacute;blica Dominicana&lt;/p&gt;
+        ///            &lt;p&gt;Tel:. (849) 483 4624 / Cel:. (829) 384 5759&lt;/p&gt;
+        ///            &lt;p&gt;ilumineca02@gmail.com&lt;/p&gt;
+        ///        &lt;/div&gt;
+        ///        &lt;div&gt;
+        ///            &lt;h7&gt;FACTURA CON VALOR FISCAL&lt;/h7&gt;
+        ///            &lt;div&gt;
+        ///                &lt;p&gt;N [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string index {
+            get {
+                return ResourceManager.GetString("index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap watermark {
+            get {
+                object obj = ResourceManager.GetObject("watermark", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
             }
         }
     }

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    
+    <title>Impresi&oacute;n</title>
+    
+</head>
+
+<body>
+
+    <div>
+
+        <div>
+            <p>ILUMINECA EIRL</p>
+            <p>Doctor Defillo #45 Ens. Quisqueya</p>
+            <p>Santo Domingo, Rep&uacute;blica Dominicana</p>
+            <p>Tel:. (849) 483 4624 / Cel:. (829) 384 5759</p>
+            <p>ilumineca02@gmail.com</p>
+        </div>
+        <div>
+            <h7>FACTURA CON VALOR FISCAL</h7>
+            <div>
+                <p>NFC: </p><P>@NFC</P>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div>
+            <table style="border-collapse: collapse;">
+                <tr>
+                    <th style="padding: 4px; width: 170px; text-align: start; border-bottom: 1px solid black;">RNC/CEDULA</th>
+                    <td style="width: 400px; padding: 4px; border-bottom: 1px solid black;">@RNC</td>
+                </tr>
+                <tr>
+                    <th style="padding: 4px; text-align: start; border-bottom: 1px solid black;">Cliente</th>
+                    <td style="width: 400px; padding: 4px; border-bottom: 1px solid black;">@CLIENTE</td>
+                </tr>
+                <tr>
+                    <th style="padding: 4px; text-align: start; border-bottom: 1px solid black;">Direcci&oacute;n</th>
+                    <td style="width: 400px; padding: 4px; border-bottom: 1px solid black;">@DIRECCION</td>
+                </tr>
+                <tr>
+                    <th style="padding: 4px; text-align: start; border-bottom: 1px solid black;">Tel&eacute;fono</th>
+                    <td style="width: 400px; padding: 4px; border-bottom: 1px solid black;">@TELEFONO</td>
+                </tr>
+                <tr>
+                    <th style="padding: 4px; text-align: start; border-bottom: 1px solid black;">Vendedor</th>
+                    <td style="width: 400px; padding: 4px; border-bottom: 1px solid black;">@VENDEDOR</td>
+                </tr>
+                <tr>
+                    <th style="padding: 4px; text-align: start;">Obra</th>
+                    <td style="width: 400px; padding: 4px;">@OBRA</td>
+                </tr>
+            </table>
+        </div>
+        <div>
+            <H2>Factura RD$</H2>
+            <table border="1px" style="border-collapse: collapse;">
+                <tr>
+                    <th style="width: 130px; padding: 8px;">N&uacute;mero</th>
+                    <td >@NUMERO</td>
+                </tr>
+                <tr>
+                    <th style="width: 130px; padding: 8px;">Fecha</th>
+                    <td >@FECHA</td>
+                </tr>
+                <tr>
+                    <th style="width: 130px; padding: 8px;">Condiciones</th>
+                    <td>@CONDICIONES</td>
+                </tr>
+                <tr>
+                    <th style="width: 130px; padding: 8px;">Vencimiento</th>
+                    <td >@VENCIMIENTO</td>
+                </tr>
+                <tr>
+                    <th style="width: 130px; padding: 8px;">Orden</th>
+                    <td >@ORDEN</td>
+                </tr>
+                <tr>
+                    <th style="width: 130px; padding: 8px;">Pagina No.</th>
+                    <td >@PAGINA</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <br />
+    <br />
+    <div>
+        <table border="1px" style="border-collapse: collapse;">
+            <tr>
+                <th style="width: 130px; padding: 8px;">REF</th>
+                <th>Cantidad</th>
+                <th style="width: 387px; padding: 8px">Descripci&oacute;n</th>
+                <th style="padding: 8px;">Precio Unitario</th>
+                <th style="width: 100px; padding: 8px">Total</th>
+            </tr>
+            @Filas
+        </table>
+        <br />
+    </div>
+    
+        <div align ="right">
+            <table border="1px" style="border-collapse: collapse; align = "right">
+                <tr>
+                    <th style="padding: 8px; text-align: start;">Valor Bruto</th>
+                    <td style="padding: 8px;">@B</td>
+                </tr>
+                <tr>
+                    <th style="padding: 8px; text-align: start;">Descuento @DESCUENTO %</th>
+                    <td style="padding: 8px;">@D</td>
+                </tr>
+                <tr>
+                    <th style="padding: 8px; text-align: start;"> @IMPUESTO % Impuesto</th>
+                    <td style="padding: 8px;">@I</td>
+                </tr>
+                <tr>
+                    <th style="padding: 8px; text-align: start;">Valor Neto</th>
+                    <td style="padding: 8px;">@V</td>
+                </tr>
+            </table>
+        </div>
+    
+
+</body>
+</html>
