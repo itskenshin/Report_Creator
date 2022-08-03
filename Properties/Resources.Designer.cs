@@ -84,7 +84,13 @@ namespace Facturacion.Properties {
         ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
         ///&lt;html&gt;
         ///&lt;head&gt;
+        ///     &lt;style&gt;
+        ///         .tds {
+        ///             max-width: 350px;
+        ///             word-wrap: break-word;
+        ///         }
         ///
+        ///     &lt;/style&gt;
         ///&lt;/head&gt;
         ///&lt;body&gt;
         ///
@@ -97,14 +103,11 @@ namespace Facturacion.Properties {
         ///            &lt;p&gt;
         ///                RNC: 131-09580-1
         ///                &lt;br /&gt;
-        ///                Direccción: Doctor Defillo #45 Ens. Quisqueya, SD.
+        ///                Direcci&amp;oacute;n:
+        ///                Doctor Defillo #45 Ens. Quisqueya, SD.
         ///                &lt;br /&gt;
-        ///                Telefono: 809-4834624
-        ///                &lt;br /&gt;
-        ///                Cel: 829-384-5759
-        ///                &lt;br /&gt;
-        ///                Correo: ilumineca02@gmail.com
-        ///                &lt;b [rest of string was truncated]&quot;;.
+        ///                Tel&amp;eacute;fono:
+        ///    [rest of string was truncated]&quot;;.
         /// </summary>
         internal static string cotizacion {
             get {
@@ -141,6 +144,41 @@ namespace Facturacion.Properties {
         internal static string index {
             get {
                 return ResourceManager.GetString("index", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;!DOCTYPE html&gt;
+        ///&lt;html&gt;
+        ///&lt;head&gt;
+        ///     &lt;style&gt;
+        ///         .tds {
+        ///             max-width: 350px;
+        ///             word-wrap: break-word;
+        ///         }
+        ///
+        ///     &lt;/style&gt;
+        ///&lt;/head&gt;
+        ///&lt;body&gt;
+        ///
+        ///    &lt;div&gt;
+        ///        &lt;div&gt;
+        ///            &lt;div&gt;
+        ///
+        ///            &lt;/div&gt;
+        ///            &lt;h1&gt;ILUMINECA EIRL&lt;/h1&gt;
+        ///            &lt;p&gt;
+        ///                RNC: 131-09580-1
+        ///                &lt;br /&gt;
+        ///                Direcci&amp;oacute;n:
+        ///                Doctor Defillo #45 Ens. Quisqueya, SD.
+        ///                &lt;br /&gt;
+        ///                Tel&amp;eacute;fono:
+        ///    [rest of string was truncated]&quot;;.
+        /// </summary>
+        internal static string orden {
+            get {
+                return ResourceManager.GetString("orden", resourceCulture);
             }
         }
         

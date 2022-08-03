@@ -55,6 +55,12 @@ namespace Facturacion
                                      MessageBoxButtons.OK);
 
             }
+            else if (descrbox.Texts.Length > 75)
+            {
+                var messageValuee = MessageBox.Show("Por favor introduza una descripcion de producto mas corta",
+                                    "Confirmar",
+                                    MessageBoxButtons.OK);
+            }
             else
             {
                 try
