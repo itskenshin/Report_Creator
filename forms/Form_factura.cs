@@ -13,6 +13,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
 // para guardar archivos
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Facturacion
 {
@@ -45,6 +46,7 @@ namespace Facturacion
         private void botonAgregarProducto_Click(object sender, EventArgs e)
         {
             // una condicional para verificar si hay campos vacios si encuentra se mostrara un dialogo
+            Regex rx = new Regex(@"^([1-9]\d*(\.)\d*|0?(\.)\d*[1-9]\d*|[1-9]\d*)$");
             if (refbox.Texts == String.Empty || descrbox.Texts == String.Empty ||
                 cantidadbox.Texts == String.Empty || preciunibox.Texts == String.Empty
                 )
@@ -55,6 +57,20 @@ namespace Facturacion
                                      MessageBoxButtons.OK);
 
             }
+            else if (descrbox.Texts.Length > 75)
+            {
+                var messageValuee = MessageBox.Show("Por favor introduza una descripcion de producto mas corta",
+                                    "Confirmar",
+                                    MessageBoxButtons.OK);
+            }
+            else if (rx.IsMatch(cantidadbox.Texts) != true || rx.IsMatch(preciunibox.Texts) != true || rx.IsMatch(impuestobox.Texts) != true
+                || rx.IsMatch(descuentobox.Texts) != true)
+            {
+                var messageValuee = MessageBox.Show("Por favor introduza valor numericos preferible en decimales ",
+                                  "Confirmar",
+                                  MessageBoxButtons.OK);
+            }
+
             else
             {
                 try
@@ -245,6 +261,24 @@ namespace Facturacion
             }
         }
 
-      
+        private void cantidadbox_Enter(object sender, EventArgs e)
+        {
+            cantidadbox.Texts = "";
+        }
+
+        private void preciunibox_Enter(object sender, EventArgs e)
+        {
+            preciunibox.Texts = "";
+        }
+
+        private void descuentobox_Enter(object sender, EventArgs e)
+        {
+            descuentobox.Texts = "";
+        }
+
+        private void impuestobox_Enter(object sender, EventArgs e)
+        {
+            impuestobox.Texts = "";
+        }
     }
 }
