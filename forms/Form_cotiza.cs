@@ -34,7 +34,7 @@ namespace Facturacion
                 boxcantidad.Texts == String.Empty || boxunid.Texts == String.Empty
 
 
-                && boxprecio.Texts == String.Empty || impboxx.Texts == String.Empty)
+                || boxprecio.Texts == String.Empty || impboxx.Texts == String.Empty)
 
 
 
