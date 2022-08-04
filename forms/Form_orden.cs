@@ -7,7 +7,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
 // para maneejar los pdf
 using iTextSharp.text;
 using iTextSharp.text.pdf;
@@ -16,27 +15,24 @@ using iTextSharp.tool.xml;
 using System.IO;
 using System.Text.RegularExpressions;
 
-namespace Facturacion
+namespace Facturacion.forms
 {
-    public partial class Form_cotiza : Form
+    public partial class Form_orden : Form
     {
-        public Form_cotiza()
+        public Form_orden()
         {
             InitializeComponent();
         }
 
-
         private void botonAgregarProducto_Click(object sender, EventArgs e)
+
         {   // una condicional para verificar si hay campos vacios si encuentra se mostrara un dialogo
             Regex rx = new Regex(@"^([1-9]\d*(\.)\d*|0?(\.)\d*[1-9]\d*|[1-9]\d*)$");
             if (ltmbox.Texts == String.Empty || codprodcbox.Texts == String.Empty ||
                 descriProductBox.Texts == String.Empty || bodgbox.Texts == String.Empty ||
                 boxcantidad.Texts == String.Empty || boxunid.Texts == String.Empty
 
-
-                || boxprecio.Texts == String.Empty || impboxx.Texts == String.Empty)
-
-
+                && boxprecio.Texts == String.Empty || impboxx.Texts == String.Empty)
 
 
             {
@@ -50,7 +46,7 @@ namespace Facturacion
                                     "Confirmar",
                                     MessageBoxButtons.OK);
             }
-            else if (rx.IsMatch(boxcantidad.Texts) != true || rx.IsMatch(boxprecio.Texts) != true || rx.IsMatch(impboxx.Texts) != true
+            else if (rx.IsMatch(boxcantidad.Texts) !=true || rx.IsMatch(boxprecio.Texts) != true || rx.IsMatch(impboxx.Texts) != true 
                 || rx.IsMatch(dsctglobalbox.Texts) != true)
             {
                 var messageValuee = MessageBox.Show("Por favor introduza valor numericos preferible en decimales ",
@@ -59,16 +55,16 @@ namespace Facturacion
             }
 
 
-
             else
-            {   try
+            {
+                try
                 {
-                    
+
                     int indicarfila = gridprodc.Rows.Add(); // cuando le damos agregar producto nos crea una fila y guardo el indice de esa fila
                     DataGridViewRow fila = gridprodc.Rows[indicarfila]; // guardamos esa fila especifica 
 
                     // aqui cada celda de la tabla sera remplazada por lo que dijitee en el textbox del formulario
-                    fila.Cells["Ltm"].Value = ltmbox.Texts; 
+                    fila.Cells["Ltm"].Value = ltmbox.Texts;
                     fila.Cells["Cod.Pro"].Value = codprodcbox.Texts;
                     fila.Cells["Descripcion Producto"].Value = descriProductBox.Texts;
                     fila.Cells["Bodg."].Value = bodgbox.Texts;
@@ -77,22 +73,18 @@ namespace Facturacion
                     fila.Cells["Precio"].Value = boxprecio.Texts;
                     fila.Cells["Dto.%"].Value = "";
 
-
                     fila.Cells["Imp.%"].Value = impboxx.Texts;
                     decimal converimp = decimal.Parse(impboxx.Texts) / 100;
-
                     decimal imp = decimal.Parse(boxprecio.Texts) * converimp;
                     string re1 = String.Format("{0:0.00}", converimp);
                     string re2 = String.Format("{0:0.00}", imp);
                     fila.Cells["Imp.Monto"].Value = re2;
 
-
-
                     decimal suma = decimal.Parse(boxcantidad.Texts) * decimal.Parse(boxprecio.Texts);
-                    string re = String.Format("{0:0.00}",suma);
+                    string re = String.Format("{0:0.00}", suma);
                     fila.Cells["Importe"].Value = re;
-                    
-                    
+
+
 
                 }
                 catch
@@ -101,7 +93,7 @@ namespace Facturacion
                                      "Confirmar",
                                      MessageBoxButtons.OK);
                 }
-                
+
 
 
             }
@@ -110,11 +102,11 @@ namespace Facturacion
 
         }
 
-       
+
 
         private void Form_cotiza_Load(object sender, EventArgs e)
         {   // cuando cargue el form se crean columnas para la tabla
-            gridprodc.Columns.Add("Ltm","Ltm");
+            gridprodc.Columns.Add("Ltm", "Ltm");
             gridprodc.Columns.Add("Cod.Pro", "Cod.Pro");
             gridprodc.Columns.Add("Descripcion Producto", "Descripcion Producto");
             gridprodc.Columns.Add("Bodg.", "Bodg.");
@@ -125,11 +117,11 @@ namespace Facturacion
             gridprodc.Columns.Add("Imp.%", "Imp.%");
             gridprodc.Columns.Add("Imp.Monto", "Imp.Monto");
             gridprodc.Columns.Add("Importe", "Importe");
-            
+
 
         }
 
-        
+
         // cuando presionemos el boton imprimir
         private void butonImprimir_Click(object sender, EventArgs e)
 
@@ -140,7 +132,7 @@ namespace Facturacion
 
             SaveFileDialog saveFile = new SaveFileDialog(); // para guardar 
             saveFile.Filter = "PDF document (*.pdf)|*.pdf";
-            saveFile.FileName = "NombrarArchivo" +".pdf"; // el archivo a guardar tendra por default la fecha actual
+            saveFile.FileName = "NombrarArchivo" + ".pdf"; // el archivo a guardar tendra por default la fecha actual
 
 
 
@@ -148,7 +140,7 @@ namespace Facturacion
 
             // generar un pdf con un html
 
-            string paginahtml_texto = Properties.Resources.cotizacion.ToString(); // pasar aqui la plantilla html primero agregar la plantilla a recursos 
+            string paginahtml_texto = Properties.Resources.orden.ToString(); // pasar aqui la plantilla html primero agregar la plantilla a recursos 
 
             paginahtml_texto = paginahtml_texto.Replace("@NUMERO", textBox_numeroCoti.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@FECHA", textboxFecha.Texts);
@@ -169,9 +161,7 @@ namespace Facturacion
             decimal impmontotal = 0;
             foreach (DataGridViewRow row in gridprodc.Rows)
             {
-
                 filas += "<tr>";
-
                 filas += "<td>" + row.Cells["Ltm"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
@@ -183,32 +173,27 @@ namespace Facturacion
                 filas += "<td>" + row.Cells["Imp.%"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Importe"].Value.ToString() + " </td>";
-
                 filas += "</tr>";
                 total += decimal.Parse(row.Cells["Importe"].Value.ToString());
                 impmontotal += decimal.Parse(row.Cells["Imp.Monto"].Value.ToString());
             }
-            if ( dsctglobalbox.Texts != String.Empty)
+            if (dsctglobalbox.Texts != String.Empty)
             {
                 dsctglobal = (decimal.Parse(dsctglobalbox.Texts) / 100) * total;
             }
-            
+
             string re = String.Format("{0:0.00}", dsctglobal);
             string re1 = String.Format("{0:0.00}", impmontotal);
             decimal totaltodo = (total - dsctglobal) + impmontotal;
-            string re2= String.Format("{0:0.00}", totaltodo);
-
+            string re2 = String.Format("{0:0.00}", totaltodo);
             paginahtml_texto = paginahtml_texto.Replace("@imp", impboxx.Texts.ToString());
-
             paginahtml_texto = paginahtml_texto.Replace("@Filas", filas);
             paginahtml_texto = paginahtml_texto.Replace("@IMPTOTAL", re1);
             paginahtml_texto = paginahtml_texto.Replace("@Subtotal", total.ToString());
             paginahtml_texto = paginahtml_texto.Replace("@DsGlobal", dsctglobalbox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@Dsctonumero", re);
 
-
             paginahtml_texto = paginahtml_texto.Replace("@TOTAL", re2);
-
 
 
 
@@ -229,7 +214,7 @@ namespace Facturacion
                         //#########################################
                         //agregando imagenes al pdf
                         iTextSharp.text.Image img = iTextSharp.text.Image.GetInstance(Properties.Resources.colorrojo, System.Drawing.Imaging.ImageFormat.Png);
-                        
+
 
 
                         img.ScaleToFit(350, 350);
@@ -244,7 +229,7 @@ namespace Facturacion
 
 
                         pdfDoc.Add(img);
-                        
+
                         // ###########################################################################
 
                         using (StringReader sr = new StringReader(paginahtml_texto))// para leer la estructura html aqui le pasamos el html
@@ -268,8 +253,8 @@ namespace Facturacion
                                      "Confirmar",
                                      MessageBoxButtons.OK);
                 }
-                
-                
+
+
             }
         }
 
@@ -303,13 +288,11 @@ namespace Facturacion
             boxprecio.Texts = "";
 
 
-            
-            
+
             dsctglobalbox.Texts = "";
-            
 
 
-            
+
 
         }
 
@@ -321,7 +304,7 @@ namespace Facturacion
             }
         }
 
-        
+
         private void sumarboton_Click(object sender, EventArgs e)
         {
             decimal sumar_importe = 0;
@@ -336,7 +319,7 @@ namespace Facturacion
         }
 
         private void rjControls1_Click_1(object sender, EventArgs e)
-        {   
+        {
             if (dsctglobalbox.Texts != String.Empty)
             {
                 decimal ddsctglobal = (decimal.Parse(dsctglobalbox.Texts) / 100);
@@ -357,10 +340,10 @@ namespace Facturacion
                                          "Confirmar",
                                          MessageBoxButtons.OK);
             }
-           
+
         }
 
-
+  
 
         private void boxcantidad_Enter(object sender, EventArgs e)
         {
@@ -383,3 +366,4 @@ namespace Facturacion
         }
     }
 }
+

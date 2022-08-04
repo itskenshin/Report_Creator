@@ -47,7 +47,7 @@
             this.label_name_empresa.Size = new System.Drawing.Size(167, 25);
             this.label_name_empresa.TabIndex = 0;
             this.label_name_empresa.Text = "ILUMINECA EIRL";
-            this.label_name_empresa.Click += new System.EventHandler(this.label_name_empresa_Click);
+            
             // 
             // label1
             // 
@@ -130,7 +130,7 @@
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            
             // 
             // Main
             // 
@@ -149,7 +149,7 @@
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Creador_Reportes 1.0";
-            this.Load += new System.EventHandler(this.Main_Load);
+            
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
