@@ -13,6 +13,7 @@ using iTextSharp.text.pdf;
 using iTextSharp.tool.xml;
 // para guardar archivos
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace Facturacion.forms
 {
@@ -24,7 +25,9 @@ namespace Facturacion.forms
         }
 
         private void botonAgregarProducto_Click(object sender, EventArgs e)
+
         {   // una condicional para verificar si hay campos vacios si encuentra se mostrara un dialogo
+            Regex rx = new Regex(@"^([1-9]\d*(\.)\d*|0?(\.)\d*[1-9]\d*|[1-9]\d*)$");
             if (ltmbox.Texts == String.Empty || codprodcbox.Texts == String.Empty ||
                 descriProductBox.Texts == String.Empty || bodgbox.Texts == String.Empty ||
                 boxcantidad.Texts == String.Empty || boxunid.Texts == String.Empty
@@ -43,7 +46,13 @@ namespace Facturacion.forms
                                     "Confirmar",
                                     MessageBoxButtons.OK);
             }
-
+            else if (rx.IsMatch(boxcantidad.Texts) !=true || rx.IsMatch(boxprecio.Texts) != true || rx.IsMatch(impboxx.Texts) != true 
+                || rx.IsMatch(dsctglobalbox.Texts) != true)
+            {
+                var messageValuee = MessageBox.Show("Por favor introduza valor numericos preferible en decimales ",
+                                  "Confirmar",
+                                  MessageBoxButtons.OK);
+            }
 
 
             else
@@ -153,17 +162,17 @@ namespace Facturacion.forms
             foreach (DataGridViewRow row in gridprodc.Rows)
             {
                 filas += "<tr>";
-                filas += "<td class = \"tds\">" + row.Cells["Ltm"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Bodg."].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Cantidad"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Unid."].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Precio"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Dto.%"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Imp.%"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
-                filas += "<td class = \"tds\">" + row.Cells["Importe"].Value.ToString() + " </td>";
+                filas += "<td>" + row.Cells["Ltm"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Bodg."].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Cantidad"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Unid."].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Precio"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Dto.%"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Imp.%"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Imp.Monto"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["Importe"].Value.ToString() + " </td>";
                 filas += "</tr>";
                 total += decimal.Parse(row.Cells["Importe"].Value.ToString());
                 impmontotal += decimal.Parse(row.Cells["Imp.Monto"].Value.ToString());
@@ -334,9 +343,26 @@ namespace Facturacion.forms
 
         }
 
-        private void label_NumeroCoti_Click(object sender, EventArgs e)
-        {
+  
 
+        private void boxcantidad_Enter(object sender, EventArgs e)
+        {
+            boxcantidad.Texts = "";
+        }
+
+        private void boxprecio_Enter(object sender, EventArgs e)
+        {
+            boxprecio.Texts = "";
+        }
+
+        private void impboxx_Enter(object sender, EventArgs e)
+        {
+            impboxx.Texts = "";
+        }
+
+        private void dsctglobalbox_Enter(object sender, EventArgs e)
+        {
+            dsctglobalbox.Texts = "";
         }
     }
 }

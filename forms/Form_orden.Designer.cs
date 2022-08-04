@@ -52,6 +52,17 @@
             this.labelImp = new System.Windows.Forms.Label();
             this.porcientodsct = new System.Windows.Forms.Label();
             this.gb_DatosClientes = new System.Windows.Forms.GroupBox();
+            this.gb_DetallesProducto = new System.Windows.Forms.GroupBox();
+            this.labelunit = new System.Windows.Forms.Label();
+            this.impboxx = new Facturacion.widgets.RJTextBox();
+            this.ltmbox = new Facturacion.widgets.RJTextBox();
+            this.boxunid = new Facturacion.widgets.RJTextBox();
+            this.codprodcbox = new Facturacion.widgets.RJTextBox();
+            this.descriProductBox = new Facturacion.widgets.RJTextBox();
+            this.dsctglobalbox = new Facturacion.widgets.RJTextBox();
+            this.bodgbox = new Facturacion.widgets.RJTextBox();
+            this.boxcantidad = new Facturacion.widgets.RJTextBox();
+            this.boxprecio = new Facturacion.widgets.RJTextBox();
             this.textBox_RNC = new Facturacion.widgets.RJTextBox();
             this.textBox_nombre = new Facturacion.widgets.RJTextBox();
             this.textBoxCodigoCliente = new Facturacion.widgets.RJTextBox();
@@ -64,17 +75,6 @@
             this.textboxFecha = new Facturacion.widgets.RJTextBox();
             this.textBox_numeroCoti = new Facturacion.widgets.RJTextBox();
             this.textboxPagina = new Facturacion.widgets.RJTextBox();
-            this.gb_DetallesProducto = new System.Windows.Forms.GroupBox();
-            this.impboxx = new Facturacion.widgets.RJTextBox();
-            this.labelunit = new System.Windows.Forms.Label();
-            this.ltmbox = new Facturacion.widgets.RJTextBox();
-            this.boxunid = new Facturacion.widgets.RJTextBox();
-            this.codprodcbox = new Facturacion.widgets.RJTextBox();
-            this.descriProductBox = new Facturacion.widgets.RJTextBox();
-            this.dsctglobalbox = new Facturacion.widgets.RJTextBox();
-            this.bodgbox = new Facturacion.widgets.RJTextBox();
-            this.boxcantidad = new Facturacion.widgets.RJTextBox();
-            this.boxprecio = new Facturacion.widgets.RJTextBox();
             this.borrarbuton = new Facturacion.widgets.RJControls();
             this.cleanbuton = new Facturacion.widgets.RJControls();
             this.botonmenuprincipal = new Facturacion.widgets.RJControls();
@@ -117,7 +117,6 @@
             this.label_NumeroCoti.Size = new System.Drawing.Size(98, 16);
             this.label_NumeroCoti.TabIndex = 5;
             this.label_NumeroCoti.Text = "COTIZACIÓN No:";
-            this.label_NumeroCoti.Click += new System.EventHandler(this.label_NumeroCoti_Click);
             // 
             // labelFecha
             // 
@@ -360,6 +359,221 @@
             this.gb_DatosClientes.TabStop = false;
             this.gb_DatosClientes.Text = "Datos Clientes";
             // 
+            // gb_DetallesProducto
+            // 
+            this.gb_DetallesProducto.Controls.Add(this.impboxx);
+            this.gb_DetallesProducto.Controls.Add(this.labelunit);
+            this.gb_DetallesProducto.Controls.Add(this.ltmbox);
+            this.gb_DetallesProducto.Controls.Add(this.ltmlabel);
+            this.gb_DetallesProducto.Controls.Add(this.boxunid);
+            this.gb_DetallesProducto.Controls.Add(this.labelCodprod);
+            this.gb_DetallesProducto.Controls.Add(this.porcientodsct);
+            this.gb_DetallesProducto.Controls.Add(this.codprodcbox);
+            this.gb_DetallesProducto.Controls.Add(this.descriProductBox);
+            this.gb_DetallesProducto.Controls.Add(this.dsctglobalbox);
+            this.gb_DetallesProducto.Controls.Add(this.labeldescripcionproducto);
+            this.gb_DetallesProducto.Controls.Add(this.labelImp);
+            this.gb_DetallesProducto.Controls.Add(this.labelbodg);
+            this.gb_DetallesProducto.Controls.Add(this.labelcantidad);
+            this.gb_DetallesProducto.Controls.Add(this.labelunid);
+            this.gb_DetallesProducto.Controls.Add(this.labelPrecio);
+            this.gb_DetallesProducto.Controls.Add(this.bodgbox);
+            this.gb_DetallesProducto.Controls.Add(this.boxcantidad);
+            this.gb_DetallesProducto.Controls.Add(this.boxprecio);
+            this.gb_DetallesProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gb_DetallesProducto.Location = new System.Drawing.Point(12, 232);
+            this.gb_DetallesProducto.Name = "gb_DetallesProducto";
+            this.gb_DetallesProducto.Size = new System.Drawing.Size(1189, 162);
+            this.gb_DetallesProducto.TabIndex = 65;
+            this.gb_DetallesProducto.TabStop = false;
+            this.gb_DetallesProducto.Text = "Detalles Producto";
+            // 
+            // labelunit
+            // 
+            this.labelunit.AutoSize = true;
+            this.labelunit.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
+            this.labelunit.ForeColor = System.Drawing.Color.Red;
+            this.labelunit.Location = new System.Drawing.Point(855, 78);
+            this.labelunit.Name = "labelunit";
+            this.labelunit.Size = new System.Drawing.Size(36, 16);
+            this.labelunit.TabIndex = 63;
+            this.labelunit.Text = "UNIT";
+            // 
+            // impboxx
+            // 
+            this.impboxx.BackColor = System.Drawing.SystemColors.Window;
+            this.impboxx.BorderColor = System.Drawing.Color.Red;
+            this.impboxx.BorderFocusColor = System.Drawing.Color.Red;
+            this.impboxx.BorderSize = 1;
+            this.impboxx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.impboxx.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.impboxx.Location = new System.Drawing.Point(902, 32);
+            this.impboxx.Margin = new System.Windows.Forms.Padding(4);
+            this.impboxx.Multiline = false;
+            this.impboxx.Name = "impboxx";
+            this.impboxx.Padding = new System.Windows.Forms.Padding(7);
+            this.impboxx.PasswordChar = false;
+            this.impboxx.Size = new System.Drawing.Size(269, 31);
+            this.impboxx.TabIndex = 64;
+            this.impboxx.Texts = "Eje: 20";
+            this.impboxx.UnderlineStyle = true;
+            this.impboxx.Enter += new System.EventHandler(this.impboxx_Enter);
+            // 
+            // ltmbox
+            // 
+            this.ltmbox.BackColor = System.Drawing.SystemColors.Window;
+            this.ltmbox.BorderColor = System.Drawing.Color.Red;
+            this.ltmbox.BorderFocusColor = System.Drawing.Color.Red;
+            this.ltmbox.BorderSize = 1;
+            this.ltmbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ltmbox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.ltmbox.Location = new System.Drawing.Point(150, 32);
+            this.ltmbox.Margin = new System.Windows.Forms.Padding(4);
+            this.ltmbox.Multiline = false;
+            this.ltmbox.Name = "ltmbox";
+            this.ltmbox.Padding = new System.Windows.Forms.Padding(7);
+            this.ltmbox.PasswordChar = false;
+            this.ltmbox.Size = new System.Drawing.Size(269, 31);
+            this.ltmbox.TabIndex = 36;
+            this.ltmbox.Texts = "";
+            this.ltmbox.UnderlineStyle = true;
+            // 
+            // boxunid
+            // 
+            this.boxunid.BackColor = System.Drawing.SystemColors.Window;
+            this.boxunid.BorderColor = System.Drawing.Color.Red;
+            this.boxunid.BorderFocusColor = System.Drawing.Color.Red;
+            this.boxunid.BorderSize = 1;
+            this.boxunid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxunid.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.boxunid.Location = new System.Drawing.Point(903, 71);
+            this.boxunid.Margin = new System.Windows.Forms.Padding(4);
+            this.boxunid.Multiline = false;
+            this.boxunid.Name = "boxunid";
+            this.boxunid.Padding = new System.Windows.Forms.Padding(7);
+            this.boxunid.PasswordChar = false;
+            this.boxunid.Size = new System.Drawing.Size(269, 31);
+            this.boxunid.TabIndex = 48;
+            this.boxunid.Texts = "";
+            this.boxunid.UnderlineStyle = true;
+            // 
+            // codprodcbox
+            // 
+            this.codprodcbox.BackColor = System.Drawing.SystemColors.Window;
+            this.codprodcbox.BorderColor = System.Drawing.Color.Red;
+            this.codprodcbox.BorderFocusColor = System.Drawing.Color.Red;
+            this.codprodcbox.BorderSize = 1;
+            this.codprodcbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.codprodcbox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.codprodcbox.Location = new System.Drawing.Point(150, 71);
+            this.codprodcbox.Margin = new System.Windows.Forms.Padding(4);
+            this.codprodcbox.Multiline = false;
+            this.codprodcbox.Name = "codprodcbox";
+            this.codprodcbox.Padding = new System.Windows.Forms.Padding(7);
+            this.codprodcbox.PasswordChar = false;
+            this.codprodcbox.Size = new System.Drawing.Size(269, 31);
+            this.codprodcbox.TabIndex = 37;
+            this.codprodcbox.Texts = "";
+            this.codprodcbox.UnderlineStyle = true;
+            // 
+            // descriProductBox
+            // 
+            this.descriProductBox.BackColor = System.Drawing.SystemColors.Window;
+            this.descriProductBox.BorderColor = System.Drawing.Color.Red;
+            this.descriProductBox.BorderFocusColor = System.Drawing.Color.Red;
+            this.descriProductBox.BorderSize = 1;
+            this.descriProductBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.descriProductBox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.descriProductBox.Location = new System.Drawing.Point(150, 110);
+            this.descriProductBox.Margin = new System.Windows.Forms.Padding(4);
+            this.descriProductBox.Multiline = true;
+            this.descriProductBox.Name = "descriProductBox";
+            this.descriProductBox.Padding = new System.Windows.Forms.Padding(7);
+            this.descriProductBox.PasswordChar = false;
+            this.descriProductBox.Size = new System.Drawing.Size(266, 31);
+            this.descriProductBox.TabIndex = 38;
+            this.descriProductBox.Texts = "";
+            this.descriProductBox.UnderlineStyle = true;
+            // 
+            // dsctglobalbox
+            // 
+            this.dsctglobalbox.BackColor = System.Drawing.SystemColors.Window;
+            this.dsctglobalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
+            this.dsctglobalbox.BorderFocusColor = System.Drawing.Color.Red;
+            this.dsctglobalbox.BorderSize = 2;
+            this.dsctglobalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dsctglobalbox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.dsctglobalbox.Location = new System.Drawing.Point(903, 109);
+            this.dsctglobalbox.Margin = new System.Windows.Forms.Padding(4);
+            this.dsctglobalbox.Multiline = false;
+            this.dsctglobalbox.Name = "dsctglobalbox";
+            this.dsctglobalbox.Padding = new System.Windows.Forms.Padding(7);
+            this.dsctglobalbox.PasswordChar = false;
+            this.dsctglobalbox.Size = new System.Drawing.Size(269, 31);
+            this.dsctglobalbox.TabIndex = 58;
+            this.dsctglobalbox.Texts = "Eje: 15";
+            this.dsctglobalbox.UnderlineStyle = true;
+            this.dsctglobalbox.Enter += new System.EventHandler(this.dsctglobalbox_Enter);
+            // 
+            // bodgbox
+            // 
+            this.bodgbox.BackColor = System.Drawing.SystemColors.Window;
+            this.bodgbox.BorderColor = System.Drawing.Color.Red;
+            this.bodgbox.BorderFocusColor = System.Drawing.Color.Red;
+            this.bodgbox.BorderSize = 1;
+            this.bodgbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bodgbox.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.bodgbox.Location = new System.Drawing.Point(520, 32);
+            this.bodgbox.Margin = new System.Windows.Forms.Padding(4);
+            this.bodgbox.Multiline = true;
+            this.bodgbox.Name = "bodgbox";
+            this.bodgbox.Padding = new System.Windows.Forms.Padding(7);
+            this.bodgbox.PasswordChar = false;
+            this.bodgbox.Size = new System.Drawing.Size(269, 31);
+            this.bodgbox.TabIndex = 39;
+            this.bodgbox.Texts = "";
+            this.bodgbox.UnderlineStyle = true;
+            // 
+            // boxcantidad
+            // 
+            this.boxcantidad.BackColor = System.Drawing.SystemColors.Window;
+            this.boxcantidad.BorderColor = System.Drawing.Color.Red;
+            this.boxcantidad.BorderFocusColor = System.Drawing.Color.Red;
+            this.boxcantidad.BorderSize = 1;
+            this.boxcantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxcantidad.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.boxcantidad.Location = new System.Drawing.Point(521, 71);
+            this.boxcantidad.Margin = new System.Windows.Forms.Padding(4);
+            this.boxcantidad.Multiline = false;
+            this.boxcantidad.Name = "boxcantidad";
+            this.boxcantidad.Padding = new System.Windows.Forms.Padding(7);
+            this.boxcantidad.PasswordChar = false;
+            this.boxcantidad.Size = new System.Drawing.Size(269, 31);
+            this.boxcantidad.TabIndex = 47;
+            this.boxcantidad.Texts = " Eje: 1.00";
+            this.boxcantidad.UnderlineStyle = true;
+            this.boxcantidad.Enter += new System.EventHandler(this.boxcantidad_Enter);
+            // 
+            // boxprecio
+            // 
+            this.boxprecio.BackColor = System.Drawing.SystemColors.Window;
+            this.boxprecio.BorderColor = System.Drawing.Color.Red;
+            this.boxprecio.BorderFocusColor = System.Drawing.Color.Red;
+            this.boxprecio.BorderSize = 1;
+            this.boxprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.boxprecio.ForeColor = System.Drawing.SystemColors.GrayText;
+            this.boxprecio.Location = new System.Drawing.Point(521, 110);
+            this.boxprecio.Margin = new System.Windows.Forms.Padding(4);
+            this.boxprecio.Multiline = false;
+            this.boxprecio.Name = "boxprecio";
+            this.boxprecio.Padding = new System.Windows.Forms.Padding(7);
+            this.boxprecio.PasswordChar = false;
+            this.boxprecio.Size = new System.Drawing.Size(269, 31);
+            this.boxprecio.TabIndex = 49;
+            this.boxprecio.Texts = "Eje: 500.00";
+            this.boxprecio.UnderlineStyle = true;
+            this.boxprecio.Enter += new System.EventHandler(this.boxprecio_Enter);
+            // 
             // textBox_RNC
             // 
             this.textBox_RNC.BackColor = System.Drawing.SystemColors.Window;
@@ -587,217 +801,6 @@
             this.textboxPagina.TabIndex = 10;
             this.textboxPagina.Texts = "";
             this.textboxPagina.UnderlineStyle = true;
-            // 
-            // gb_DetallesProducto
-            // 
-            this.gb_DetallesProducto.Controls.Add(this.impboxx);
-            this.gb_DetallesProducto.Controls.Add(this.labelunit);
-            this.gb_DetallesProducto.Controls.Add(this.ltmbox);
-            this.gb_DetallesProducto.Controls.Add(this.ltmlabel);
-            this.gb_DetallesProducto.Controls.Add(this.boxunid);
-            this.gb_DetallesProducto.Controls.Add(this.labelCodprod);
-            this.gb_DetallesProducto.Controls.Add(this.porcientodsct);
-            this.gb_DetallesProducto.Controls.Add(this.codprodcbox);
-            this.gb_DetallesProducto.Controls.Add(this.descriProductBox);
-            this.gb_DetallesProducto.Controls.Add(this.dsctglobalbox);
-            this.gb_DetallesProducto.Controls.Add(this.labeldescripcionproducto);
-            this.gb_DetallesProducto.Controls.Add(this.labelImp);
-            this.gb_DetallesProducto.Controls.Add(this.labelbodg);
-            this.gb_DetallesProducto.Controls.Add(this.labelcantidad);
-            this.gb_DetallesProducto.Controls.Add(this.labelunid);
-            this.gb_DetallesProducto.Controls.Add(this.labelPrecio);
-            this.gb_DetallesProducto.Controls.Add(this.bodgbox);
-            this.gb_DetallesProducto.Controls.Add(this.boxcantidad);
-            this.gb_DetallesProducto.Controls.Add(this.boxprecio);
-            this.gb_DetallesProducto.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gb_DetallesProducto.Location = new System.Drawing.Point(12, 232);
-            this.gb_DetallesProducto.Name = "gb_DetallesProducto";
-            this.gb_DetallesProducto.Size = new System.Drawing.Size(1189, 162);
-            this.gb_DetallesProducto.TabIndex = 65;
-            this.gb_DetallesProducto.TabStop = false;
-            this.gb_DetallesProducto.Text = "Detalles Producto";
-            // 
-            // impboxx
-            // 
-            this.impboxx.BackColor = System.Drawing.SystemColors.Window;
-            this.impboxx.BorderColor = System.Drawing.Color.Red;
-            this.impboxx.BorderFocusColor = System.Drawing.Color.Red;
-            this.impboxx.BorderSize = 1;
-            this.impboxx.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.impboxx.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.impboxx.Location = new System.Drawing.Point(902, 32);
-            this.impboxx.Margin = new System.Windows.Forms.Padding(4);
-            this.impboxx.Multiline = false;
-            this.impboxx.Name = "impboxx";
-            this.impboxx.Padding = new System.Windows.Forms.Padding(7);
-            this.impboxx.PasswordChar = false;
-            this.impboxx.Size = new System.Drawing.Size(269, 31);
-            this.impboxx.TabIndex = 64;
-            this.impboxx.Texts = "";
-            this.impboxx.UnderlineStyle = true;
-            // 
-            // labelunit
-            // 
-            this.labelunit.AutoSize = true;
-            this.labelunit.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold);
-            this.labelunit.ForeColor = System.Drawing.Color.Red;
-            this.labelunit.Location = new System.Drawing.Point(855, 78);
-            this.labelunit.Name = "labelunit";
-            this.labelunit.Size = new System.Drawing.Size(36, 16);
-            this.labelunit.TabIndex = 63;
-            this.labelunit.Text = "UNIT";
-            // 
-            // ltmbox
-            // 
-            this.ltmbox.BackColor = System.Drawing.SystemColors.Window;
-            this.ltmbox.BorderColor = System.Drawing.Color.Red;
-            this.ltmbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.ltmbox.BorderSize = 1;
-            this.ltmbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ltmbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.ltmbox.Location = new System.Drawing.Point(150, 32);
-            this.ltmbox.Margin = new System.Windows.Forms.Padding(4);
-            this.ltmbox.Multiline = false;
-            this.ltmbox.Name = "ltmbox";
-            this.ltmbox.Padding = new System.Windows.Forms.Padding(7);
-            this.ltmbox.PasswordChar = false;
-            this.ltmbox.Size = new System.Drawing.Size(269, 31);
-            this.ltmbox.TabIndex = 36;
-            this.ltmbox.Texts = "";
-            this.ltmbox.UnderlineStyle = true;
-            // 
-            // boxunid
-            // 
-            this.boxunid.BackColor = System.Drawing.SystemColors.Window;
-            this.boxunid.BorderColor = System.Drawing.Color.Red;
-            this.boxunid.BorderFocusColor = System.Drawing.Color.Red;
-            this.boxunid.BorderSize = 1;
-            this.boxunid.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxunid.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.boxunid.Location = new System.Drawing.Point(903, 71);
-            this.boxunid.Margin = new System.Windows.Forms.Padding(4);
-            this.boxunid.Multiline = false;
-            this.boxunid.Name = "boxunid";
-            this.boxunid.Padding = new System.Windows.Forms.Padding(7);
-            this.boxunid.PasswordChar = false;
-            this.boxunid.Size = new System.Drawing.Size(269, 31);
-            this.boxunid.TabIndex = 48;
-            this.boxunid.Texts = "";
-            this.boxunid.UnderlineStyle = true;
-            // 
-            // codprodcbox
-            // 
-            this.codprodcbox.BackColor = System.Drawing.SystemColors.Window;
-            this.codprodcbox.BorderColor = System.Drawing.Color.Red;
-            this.codprodcbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.codprodcbox.BorderSize = 1;
-            this.codprodcbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.codprodcbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.codprodcbox.Location = new System.Drawing.Point(150, 71);
-            this.codprodcbox.Margin = new System.Windows.Forms.Padding(4);
-            this.codprodcbox.Multiline = false;
-            this.codprodcbox.Name = "codprodcbox";
-            this.codprodcbox.Padding = new System.Windows.Forms.Padding(7);
-            this.codprodcbox.PasswordChar = false;
-            this.codprodcbox.Size = new System.Drawing.Size(269, 31);
-            this.codprodcbox.TabIndex = 37;
-            this.codprodcbox.Texts = "";
-            this.codprodcbox.UnderlineStyle = true;
-            // 
-            // descriProductBox
-            // 
-            this.descriProductBox.BackColor = System.Drawing.SystemColors.Window;
-            this.descriProductBox.BorderColor = System.Drawing.Color.Red;
-            this.descriProductBox.BorderFocusColor = System.Drawing.Color.Red;
-            this.descriProductBox.BorderSize = 1;
-            this.descriProductBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.descriProductBox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.descriProductBox.Location = new System.Drawing.Point(150, 110);
-            this.descriProductBox.Margin = new System.Windows.Forms.Padding(4);
-            this.descriProductBox.Multiline = true;
-            this.descriProductBox.Name = "descriProductBox";
-            this.descriProductBox.Padding = new System.Windows.Forms.Padding(7);
-            this.descriProductBox.PasswordChar = false;
-            this.descriProductBox.Size = new System.Drawing.Size(266, 31);
-            this.descriProductBox.TabIndex = 38;
-            this.descriProductBox.Texts = "";
-            this.descriProductBox.UnderlineStyle = true;
-            // 
-            // dsctglobalbox
-            // 
-            this.dsctglobalbox.BackColor = System.Drawing.SystemColors.Window;
-            this.dsctglobalbox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.dsctglobalbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.dsctglobalbox.BorderSize = 2;
-            this.dsctglobalbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dsctglobalbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.dsctglobalbox.Location = new System.Drawing.Point(903, 109);
-            this.dsctglobalbox.Margin = new System.Windows.Forms.Padding(4);
-            this.dsctglobalbox.Multiline = false;
-            this.dsctglobalbox.Name = "dsctglobalbox";
-            this.dsctglobalbox.Padding = new System.Windows.Forms.Padding(7);
-            this.dsctglobalbox.PasswordChar = false;
-            this.dsctglobalbox.Size = new System.Drawing.Size(269, 31);
-            this.dsctglobalbox.TabIndex = 58;
-            this.dsctglobalbox.Texts = "";
-            this.dsctglobalbox.UnderlineStyle = true;
-            // 
-            // bodgbox
-            // 
-            this.bodgbox.BackColor = System.Drawing.SystemColors.Window;
-            this.bodgbox.BorderColor = System.Drawing.Color.Red;
-            this.bodgbox.BorderFocusColor = System.Drawing.Color.Red;
-            this.bodgbox.BorderSize = 1;
-            this.bodgbox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bodgbox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.bodgbox.Location = new System.Drawing.Point(520, 32);
-            this.bodgbox.Margin = new System.Windows.Forms.Padding(4);
-            this.bodgbox.Multiline = true;
-            this.bodgbox.Name = "bodgbox";
-            this.bodgbox.Padding = new System.Windows.Forms.Padding(7);
-            this.bodgbox.PasswordChar = false;
-            this.bodgbox.Size = new System.Drawing.Size(269, 31);
-            this.bodgbox.TabIndex = 39;
-            this.bodgbox.Texts = "";
-            this.bodgbox.UnderlineStyle = true;
-            // 
-            // boxcantidad
-            // 
-            this.boxcantidad.BackColor = System.Drawing.SystemColors.Window;
-            this.boxcantidad.BorderColor = System.Drawing.Color.Red;
-            this.boxcantidad.BorderFocusColor = System.Drawing.Color.Red;
-            this.boxcantidad.BorderSize = 1;
-            this.boxcantidad.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxcantidad.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.boxcantidad.Location = new System.Drawing.Point(521, 71);
-            this.boxcantidad.Margin = new System.Windows.Forms.Padding(4);
-            this.boxcantidad.Multiline = false;
-            this.boxcantidad.Name = "boxcantidad";
-            this.boxcantidad.Padding = new System.Windows.Forms.Padding(7);
-            this.boxcantidad.PasswordChar = false;
-            this.boxcantidad.Size = new System.Drawing.Size(269, 31);
-            this.boxcantidad.TabIndex = 47;
-            this.boxcantidad.Texts = "";
-            this.boxcantidad.UnderlineStyle = true;
-            // 
-            // boxprecio
-            // 
-            this.boxprecio.BackColor = System.Drawing.SystemColors.Window;
-            this.boxprecio.BorderColor = System.Drawing.Color.Red;
-            this.boxprecio.BorderFocusColor = System.Drawing.Color.Red;
-            this.boxprecio.BorderSize = 1;
-            this.boxprecio.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.boxprecio.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.boxprecio.Location = new System.Drawing.Point(521, 110);
-            this.boxprecio.Margin = new System.Windows.Forms.Padding(4);
-            this.boxprecio.Multiline = false;
-            this.boxprecio.Name = "boxprecio";
-            this.boxprecio.Padding = new System.Windows.Forms.Padding(7);
-            this.boxprecio.PasswordChar = false;
-            this.boxprecio.Size = new System.Drawing.Size(269, 31);
-            this.boxprecio.TabIndex = 49;
-            this.boxprecio.Texts = "";
-            this.boxprecio.UnderlineStyle = true;
             // 
             // borrarbuton
             // 

@@ -189,7 +189,6 @@
             this.dirrecionbox.TabIndex = 38;
             this.dirrecionbox.Texts = "";
             this.dirrecionbox.UnderlineStyle = true;
-            
             // 
             // telbox
             // 
@@ -267,7 +266,6 @@
             this.numerolabel.Size = new System.Drawing.Size(59, 16);
             this.numerolabel.TabIndex = 45;
             this.numerolabel.Text = "NUMERO";
-            
             // 
             // fechalabel
             // 
@@ -337,7 +335,6 @@
             this.numerobox.TabIndex = 51;
             this.numerobox.Texts = "";
             this.numerobox.UnderlineStyle = true;
-            
             // 
             // fechabox
             // 
@@ -357,7 +354,6 @@
             this.fechabox.TabIndex = 52;
             this.fechabox.Texts = "";
             this.fechabox.UnderlineStyle = true;
-            
             // 
             // condibox
             // 
@@ -377,7 +373,6 @@
             this.condibox.TabIndex = 53;
             this.condibox.Texts = "";
             this.condibox.UnderlineStyle = true;
-            
             // 
             // vencibox
             // 
@@ -397,7 +392,6 @@
             this.vencibox.TabIndex = 54;
             this.vencibox.Texts = "";
             this.vencibox.UnderlineStyle = true;
-            
             // 
             // ordenbox
             // 
@@ -521,8 +515,9 @@
             this.cantidadbox.PasswordChar = false;
             this.cantidadbox.Size = new System.Drawing.Size(272, 31);
             this.cantidadbox.TabIndex = 69;
-            this.cantidadbox.Texts = "";
+            this.cantidadbox.Texts = "Eje: 1.00";
             this.cantidadbox.UnderlineStyle = true;
+            this.cantidadbox.Enter += new System.EventHandler(this.cantidadbox_Enter);
             // 
             // descrbox
             // 
@@ -559,8 +554,9 @@
             this.preciunibox.PasswordChar = false;
             this.preciunibox.Size = new System.Drawing.Size(268, 31);
             this.preciunibox.TabIndex = 71;
-            this.preciunibox.Texts = "";
+            this.preciunibox.Texts = "Eje: 500.00";
             this.preciunibox.UnderlineStyle = true;
+            this.preciunibox.Enter += new System.EventHandler(this.preciunibox_Enter);
             // 
             // cleanbuton
             // 
@@ -701,8 +697,9 @@
             this.descuentobox.PasswordChar = false;
             this.descuentobox.Size = new System.Drawing.Size(272, 31);
             this.descuentobox.TabIndex = 82;
-            this.descuentobox.Texts = "";
+            this.descuentobox.Texts = "Eje: 20";
             this.descuentobox.UnderlineStyle = true;
+            this.descuentobox.Enter += new System.EventHandler(this.descuentobox_Enter);
             // 
             // impustolabel
             // 
@@ -730,8 +727,9 @@
             this.impuestobox.PasswordChar = false;
             this.impuestobox.Size = new System.Drawing.Size(268, 31);
             this.impuestobox.TabIndex = 87;
-            this.impuestobox.Texts = "";
+            this.impuestobox.Texts = "Eje: 15";
             this.impuestobox.UnderlineStyle = true;
+            this.impuestobox.Enter += new System.EventHandler(this.impuestobox_Enter);
             // 
             // borrarbuton
             // 

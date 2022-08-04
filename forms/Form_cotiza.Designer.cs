@@ -117,7 +117,6 @@
             this.label_NumeroCoti.Size = new System.Drawing.Size(98, 16);
             this.label_NumeroCoti.TabIndex = 5;
             this.label_NumeroCoti.Text = "COTIZACIÓN No:";
-            this.label_NumeroCoti.Click += new System.EventHandler(this.label_NumeroCoti_Click);
             // 
             // labelFecha
             // 
@@ -633,8 +632,9 @@
             this.impboxx.PasswordChar = false;
             this.impboxx.Size = new System.Drawing.Size(269, 31);
             this.impboxx.TabIndex = 64;
-            this.impboxx.Texts = "";
+            this.impboxx.Texts = "Eje: 20";
             this.impboxx.UnderlineStyle = true;
+            this.impboxx.Enter += new System.EventHandler(this.impboxx_Enter);
             // 
             // labelunit
             // 
@@ -739,8 +739,9 @@
             this.dsctglobalbox.PasswordChar = false;
             this.dsctglobalbox.Size = new System.Drawing.Size(269, 31);
             this.dsctglobalbox.TabIndex = 58;
-            this.dsctglobalbox.Texts = "";
+            this.dsctglobalbox.Texts = "Eje: 20";
             this.dsctglobalbox.UnderlineStyle = true;
+            this.dsctglobalbox.Enter += new System.EventHandler(this.dsctglobalbox_Enter);
             // 
             // bodgbox
             // 
@@ -777,8 +778,9 @@
             this.boxcantidad.PasswordChar = false;
             this.boxcantidad.Size = new System.Drawing.Size(269, 31);
             this.boxcantidad.TabIndex = 47;
-            this.boxcantidad.Texts = "";
+            this.boxcantidad.Texts = "Eje: 1.00";
             this.boxcantidad.UnderlineStyle = true;
+            this.boxcantidad.Enter += new System.EventHandler(this.boxcantidad_Enter);
             // 
             // boxprecio
             // 
@@ -796,8 +798,9 @@
             this.boxprecio.PasswordChar = false;
             this.boxprecio.Size = new System.Drawing.Size(269, 31);
             this.boxprecio.TabIndex = 49;
-            this.boxprecio.Texts = "";
+            this.boxprecio.Texts = "Eje: 500.00";
             this.boxprecio.UnderlineStyle = true;
+            this.boxprecio.Enter += new System.EventHandler(this.boxprecio_Enter);
             // 
             // borrarbuton
             // 
