@@ -68,7 +68,7 @@ namespace Facturacion
                     DataGridViewRow fila = gridprodc.Rows[indicarfila]; // guardamos esa fila especifica 
 
                     // aqui cada celda de la tabla sera remplazada por lo que dijitee en el textbox del formulario
-                    fila.Cells["Ltm"].Value = ltmbox.Texts; 
+                    fila.Cells["item"].Value = ltmbox.Texts; 
                     fila.Cells["Cod.Pro"].Value = codprodcbox.Texts;
                     fila.Cells["Descripcion Producto"].Value = descriProductBox.Texts;
                     fila.Cells["Bodg."].Value = bodgbox.Texts;
@@ -114,7 +114,7 @@ namespace Facturacion
 
         private void Form_cotiza_Load(object sender, EventArgs e)
         {   // cuando cargue el form se crean columnas para la tabla
-            gridprodc.Columns.Add("Ltm","Ltm");
+            gridprodc.Columns.Add("item","item");
             gridprodc.Columns.Add("Cod.Pro", "Cod.Pro");
             gridprodc.Columns.Add("Descripcion Producto", "Descripcion Producto");
             gridprodc.Columns.Add("Bodg.", "Bodg.");
@@ -172,7 +172,7 @@ namespace Facturacion
 
                 filas += "<tr>";
 
-                filas += "<td>" + row.Cells["Ltm"].Value.ToString() + "</td>";
+                filas += "<td>" + row.Cells["item"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Cod.Pro"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Descripcion Producto"].Value.ToString() + "</td>";
                 filas += "<td>" + row.Cells["Bodg."].Value.ToString() + "</td>";
