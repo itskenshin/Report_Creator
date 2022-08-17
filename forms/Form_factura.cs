@@ -63,13 +63,7 @@ namespace Facturacion
                                     "Confirmar",
                                     MessageBoxButtons.OK);
             }
-            else if (rx.IsMatch(cantidadbox.Texts) != true || rx.IsMatch(preciunibox.Texts) != true || rx.IsMatch(impuestobox.Texts) != true
-                || rx.IsMatch(descuentobox.Texts) != true)
-            {
-                var messageValuee = MessageBox.Show("Por favor introduza valor numericos preferible en decimales ",
-                                  "Confirmar",
-                                  MessageBoxButtons.OK);
-            }
+            
 
             else
             {
@@ -110,7 +104,7 @@ namespace Facturacion
             dirrecionbox.Texts = string.Empty;
             telbox.Texts = string.Empty;
             vendedorbox.Texts = string.Empty;
-            obrabox.Texts = string.Empty;
+            
             numerobox.Texts = string.Empty;
             fechabox.Texts = string.Empty;
             condibox.Texts = string.Empty;
@@ -153,7 +147,7 @@ namespace Facturacion
             paginahtml_texto = paginahtml_texto.Replace("@CLIENTE", clientebox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@DIRECCION", dirrecionbox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@VENDEDOR", vendedorbox.Texts);
-            paginahtml_texto = paginahtml_texto.Replace("@OBRA", obrabox.Texts);
+            
             paginahtml_texto = paginahtml_texto.Replace("@NUMERO", numerobox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@FECHA", fechabox.Texts);
             paginahtml_texto = paginahtml_texto.Replace("@CONDICIONES", condibox.Texts);
@@ -185,12 +179,21 @@ namespace Facturacion
             }
             if (descuentobox.Texts != String.Empty && impuestobox.Texts != String.Empty)
             {
+                if (decimal.Parse(impuestobox.Texts) == 0)
+                {
+                    totaldescuento = total * ((decimal.Parse(descuentobox.Texts) / 100));
+                    valorneto = (total - totaldescuento);
 
-                totaldescuento = total * ((decimal.Parse(impuestobox.Texts) / 100));
-                totalimpuesto = total * ((decimal.Parse(descuentobox.Texts) / 100));
-                valorneto = (total - totaldescuento) + totalimpuesto;
+                }
+                else
+                {
+                    totaldescuento = total * ((decimal.Parse(descuentobox.Texts) / 100));
+                    totalimpuesto = total * ((decimal.Parse(impuestobox.Texts) / 100));
+                    valorneto = (total - totaldescuento) + totalimpuesto;
 
-                
+                }
+
+
             }
             string re = String.Format("{0:0.00}", totaldescuento);
             string re2 = String.Format("{0:0.00}", totalimpuesto);
@@ -280,5 +283,7 @@ namespace Facturacion
         {
             impuestobox.Texts = "";
         }
+
+       
     }
 }

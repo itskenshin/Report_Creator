@@ -46,13 +46,7 @@ namespace Facturacion.forms
                                     "Confirmar",
                                     MessageBoxButtons.OK);
             }
-            else if (rx.IsMatch(boxcantidad.Texts) !=true || rx.IsMatch(boxprecio.Texts) != true || rx.IsMatch(impboxx.Texts) != true 
-                || rx.IsMatch(dsctglobalbox.Texts) != true)
-            {
-                var messageValuee = MessageBox.Show("Por favor introduza valor numericos preferible en decimales ",
-                                  "Confirmar",
-                                  MessageBoxButtons.OK);
-            }
+            
 
 
             else

@@ -66,8 +66,6 @@
             this.botonmenuprincipal = new Facturacion.widgets.RJControls();
             this.butonImprimir = new Facturacion.widgets.RJControls();
             this.botonAgregarProducto = new Facturacion.widgets.RJControls();
-            this.obralabeel = new System.Windows.Forms.Label();
-            this.obrabox = new Facturacion.widgets.RJTextBox();
             this.descuentolabeel = new System.Windows.Forms.Label();
             this.descuentobox = new Facturacion.widgets.RJTextBox();
             this.impustolabel = new System.Windows.Forms.Label();
@@ -642,35 +640,6 @@
             this.botonAgregarProducto.UseVisualStyleBackColor = false;
             this.botonAgregarProducto.Click += new System.EventHandler(this.botonAgregarProducto_Click);
             // 
-            // obralabeel
-            // 
-            this.obralabeel.AutoSize = true;
-            this.obralabeel.Font = new System.Drawing.Font("Bahnschrift SemiBold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.obralabeel.Location = new System.Drawing.Point(67, 281);
-            this.obralabeel.Name = "obralabeel";
-            this.obralabeel.Size = new System.Drawing.Size(39, 16);
-            this.obralabeel.TabIndex = 77;
-            this.obralabeel.Text = "OBRA";
-            // 
-            // obrabox
-            // 
-            this.obrabox.BackColor = System.Drawing.SystemColors.Window;
-            this.obrabox.BorderColor = System.Drawing.Color.MediumSlateBlue;
-            this.obrabox.BorderFocusColor = System.Drawing.Color.Red;
-            this.obrabox.BorderSize = 1;
-            this.obrabox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.5F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.obrabox.ForeColor = System.Drawing.SystemColors.GrayText;
-            this.obrabox.Location = new System.Drawing.Point(120, 274);
-            this.obrabox.Margin = new System.Windows.Forms.Padding(4);
-            this.obrabox.Multiline = false;
-            this.obrabox.Name = "obrabox";
-            this.obrabox.Padding = new System.Windows.Forms.Padding(10);
-            this.obrabox.PasswordChar = false;
-            this.obrabox.Size = new System.Drawing.Size(271, 37);
-            this.obrabox.TabIndex = 78;
-            this.obrabox.Texts = "";
-            this.obrabox.UnderlineStyle = true;
-            // 
             // descuentolabeel
             // 
             this.descuentolabeel.AutoSize = true;
@@ -779,9 +748,7 @@
             this.groupBox1.Controls.Add(this.clientebox);
             this.groupBox1.Controls.Add(this.rncbox);
             this.groupBox1.Controls.Add(this.rnclabel);
-            this.groupBox1.Controls.Add(this.obrabox);
             this.groupBox1.Controls.Add(this.clientelabel);
-            this.groupBox1.Controls.Add(this.obralabeel);
             this.groupBox1.Controls.Add(this.direccionlabel);
             this.groupBox1.Controls.Add(this.tellabel);
             this.groupBox1.Controls.Add(this.vendedorlabel);
@@ -889,8 +856,6 @@
         private widgets.RJControls botonmenuprincipal;
         private widgets.RJControls butonImprimir;
         private widgets.RJControls botonAgregarProducto;
-        private System.Windows.Forms.Label obralabeel;
-        private widgets.RJTextBox obrabox;
         private System.Windows.Forms.Label descuentolabeel;
         private widgets.RJTextBox descuentobox;
         private System.Windows.Forms.Label impustolabel;

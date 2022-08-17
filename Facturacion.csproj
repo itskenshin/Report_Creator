@@ -7,7 +7,7 @@
     <ProjectGuid>{308BC127-60C4-49C5-AE5C-4B37B9E75811}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Facturacion</RootNamespace>
-    <AssemblyName>Facturacion</AssemblyName>
+    <AssemblyName>Facturacion3</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -23,7 +23,7 @@
     <UpdatePeriodically>false</UpdatePeriodically>
     <UpdateRequired>false</UpdateRequired>
     <MapFileExtensions>true</MapFileExtensions>
-    <ApplicationRevision>3</ApplicationRevision>
+    <ApplicationRevision>4</ApplicationRevision>
     <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
     <UseApplicationTrust>false</UseApplicationTrust>
     <PublishWizardCompleted>true</PublishWizardCompleted>
